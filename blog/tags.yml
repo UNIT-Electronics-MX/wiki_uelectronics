@@ -27,3 +27,8 @@ esp32:
   label: ESP32
   permalink: /esp32
   description: ESP32 tag description
+
+flash:
+  label: Flash
+  permalink: /flash
+  description: Programming microcontrollers tag description
