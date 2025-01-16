@@ -89,11 +89,18 @@ const config = {
             label: 'Development',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/forum', label: 'Forums', position: 'left'},
           {
             href: 'https://github.com/UNIT-Electronics',
             label: 'GitHub',
             position: 'right',
           },
+          {to: 'https://uelectronics.com/', label: 'UNIT Shop', position: 'right'},
+
+          {
+            type: 'localeDropdown',
+            position: 'right',
+          }
         ],
       },
       footer: {
