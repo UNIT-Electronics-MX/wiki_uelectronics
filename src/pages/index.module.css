@@ -21,3 +21,89 @@
   align-items: center;
   justify-content: center;
 }
+.heroBanner {
+  padding: 2rem 0;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+.gridSection {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.gridItem {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 300px;
+}
+
+.gridItem:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.gridItem h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.gridItem p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.cardLink {
+  text-decoration: none;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.cardLink:hover {
+  text-decoration: underline;
+}
+
+/* Icon styles */
+.communityIcon,
+.faqIcon,
+.customIcon {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 1rem auto;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Specific icons */
+.communityIcon {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+}
+
+.faqIcon {
+  background: linear-gradient(135deg, #3f51b5, #7986cb);
+}
+
+.customIcon {
+  background: linear-gradient(135deg, #ff9800, #ffc107);
+}

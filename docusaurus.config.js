@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Wiki',
   tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  // favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',
@@ -88,8 +88,9 @@ const config = {
             position: 'left',
             label: 'Development',
           },
+          {to: 'https://www.hackster.io/unit-electronics/discussion', label: 'Forums', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
-          {to: '/forum', label: 'Forums', position: 'left'},
+
           {
             href: 'https://github.com/UNIT-Electronics',
             label: 'GitHub',

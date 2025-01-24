@@ -23,7 +23,7 @@ If you have any questions or need further assistance, please feel free to reach 
 
 
 ### Modules
-- [LiPo Charger Boost & I2C Monitor](/docs/Modules/LiPo_Charger_Boost_I2C_Monitor)  
+- [LiPo Charger Boost & I2C Monitor](/docs/Modules/lipo_module)  
   A compact power management module with integrated charging and monitoring capabilities.
 
 
@@ -39,7 +39,7 @@ At Unit Electronics, we design innovative hardware solutions to empower engineer
 
 
 ### Additional Resources
-- [Getting Started](/docs/Getting_Started)  
+- [Getting Started](/docs/intro)  
   Step-by-step guides for setting up and using your Unit Electronics products.
 - [Community Forum](https://forum.unitelectronics.com)  
   Join our community to ask questions, share projects, and connect with other users.

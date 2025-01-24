@@ -6,6 +6,10 @@ sidebar_position: 3
 
 
 The Module Potentiometer Interface SPI MAX7219 32 LED Sequential is a module that allows you to control 32 LEDs sequentially using a potentiometer. The module uses the SPI protocol to communicate with the MAX7219 LED driver, which controls the LEDs. The potentiometer is used to adjust the speed at which the LEDs are lit up.
+<!-- board in proccess designed -->
+:::caution
+**Board in Development**: The Lumiknob Module is currently in development. The information provided here is subject to change as the design progresses.
+:::
 
 
 ## Sequential LED Control
