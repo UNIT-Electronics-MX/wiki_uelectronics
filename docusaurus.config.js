@@ -14,17 +14,15 @@ const config = {
   tagline: 'Dinosaurs are cool',
   // favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
+  url: 'https://wiki.uelectronics.com',
   baseUrl: '/',
+  
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
-
+  organizationName: 'UNIT-Electronics',
+  projectName: 'wiki',
+  
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -77,9 +75,11 @@ const config = {
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: '',
+
         logo: {
           alt: 'My Site Logo',
           src: 'img/Logo-UNIT_Web-04-800x182.png',
+
         },
         items: [
           {
@@ -88,15 +88,17 @@ const config = {
             position: 'left',
             label: 'Development',
           },
-          {to: 'https://www.hackster.io/unit-electronics/discussion', label: 'Forums', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
+          {to: 'https://uelectronics.com/', label: 'UNIT Shop', position: 'left'},
+          {to: 'https://www.hackster.io/unit-electronics/discussion', label: 'Forums', position: 'right'},
+         
 
           {
             href: 'https://github.com/UNIT-Electronics',
             label: 'GitHub',
             position: 'right',
           },
-          {to: 'https://uelectronics.com/', label: 'UNIT Shop', position: 'right'},
+         
 
           {
             type: 'localeDropdown',
@@ -153,6 +155,8 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+
+        
     }),
 };
 
