@@ -14,10 +14,10 @@ const config = {
   tagline: 'Dinosaurs are cool',
   // favicon: 'img/favicon.ico',
 
-  url: 'https://Cesarbautista10.github.io', // Dirección de tu sitio
-  baseUrl: '/wiki_docsaurus/', // Subdirectorio del repositorio
-  organizationName: 'Cesarbautista10', // Nombre del usuario/organización
-  projectName: 'wiki_docsaurus', // Nombre del repositorio
+  url: 'https://UNIT-Electronics-MX.github.io', // Dirección de tu sitio
+  baseUrl: '/wiki_uelectronics/', // Subdirectorio del repositorio
+  organizationName: 'UNIT-Electronics-MX', // Nombre del usuario/organización
+  projectName: 'wiki_uelectronics', // Nombre del repositorio
   
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
