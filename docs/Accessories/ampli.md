@@ -13,7 +13,7 @@ The **UNIT PAM8403 Audio Amplifier 3W** is a Class D audio amplification module 
 
 ## Module Features
 
-<img src="/img/accessories/ampli.jpg" width="800px"/><br/>
+![](/img/accessories/ampli.jpg" width="800px)
 
 - **Operating voltage:** 2.5V to 5.5V, compatible with USB power sources and lithium batteries.
 - **Output power:** 3W per channel (4Ω, 5V).

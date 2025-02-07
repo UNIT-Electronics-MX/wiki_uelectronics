@@ -10,7 +10,7 @@ The **UNIT DualMCU-ONE** is a highly versatile development board that integrates
 
 <div style={{ textAlign: "center" }}>
   <a href="https://uelectronics.com/producto/unit-dualmcu-esp32-rp2040-tarjeta-de-desarrollo/">
-    <img src="/img/development/dualmcuone.jpg" width="300px" />
+    <img src="https://raw.githubusercontent.com/UNIT-Electronics/DualMCU-ONE/refs/heads/main/Resources/IMG_3134.jpg" width="300px" />
     <br/>
     <em>Click here to purchase one from the UNIT Electronics shop</em>
   </a>

@@ -1,0 +1,156 @@
+/* Estilos generales */
+.container {
+  width: 100%;
+  max-width: var(--ifm-container-width);
+  margin: 0 auto;
+  padding: var(--ifm-spacing-horizontal);
+}
+
+/* Estilos para el Carrusel */
+.carouselSection {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  margin: 3rem auto;
+  padding: var(--ifm-spacing-horizontal);
+  overflow: hidden; /* Evitar que desaparezca */
+}
+
+.carouselContainer {
+  width: 100%;
+  border-radius: var(--ifm-global-radius);
+}
+
+.carouselSlide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+/* Ajustar imagen sin recortes */
+.imageContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselImage {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Evita recortes */
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+/* Features Section */
+.features {
+  margin: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
+  text-align: center;
+}
+
+.features h2 {
+  font-size: var(--ifm-h2-font-size);
+  margin-bottom: var(--ifm-spacing-vertical);
+}
+
+/* Centrar Contenedores */
+.centeredRow {
+  display: flex;
+  justify-content: center;
+  gap: var(--ifm-spacing-horizontal);
+  flex-wrap: wrap;
+}
+
+/* Estilos de Features */
+.featureItem {
+  flex: 1 1 300px;
+  max-width: 300px;
+  padding: var(--ifm-spacing-vertical);
+  background: var(--ifm-background-color);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featureItem:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+/* Extra Information Section */
+.extraInfo {
+  background: var(--ifm-background-color-light);
+  padding: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
+  text-align: center;
+}
+
+.extraInfo h2 {
+  font-size: var(--ifm-h2-font-size);
+  margin-bottom: var(--ifm-spacing-vertical);
+}
+
+/* Diseño en Grid para alinear mejor las tarjetas */
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--ifm-spacing-horizontal);
+  justify-content: center;
+}
+
+/* Tarjetas de información */
+.infoCard {
+  background: var(--ifm-background-color);
+  padding: var(--ifm-spacing-vertical);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infoCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+/* Iconos en las tarjetas */
+.iconContainer {
+  font-size: 2.5rem;
+  color: var(--ifm-color-primary);
+  margin-bottom: var(--ifm-spacing-sm);
+}
+
+.infoCard h3 {
+  font-size: var(--ifm-h3-font-size);
+  margin-bottom: var(--ifm-spacing-sm);
+}
+
+.infoCard p {
+  font-size: var(--ifm-font-size-md);
+  margin-bottom: var(--ifm-spacing-sm);
+}
+
+/* Responsive Ajustes */
+@media screen and (max-width: 768px) {
+  .infoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Responsive Ajustes */
+@media screen and (max-width: 768px) {
+  .carouselSection {
+    height: auto;
+  }
+
+  .centeredRow {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .featureItem {
+    flex: 1 1 100%;
+  }
+}

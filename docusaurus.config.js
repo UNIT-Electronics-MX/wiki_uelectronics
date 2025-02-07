@@ -14,14 +14,10 @@ const config = {
   tagline: 'Dinosaurs are cool',
   // favicon: 'img/favicon.ico',
 
-  url: 'https://wiki.uelectronics.com',
-  baseUrl: '/',
-  
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'UNIT-Electronics',
-  projectName: 'wiki',
+  url: 'https://Cesarbautista10.github.io', // Dirección de tu sitio
+  baseUrl: '/wiki_docsaurus/', // Subdirectorio del repositorio
+  organizationName: 'Cesarbautista10', // Nombre del usuario/organización
+  projectName: 'wiki_docsaurus', // Nombre del repositorio
   
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -44,7 +40,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/UNIT-Electronics',
         },
         blog: {
           showReadingTime: true,
@@ -55,7 +51,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/UNIT-Electronics',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -72,7 +68,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/Logo-UNIT_Web-04-800x182.png',
       navbar: {
         title: '',
 
@@ -125,10 +121,10 @@ const config = {
                 label: 'Stack Overflow',
                 href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
+              // {
+              //   label: 'Discord',
+              //   href: 'https://discordapp.com/invite/docusaurus',
+              // },
               // {
               //   label: 'X',
               //   href: 'https://x.com/docusaurus',

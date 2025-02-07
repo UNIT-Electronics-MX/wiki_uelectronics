@@ -1,109 +1,193 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
+/* Ajuste de Contenedores para una Mejor Organización */
+.container {
+  width: 100%;
+  max-width: var(--ifm-container-width);
+  margin: 0 auto;
+  padding: var(--ifm-spacing-horizontal);
+}
 
+/* Hero Section (Manteniendo los colores por defecto) */
 .heroBanner {
-  padding: 4rem 0;
+  width: 100%;
+  padding: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
   text-align: center;
   position: relative;
-  overflow: hidden;
-}
-
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
-}
-
-.buttons {
   display: flex;
+  flex-direction: column;
   align-items: center;
+}
+
+.heroBanner h1 {
+  font-size: var(--ifm-h1-font-size);
+  font-weight: var(--ifm-font-weight-bold);
+  margin-bottom: var(--ifm-spacing-vertical);
+}
+
+.heroBanner p {
+  font-size: var(--ifm-font-size-lg);
+  margin-bottom: var(--ifm-spacing-vertical);
+}
+
+.heroBanner .buttons {
+  display: flex;
   justify-content: center;
-}
-.heroBanner {
-  padding: 2rem 0;
-}
-
-.buttons {
-  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: var(--ifm-spacing-horizontal);
+  margin-top: var(--ifm-spacing-vertical);
 }
 
-.gridSection {
-  margin: 2rem 0;
-  text-align: center;
+/* Banner Section: Organización sin modificar colores */
+.bannerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--ifm-spacing-vertical);
+  margin: var(--ifm-spacing-vertical) 0;
+  padding: var(--ifm-spacing-horizontal);
 }
 
-.gridContainer {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  justify-items: center;
-}
-
-.gridItem {
-  background: #ffffff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  text-align: center;
-  padding: 1.5rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Imagen del Banner */
+.bannerImage {
   width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.bannerImage img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+}
+
+/* Features Section */
+.features {
+  margin: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
+  text-align: center;
+}
+
+.features h2 {
+  font-size: var(--ifm-h2-font-size);
+  margin-bottom: var(--ifm-spacing-vertical);
+}
+
+.features .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--ifm-spacing-horizontal);
+}
+
+/* Feature Items organizados correctamente */
+.featureItem {
+  flex: 1 1 300px;
   max-width: 300px;
+  padding: var(--ifm-spacing-vertical);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.gridItem:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+.featureItem:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--ifm-global-shadow-md);
 }
 
-.gridItem h3 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+.featureItem i {
+  font-size: var(--ifm-font-size-xl);
+  margin-bottom: var(--ifm-spacing-vertical);
 }
 
-.gridItem p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 1rem;
+.featureItem h3 {
+  font-size: var(--ifm-h3-font-size);
+  margin-bottom: var(--ifm-spacing-sm);
 }
 
-.cardLink {
-  text-decoration: none;
-  font-weight: bold;
-  color: #007bff;
+.featureItem p {
+  font-size: var(--ifm-font-size-md);
 }
 
-.cardLink:hover {
-  text-decoration: underline;
+/* Featured Content Section */
+.featuredContent {
+  padding: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
+  text-align: center;
 }
 
-/* Icon styles */
-.communityIcon,
-.faqIcon,
-.customIcon {
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 1rem auto;
-  border-radius: 50%;
+.featuredContent h2 {
+  font-size: var(--ifm-h2-font-size);
+  margin-bottom: var(--ifm-spacing-vertical);
+}
+
+.featuredContent .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--ifm-spacing-horizontal);
+  justify-content: center;
+}
+
+/* Featured Cards organizados correctamente */
+.featuredCard {
+  flex: 1 1 350px;
+  max-width: 350px;
+  padding: var(--ifm-spacing-vertical);
+  border-radius: var(--ifm-global-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featuredCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--ifm-global-shadow-md);
+}
+
+.featuredCard h3 {
+  font-size: var(--ifm-h3-font-size);
+  margin-bottom: var(--ifm-spacing-sm);
+}
+
+.featuredCard p {
+  font-size: var(--ifm-font-size-md);
+  margin-bottom: var(--ifm-spacing-sm);
+}
+
+/* Call-to-Action Section */
+.ctaSection {
+  text-align: center;
+  padding: var(--ifm-spacing-vertical) var(--ifm-spacing-horizontal);
+}
+
+.ctaSection h2 {
+  font-size: var(--ifm-h2-font-size);
+  margin-bottom: var(--ifm-spacing-vertical);
+}
+
+.ctaSection p {
+  font-size: var(--ifm-font-size-md);
+  margin-bottom: var(--ifm-spacing-vertical);
+}
+
+.ctaSection .buttons {
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 2rem;
-  font-weight: bold;
+  gap: var(--ifm-spacing-horizontal);
+  flex-wrap: wrap;
 }
 
-/* Specific icons */
-.communityIcon {
-  background: linear-gradient(135deg, #4caf50, #81c784);
-}
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .bannerImage {
+    margin-top: var(--ifm-spacing-vertical);
+  }
 
-.faqIcon {
-  background: linear-gradient(135deg, #3f51b5, #7986cb);
-}
+  .features .row,
+  .featuredContent .row {
+    flex-direction: column;
+  }
 
-.customIcon {
-  background: linear-gradient(135deg, #ff9800, #ffc107);
+  .featureItem,
+  .featuredCard {
+    flex: 1 1 100%;
+  }
 }

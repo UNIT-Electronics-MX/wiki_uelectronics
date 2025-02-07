@@ -11,7 +11,7 @@ DualMCU has been thought of as a mix between two 32-bit microprocessors: a Raspb
 
 <div style={{ textAlign: "center" }}>
 <a href="https://uelectronics.com/producto/unit-dualmcu-esp32-rp2040-tarjeta-de-desarrollo/">
-  <img src="/img/development/dualmcu.png" width="300px" />
+  <img src="https://raw.githubusercontent.com/UNIT-Electronics/DualMCU/refs/heads/main/Docs/DUALMCU_TOP_3D.png" width="300px" />
   <br/>
   <em>Click here to purchase one from the UNIT Electronics shop</em>
 </a>

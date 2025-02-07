@@ -1,41 +1,32 @@
-# Website
+# Wiki Unit Electronics - Tarjetas, Módulos, desarrollo y más
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+## Descripción
 
-### Installation
+Este repositorio contiene la documentación de las tarjetas de desarrollo, módulos y otros productos de UNIT-Electronicss. Se implenta con [Docusaurus](https://docusaurus.io/).
 
-```
-$ yarn
-```
 
-### Local Development
+## Acerca de UNIT-Electronics
 
-```
-$ yarn start
-```
+"UNIT Electronics es un distribuidor líder de componentes electrónicos en línea con una fuerte presencia en México. Nos enorgullece ofrecer una amplia variedad de módulos, tarjetas de desarrollo, semiconductores y otros productos esenciales para proyectos de ingeniería. Nuestro catálogo está diseñado para satisfacer las necesidades de estudiantes y escuelas hasta empresas e instituciones. ..." [Leer más](https://uelectronics.com/la-empresa/).
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-### Build
+## Documentación
 
-```
-$ yarn build
-```
+La documentación está organizada en las siguientes categorías:
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+- [Tarjetas de desarrollo](docs/category/unit---development-boards)
+- [Módulos](docs/category/unit---modules)
+- [Accesorios](docs/category/unit---accessories)
 
-### Deployment
+## Contribuir
 
-Using SSH:
+¡Gracias por considerar contribuir a la documentación de UNIT-Electronics! Si deseas contribuir, por favor sigue las [instrucciones de contribución](CONTRIBUTING.md).
 
-```
-$ USE_SSH=true yarn deploy
-```
 
-Not using SSH:
+## Licencia
 
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
+Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más información.
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+## Contacto
+
+Para cualquier pregunta o comentario, por favor contáctanos a través de nuestro [sitio web](https://uelectronics.com/contactanos/).

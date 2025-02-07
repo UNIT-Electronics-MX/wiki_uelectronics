@@ -9,10 +9,43 @@ sidebar_position: 1
 Haptic Motor Driver Module is a module that can be used to drive a haptic motor. The module is based on the DRV2605L haptic motor driver IC. The DRV2605L is a versatile haptic driver that can be used to drive a linear resonant actuator (LRA) or an eccentric rotating mass (ERM) motor, providing a wide range of haptic effects. The module is designed to be used with compatible STEMMA QT connectors and qwiic connectors. 
 
 <div style={{ textAlign: "center" }}>
-  <img src="/img/module/haptic_motor_driver_module.jpg" alt="Haptic Motor Driver Module" width="60%" />
+ <img src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT_DRV2605L_Haptic_Motor_Driver/refs/heads/main/Resources/drv2605l.jpg" width="300px" />
+
+
+  <br/>
 </div>
 
+## Code Example  
 
+:::note 
+
+  The next example is only demostrative, you can find more examples in the [DRV2605L GitHub Repository](https://github.com/UNIT-Electronics/UNIT_DRV2605L_Haptic_Motor_Driver/tree/main/Software)
+
+:::
+
+```python
+from machine import I2C, Pin
+import time
+
+# Initialize I2C
+i2c = I2C(0, scl=Pin(13), sda=Pin(12))  # Use appropriate pins for your board, e.g. RP2040 (Pico)
+drv = DRV2605L(i2c)
+
+# Example usage
+print("Initializing DRV2605L...")
+drv.set_voltage(0x80, 0x90)  # Set voltage for 3.3V operation 
+drv.select_library(1)        # Use ERM library
+
+# Example: Ramp Effect
+print("Playing ramp effect...")
+drv.set_waveform(0, 47)  # Increment effect
+drv.set_waveform(1, 48)  # Decrement effect
+drv.set_waveform(2, 0)   # End sequence
+drv.go()
+time.sleep(1)  # Vibrates for 1 second
+drv.stop()
+print("Ramp effect completed.")
+```
 
 ## Getting Started
 
@@ -42,19 +75,3 @@ For more details, see:
 
 This project is open source! Both the hardware and software are licensed under the MIT License for MicroPython:
 - **Software:** [MIT License](https://opensource.org/licenses/MIT)
-
-
-## Credits and References
-
-- **Datasheet:** [DRV2605L Datasheet](https://www.ti.com/lit/ds/symlink/drv2605l.pdf)
-- **Product Page:** [DRV2605L Product Page](https://www.ti.com/product/DRV2605L)
-- **GitHub Repository:** [DRV2605L GitHub Repository](https://github.com/UNIT-Electronics/UNIT_DRV2605L_Haptic_Motor_Driver)
-
-Special thanks to:
-- [Stefan Wagner](https://github.com/wagiminator) for support with microcontroller CH552G and CH55x series.
-
-
-## About Unit Electronics
-The DRV2605L Haptic Motor Driver Module is developed and maintained by **Unit Electronics**, dedicated to creating open-source hardware and software solutions for embedded systems.
-
-For questions, feedback, or contributions, feel free to reach out or submit issues through the [GitHub repository](https://github.com/UNIT-Electronics).

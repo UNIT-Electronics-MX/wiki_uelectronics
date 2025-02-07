@@ -1,5 +1,5 @@
 ---
-sidebar_position: 4
+sidebar_position: 2
 ---
 
 # Nano C6
@@ -16,7 +16,7 @@ We are currently working on the design of this new development board, **UNIT NAN
 <div style={{ textAlign: "center" }}>
   <a href="#">
     <img
-      src="/img/development/TOP(1V5).png"
+      src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT_NANO_C6/refs/heads/main/RESOURCES/TOP(1V5).png"
       width="200px"
       style={{ transform: "rotate(90deg)" }}
       alt="Rotated Image"
@@ -31,7 +31,7 @@ We are currently working on the design of this new development board, **UNIT NAN
 <div style={{ textAlign: "center" }}>
   <a href="#">
     <img
-      src="/img/development/BOTTOM(1V5).png"
+      src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT_NANO_C6/refs/heads/main/RESOURCES/BOTTOM(1V5).png"
       width="200px"
       style={{ transform: "rotate(90deg)" }}
       alt="Rotated Image"

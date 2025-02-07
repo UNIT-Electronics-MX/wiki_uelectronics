@@ -34,7 +34,7 @@ The **UNIT LiPo Charger Boost & I2C Monitor** is an advanced charging and monito
 ### Front Pinout
 
 <a href="https://www.uelectronics.com">
-  <img src="/img/module/PinoutTop_EN.jpg" width="600px" />
+  ![](/img/module/PinoutTop_EN.jpg)
 </a>
 
 ### Back Pinout
