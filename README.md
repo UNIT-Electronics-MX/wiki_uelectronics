@@ -12,7 +12,7 @@ Este repositorio contiene la documentación de las tarjetas de desarrollo, módu
 
 ## Website
 
-[WIKI UNIT ELECTRONICS](ttps://unit-electronics-mx.github.io/wiki_uelectronics/)
+[WIKI UNIT ELECTRONICS](https://unit-electronics-mx.github.io/wiki_uelectronics/)
 
 
 ## Documentación
