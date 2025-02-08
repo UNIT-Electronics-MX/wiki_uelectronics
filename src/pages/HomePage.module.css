@@ -132,6 +132,47 @@
   margin-bottom: var(--ifm-spacing-sm);
 }
 
+
+.videoSection {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.videoGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.videoCard {
+  max-width: 480px;
+  width: 100%;
+  background: var(--content-background);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px var(--content-shadow);
+  text-align: center;
+}
+
+.videoCard h3 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: var(--text-color);
+}
+
+.videoIframe {
+  width: 100%;
+  height: 270px;
+  border-radius: 8px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .videoIframe {
+    height: 200px;
+  }
+}
 /* Responsive Ajustes */
 @media screen and (max-width: 768px) {
   .infoGrid {

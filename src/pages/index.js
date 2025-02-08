@@ -14,6 +14,19 @@ const images = [
   'https://uelectronics.com/wp-content/uploads/2024/08/03-MODULOS-UNIT.jpg'
 ];
 
+// Lista de videos de YouTube
+const youtubeVideos = [
+  {
+    title: "ESP32-S3 Development Board Overview",
+    url: "https://www.youtube.com/embed/9DHy2TkKxhw"
+  },
+  {
+    title: "Introduction to MicroPython",
+    url: "https://www.youtube.com/embed/QV1FBynrJjo"
+  },
+
+];
+
 // Sección de Información Adicional
 const extraInfoItems = [
   {
@@ -84,6 +97,30 @@ const renderExtraInfo = () => (
   </section>
 );
 
+// Sección de Videos de YouTube
+const renderYoutubeVideos = () => (
+  <section className={styles.videoSection}>
+    <div className="container">
+      <h2>Featured Videos</h2>
+      <div className={styles.videoGrid}>
+        {youtubeVideos.map((video, index) => (
+          <div key={index} className={styles.videoCard}>
+            <iframe
+              src={video.url}
+              title={video.title}
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className={styles.videoIframe}
+            ></iframe>
+            <h3>{video.title}</h3>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+);
+
 function HomePage() {
   const [theme, setTheme] = useState('light');
 
@@ -95,12 +132,19 @@ function HomePage() {
 
   return (
     <Layout title="Wiki Unit Electronics" description="Explore electronics knowledge with our comprehensive platform.">
-
-      {/* Carrusel de Imágenes - BANNER GRANDE */}
+      
+      {/* Carrusel de Imágenes */}
       {renderCarousel()}
 
-      {/* Features Section */}
       <main>
+        {/* Sección de Videos de YouTube */}
+        {renderYoutubeVideos()}
+
+        {/* Sección de Información Adicional */}
+        {renderExtraInfo()}
+
+
+
         <section className={styles.features}>
           <div className="container">
             <h2>Explore Our Platform</h2>
@@ -123,9 +167,6 @@ function HomePage() {
             </div>
           </div>
         </section>
-
-        {/* Sección de Información Adicional */}
-        {renderExtraInfo()}
       </main>
     </Layout>
   );
