@@ -1,0 +1,62 @@
+{
+  "version.label": {
+    "message": "Siguiente",
+    "description": "La etiqueta para la versión actual"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Development boards": {
+    "message": "UNIT - Placas de desarrollo",
+    "description": "La etiqueta para la categoría UNIT - Placas de desarrollo en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Development boards.link.generated-index.description": {
+    "message": "Diseño y desarrollo del hardware de las placas de desarrollo",
+    "description": "La descripción de la página de índice generado para la categoría UNIT - Placas de desarrollo en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Compatibility with Arduino": {
+    "message": "Compatibilidad con Arduino",
+    "description": "La etiqueta para la categoría Compatibilidad con Arduino en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Compatibility with Arduino.link.generated-index.description": {
+    "message": "Compatibilidad con Arduino",
+    "description": "La descripción de la página de índice generado para la categoría Compatibilidad con Arduino en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.DualMCU Development boards": {
+    "message": "Placas de desarrollo DualMCU",
+    "description": "La etiqueta para la categoría de placas de desarrollo DualMCU en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.DualMCU Development boards.link.generated-index.description": {
+    "message": "Diseño y desarrollo del hardware de la línea DualMCU",
+    "description": "La descripción de la página de índice generado para la categoría de placas de desarrollo DualMCU en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Nano Development boards": {
+    "message": "Placas de desarrollo Nano",
+    "description": "La etiqueta para la categoría de placas de desarrollo Nano en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Nano Development boards.link.generated-index.description": {
+    "message": "Diseño y desarrollo del hardware de las placas de desarrollo Nano",
+    "description": "La descripción de la página de índice generado para la categoría de placas de desarrollo Nano en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Modules": {
+    "message": "UNIT - Módulos",
+    "description": "La etiqueta para la categoría UNIT - Módulos en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Modules.link.generated-index.description": {
+    "message": "Diseño y desarrollo del hardware de los módulos",
+    "description": "La descripción de la página de índice generado para la categoría UNIT - Módulos en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Accessories": {
+    "message": "UNIT - Accesorios",
+    "description": "La etiqueta para la categoría UNIT - Accesorios en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Accessories.link.generated-index.description": {
+    "message": "Diseño y desarrollo del hardware de los accesorios",
+    "description": "La descripción de la página de índice generado para la categoría UNIT - Accesorios en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Firmware": {
+    "message": "UNIT - Firmware",
+    "description": "La etiqueta para la categoría UNIT - Firmware en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Firmware.link.generated-index.description": {
+    "message": "Diseño y desarrollo del software de firmware",
+    "description": "La descripción de la página de índice generado para la categoría UNIT - Firmware en la barra lateral tutorialSidebar"
+  }
+}

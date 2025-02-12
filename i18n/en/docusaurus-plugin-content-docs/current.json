@@ -1,0 +1,62 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Development boards": {
+    "message": "UNIT - Development boards",
+    "description": "The label for category UNIT - Development boards in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Development boards.link.generated-index.description": {
+    "message": "Development boards hardware design and development",
+    "description": "The generated-index page description for category UNIT - Development boards in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Compatibility with Arduino": {
+    "message": "Compatibility with Arduino",
+    "description": "The label for category Compatibility with Arduino in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Compatibility with Arduino.link.generated-index.description": {
+    "message": "Compatibility with Arduino",
+    "description": "The generated-index page description for category Compatibility with Arduino in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.DualMCU Development boards": {
+    "message": "DualMCU Development boards",
+    "description": "The label for category DualMCU Development boards in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.DualMCU Development boards.link.generated-index.description": {
+    "message": "DualMCU Line hardware design and development",
+    "description": "The generated-index page description for category DualMCU Development boards in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Nano Development boards": {
+    "message": "Nano Development boards",
+    "description": "The label for category Nano Development boards in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Nano Development boards.link.generated-index.description": {
+    "message": "Nano Development boards hardware design and development",
+    "description": "The generated-index page description for category Nano Development boards in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Modules": {
+    "message": "UNIT - Modules",
+    "description": "The label for category UNIT - Modules in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Modules.link.generated-index.description": {
+    "message": "Modules hardware design and development",
+    "description": "The generated-index page description for category UNIT - Modules in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Accessories": {
+    "message": "UNIT - Accessories",
+    "description": "The label for category UNIT - Accessories in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Accessories.link.generated-index.description": {
+    "message": "Accessories hardware design and development",
+    "description": "The generated-index page description for category UNIT - Accessories in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Firmware": {
+    "message": "UNIT - Firmware",
+    "description": "The label for category UNIT - Firmware in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Firmware.link.generated-index.description": {
+    "message": "Firmware software design and development",
+    "description": "The generated-index page description for category UNIT - Firmware in sidebar tutorialSidebar"
+  }
+}

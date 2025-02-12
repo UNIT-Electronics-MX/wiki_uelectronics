@@ -1,0 +1,34 @@
+{
+  "link.title.Docs": {
+    "message": "Documentos",
+    "description": "El título de la columna de enlaces 'Documentos' en el pie de página"
+  },
+  "link.title.Community": {
+    "message": "Comunidad",
+    "description": "El título de la columna de enlaces 'Comunidad' en el pie de página"
+  },
+  "link.title.More": {
+    "message": "Más",
+    "description": "El título de la columna de enlaces 'Más' en el pie de página"
+  },
+  "link.item.label.Tutorial": {
+    "message": "Tutorial",
+    "description": "La etiqueta del enlace del pie de página 'Tutorial' que enlaza a /docs/intro"
+  },
+  "link.item.label.Stack Overflow": {
+    "message": "Stack Overflow",
+    "description": "La etiqueta del enlace del pie de página 'Stack Overflow' que enlaza a https://stackoverflow.com/questions/tagged/docusaurus"
+  },
+  "link.item.label.Blog": {
+    "message": "Blog",
+    "description": "La etiqueta del enlace del pie de página 'Blog' que enlaza a /blog"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "La etiqueta del enlace del pie de página 'GitHub' que enlaza a https://github.com/UNIT-Electronics"
+  },
+  "copyright": {
+    "message": "Derechos de autor © 2025 UNIT Electronics",
+    "description": "El aviso de derechos de autor del pie de página"
+  }
+}

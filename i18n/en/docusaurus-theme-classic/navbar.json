@@ -1,0 +1,26 @@
+{
+  "logo.alt": {
+    "message": "My Site Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Development": {
+    "message": "Development",
+    "description": "Navbar item with label Development"
+  },
+  "item.label.Blog": {
+    "message": "Blog",
+    "description": "Navbar item with label Blog"
+  },
+  "item.label.UNIT Shop": {
+    "message": "UNIT Shop",
+    "description": "Navbar item with label UNIT Shop"
+  },
+  "item.label.Forums": {
+    "message": "Forums",
+    "description": "Navbar item with label Forums"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  }
+}

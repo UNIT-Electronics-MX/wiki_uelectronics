@@ -6,6 +6,7 @@ import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/swiper-bundle.css';
 import styles from './HomePage.module.css';
 import Link from '@docusaurus/Link';
+import Translate, { translate } from '@docusaurus/Translate';
 
 // Lista de imágenes para el carrusel
 const images = [
@@ -24,102 +25,32 @@ const youtubeVideos = [
     title: "Introduction to MicroPython",
     url: "https://www.youtube.com/embed/QV1FBynrJjo"
   },
-
 ];
 
 // Sección de Información Adicional
 const extraInfoItems = [
   {
-    title: 'Advanced Tutorials',
-    description: 'Dive deeper into complex topics with advanced electronics guides.',
+    title: translate({ id: 'homepage.advancedTutorials', message: 'Advanced Tutorials' }),
+    description: translate({ id: 'homepage.advancedTutorials.desc', message: 'Dive deeper into complex topics with advanced electronics guides.' }),
     link: '/docs/circuit-design',
-    buttonText: 'Learn More',
+    buttonText: translate({ id: 'homepage.learnMore', message: 'Learn More' }),
     icon: 'fas fa-microchip'
   },
   {
-    title: 'Community Forum',
-    description: 'Join discussions and ask questions in our interactive community.',
+    title: translate({ id: 'homepage.communityForum', message: 'Community Forum' }),
+    description: translate({ id: 'homepage.communityForum.desc', message: 'Join discussions and ask questions in our interactive community.' }),
     link: '/docs/custom',
-    buttonText: 'Visit Forum',
+    buttonText: translate({ id: 'homepage.visitForum', message: 'Visit Forum' }),
     icon: 'fas fa-users'
   },
   {
-    title: 'Open-Source Projects',
-    description: 'Explore and contribute to open-source electronics projects.',
+    title: translate({ id: 'homepage.openSourceProjects', message: 'Open-Source Projects' }),
+    description: translate({ id: 'homepage.openSourceProjects.desc', message: 'Explore and contribute to open-source electronics projects.' }),
     link: 'https://github.com/UNIT-Electronics',
-    buttonText: 'GitHub',
+    buttonText: translate({ id: 'homepage.github', message: 'GitHub' }),
     icon: 'fab fa-github'
   }
 ];
-
-// Carrusel de imágenes
-const renderCarousel = () => (
-  <div className={clsx(styles.carouselSection)}>
-    <Swiper
-      modules={[Autoplay, Pagination]}
-      loop
-      autoplay={{ delay: 5000, disableOnInteraction: false }}
-      slidesPerView={1}
-      pagination={{ clickable: true }}
-      className={styles.carouselContainer}
-    >
-      {images.map((src, index) => (
-        <SwiperSlide key={index} className={styles.carouselSlide}>
-          <div className={styles.imageContainer}>
-            <img src={src} alt={`Slide ${index + 1}`} className={styles.carouselImage} />
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
-  </div>
-);
-
-// Sección de Información Adicional
-const renderExtraInfo = () => (
-  <section className={styles.extraInfo}>
-    <div className="container">
-      <h2>Discover More</h2>
-      <div className={styles.infoGrid}>
-        {extraInfoItems.map((item, index) => (
-          <div key={index} className={styles.infoCard}>
-            <div className={styles.iconContainer}>
-              <i className={item.icon}></i>
-            </div>
-            <h3>{item.title}</h3>
-            <p>{item.description}</p>
-            <Link to={item.link} className="button button--primary">
-              {item.buttonText}
-            </Link>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
-
-// Sección de Videos de YouTube
-const renderYoutubeVideos = () => (
-  <section className={styles.videoSection}>
-    <div className="container">
-      <h2>Featured Videos</h2>
-      <div className={styles.videoGrid}>
-        {youtubeVideos.map((video, index) => (
-          <div key={index} className={styles.videoCard}>
-            <iframe
-              src={video.url}
-              title={video.title}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-              className={styles.videoIframe}
-            ></iframe>
-            <h3>{video.title}</h3>
-          </div>
-        ))}
-      </div>
-    </div>
-  </section>
-);
 
 function HomePage() {
   const [theme, setTheme] = useState('light');
@@ -131,38 +62,92 @@ function HomePage() {
   }, []);
 
   return (
-    <Layout title="Wiki Unit Electronics" description="Explore electronics knowledge with our comprehensive platform.">
-      
+    <Layout 
+      title={translate({ id: 'homepage.title', message: 'Wiki Unit Electronics' })} 
+      description={translate({ id: 'homepage.description', message: 'Explore electronics knowledge with our comprehensive platform.' })}
+    >
       {/* Carrusel de Imágenes */}
-      {renderCarousel()}
+      <section className={clsx(styles.carouselSection)}>
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          loop
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          className={styles.carouselContainer}
+        >
+          {images.map((src, index) => (
+            <SwiperSlide key={index} className={styles.carouselSlide}>
+              <div className={styles.imageContainer}>
+                <img src={src} alt={`Slide ${index + 1}`} className={styles.carouselImage} />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
 
       <main>
         {/* Sección de Videos de YouTube */}
-        {renderYoutubeVideos()}
+        <section className={styles.videoSection}>
+          <div className="container">
+            <h2><Translate id="homepage.featuredVideos">Featured Videos</Translate></h2>
+            <div className={styles.videoGrid}>
+              {youtubeVideos.map((video, index) => (
+                <div key={index} className={styles.videoCard}>
+                  <iframe
+                    src={video.url}
+                    title={video.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className={styles.videoIframe}
+                  ></iframe>
+                  <h3>{video.title}</h3>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         {/* Sección de Información Adicional */}
-        {renderExtraInfo()}
-
-
+        <section className={styles.extraInfo}>
+          <div className="container">
+            <h2><Translate id="homepage.discoverMore">Discover More</Translate></h2>
+            <div className={styles.infoGrid}>
+              {extraInfoItems.map((item, index) => (
+                <div key={index} className={styles.infoCard}>
+                  <div className={styles.iconContainer}>
+                    <i className={item.icon}></i>
+                  </div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <Link to={item.link} className="button button--primary">
+                    {item.buttonText}
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className={styles.features}>
           <div className="container">
-            <h2>Explore Our Platform</h2>
+            <h2><Translate id="homepage.explorePlatform">Explore Our Platform</Translate></h2>
             <div className={styles.centeredRow}>
               <div className={clsx(styles.featureItem)}>
                 <i className="fas fa-book" />
-                <h3>Learn</h3>
-                <p>Access comprehensive guides and tutorials for all skill levels.</p>
+                <h3><Translate id="homepage.learn">Learn</Translate></h3>
+                <p><Translate id="homepage.learn.desc">Access comprehensive guides and tutorials for all skill levels.</Translate></p>
               </div>
               <div className={clsx(styles.featureItem)}>
                 <i className="fas fa-tools" />
-                <h3>Build</h3>
-                <p>Hands-on projects to apply and solidify your knowledge.</p>
+                <h3><Translate id="homepage.build">Build</Translate></h3>
+                <p><Translate id="homepage.build.desc">Hands-on projects to apply and solidify your knowledge.</Translate></p>
               </div>
               <div className={clsx(styles.featureItem)}>
                 <i className="fas fa-users" />
-                <h3>Collaborate</h3>
-                <p>Engage with the community and share your expertise.</p>
+                <h3><Translate id="homepage.collaborate">Collaborate</Translate></h3>
+                <p><Translate id="homepage.collaborate.desc">Engage with the community and share your expertise.</Translate></p>
               </div>
             </div>
           </div>
