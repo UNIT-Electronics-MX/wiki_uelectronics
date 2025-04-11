@@ -2,38 +2,85 @@
 sidebar_position: 2
 ---
 
-# DualMCU ONE 
+# DualMCU ONE
+
+The **UNIT DualMCU-ONE** is a highly versatile development board that integrates the power of two microcontrollers: the ESP32 and the RP2040. Designed for advanced IoT, robotics, and industrial applications, it offers enhanced connectivity, robust power management, and full compatibility with Arduino UNO shields.
 
 
+:::warning
+The DualMCU-ONE operates with 3.3V logic levels instead of the Arduino Uno’s typical 5V.
+Make sure any shield or peripheral connected is compatible with 3.3V logic to avoid potential damage.
+:::
 
-The **UNIT DualMCU-ONE** is a highly versatile development board that integrates the power of two microcontrollers: the ESP32 and the RP2040. Designed for advanced IoT, robotics, and industrial applications, it provides enhanced connectivity, robust power management, and full compatibility with Arduino UNO shields.
 
 <div style={{ textAlign: "center" }}>
   <a href="https://uelectronics.com/producto/unit-dualmcu-esp32-rp2040-tarjeta-de-desarrollo/">
     <img src="https://raw.githubusercontent.com/UNIT-Electronics/DualMCU-ONE/refs/heads/main/Resources/IMG_3134.jpg" width="300px" />
     <br/>
-    <em>Click here to purchase one from the UNIT Electronics shop</em>
+    <em>Click here to buy it from the UNIT Electronics store</em>
   </a>
 </div>
 
-Key enhancements over its predecessor, the DualMCU, include:
-- SPI communication between the MCUs for improved data transfer.
-- A USB Type-C hub, replacing the USB communication switch.
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MicroPython Course (English Version)</td>
+      <td><a href="https://unit-electronics.github.io/DualMCU_Getting_Started/">https://unit-electronics.github.io/DualMCU_Getting_Started/</a></td>
+    </tr>
+    <tr>
+      <td>MicroPython Course (Spanish Version)</td>
+      <td><a href="https://unit-electronics-mx.github.io/DualMCU_Curso_introductorio/index.html">https://unit-electronics-mx.github.io/DualMCU_Curso_introductorio/index.html</a></td>
+    </tr>
+  </tbody>
+</table>
+
+Key improvements over its predecessor, the DualMCU, include:
+- SPI communication between the microcontrollers for improved data transfer.
+- A USB Type-C hub that replaces the USB communication switch.
 - CAN bus connectivity for industrial and automotive environments.
-- Onboard connectors compatible with STEMMA and QWIIC ecosystems.
+- Integrated connectors compatible with the STEMMA and QWIIC ecosystems.
 
+For more details, check the product pages at:
 
-
-
-
-For more details, check out the product pages at:
-* [UNIT Electronics Website](https://uelectronics.com/)
-* [Hardware-DualMCU-ONE](https://github.com/UNIT-Electronics/DualMCU-ONE/tree/main/Hardware)
-* [Product Reference Manual](https://github.com/UNIT-Electronics/DualMCU-ONE/blob/main/DualMCU-ONE(Product%20Reference%20Manual%20)%5BEN%5D.pdf)
-* [DualMCU-ONE_Getting_Started](https://unit-electronics.github.io/DualMCU-ONE/index.html)
-
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hardware-DualMCU-ONE</td>
+      <td><a href="https://github.com/UNIT-Electronics/DualMCU-ONE/tree/main/Hardware">https://github.com/UNIT-Electronics/DualMCU-ONE/tree/main/Hardware</a></td>
+    </tr>
+    <tr>
+      <td>Product Reference Manual</td>
+      <td><a href="https://github.com/UNIT-Electronics/DualMCU-ONE/blob/main/DualMCU-ONE(Product%20Reference%20Manual%20)%5BEN%5D.pdf">https://github.com/UNIT-Electronics/DualMCU-ONE/blob/main/DualMCU-ONE(Product%20Reference%20Manual%20)%5BEN%5D.pdf</a></td>
+    </tr>
+    <tr>
+      <td>DualMCU-ONE Getting Started</td>
+      <td><a href="https://unit-electronics.github.io/DualMCU-ONE/index.html">https://unit-electronics.github.io/DualMCU-ONE/index.html</a></td>
+    </tr>
+  </tbody>
+</table>
 
 ---
+
+## Pinout
+
+The **DualMCU-ONE** features a wide variety of input/output (I/O) pins that allow you to connect sensors, actuators, and other devices to the board. Below is the pinout of the **DualMCU-ONE**:
+
+<div style={{ textAlign: "center" }}>
+  <img src="https://raw.githubusercontent.com/UNIT-Electronics/DualMCU-ONE/refs/heads/main/Hardware/Resources/Pinout_Top_EN.jpg" width="1200px" />
+</div>
 
 ## Features
 
@@ -42,22 +89,22 @@ For more details, check out the product pages at:
   - **ESP32**: Wi-Fi, Bluetooth, and CAN bus capabilities.
 
 - **USB Connectivity**:
-  - Integrated USB Type-C hub for simultaneous communication with both MCUs.
-  - Additional USB device support via JST connectors.
+  - Integrated USB Type-C hub for simultaneous communication with both microcontrollers.
+  - Additional support for USB devices through JST connectors.
 
 - **Power Supply**:
-  - Robust MP1482DS regulator, supporting input voltages up to 18V.
-  - Delivers stable 5V output for powering peripherals.
+  - Robust MP1482DS regulator supporting input voltages up to 18V.
+  - Provides a stable 5V output to power peripherals.
 
 - **Storage**:
-  - Optional MicroSD socket (up to 64GB), connected via ESP32's QSPI interface.
+  - Optional MicroSD slot (up to 64GB), connected via the ESP32's QSPI interface.
 
 - **I2C Connectors**:
-  - JST-SH connectors compatible with STEMMA and QWIIC ecosystems.
+  - JST-SH connectors compatible with the STEMMA and QWIIC ecosystems.
 
 - **Additional Features**:
   - RGB 2020 LED and WS2812B LED for visual feedback.
-  - Optional FPC-24P connector for expanded ESP32 GPIO access.
+  - Optional FPC-24P connector for expanded access to the ESP32's GPIO.
 
 ---
 
@@ -65,54 +112,32 @@ For more details, check out the product pages at:
 
 The **DualMCU-ONE** is ideal for:
 - **Internet of Things (IoT)**: Wireless connectivity for smart devices.
-- **Education**: Perfect for students and makers to explore advanced microcontrollers.
-- **Industrial**: Robust CAN bus communication for automotive and industrial use.
-- **Prototyping**: Full Arduino UNO shield compatibility.
-- **Robotics**: Multi-core processing for complex systems.
+- **Education**: Perfect for students and makers exploring advanced microcontrollers.
+- **Industrial**: Robust communication via CAN bus for automotive and industrial applications.
+- **Prototyping**: Full compatibility with Arduino UNO shields.
+- **Robotics**: Multicore processing for complex systems.
 
 ---
 
 ## Getting Started
 
 The **DualMCU-ONE** supports:
-- **Arduino IDE** for both RP2040 and ESP32.
-- **MicroPython** and **CircuitPython** with IDEs like Thonny.
+- **Arduino IDE** for the RP2040 and ESP32.
+- **MicroPython** and **CircuitPython** using IDEs like Thonny.
 
-For setup and first projects, refer to the [Getting Started Guide](https://unit-electronics.github.io/DualMCU-ONE/index.html).
-
----
-
-## Development Resources
-
-| Resource                                   | Link                                                                                   |
-|-------------------------------------------|----------------------------------------------------------------------------------------|
-| **Arduino Package RP2040 JSON**           | [RP2040 Package](https://github.com/UNIT-Electronics/Uelectronics-RP2040-Arduino-Package) |
-| **Arduino Package ESP32 JSON**            | [ESP32 Package](https://github.com/UNIT-Electronics/Uelectronics-ESP32-Arduino-Package) |
-| **MicroPython Documentation**             | [MicroPython.org](https://micropython.org/)                                            |
-| **CircuitPython Documentation**           | [Adafruit CircuitPython](https://circuitpython.org/)                                   |
-| **UNIT DualMCU-ONE Documentation**        | [DualMCU-ONE Documentation](https://github.com/UNIT-Electronics/DualMCU-ONE)          |
-| **Getting Started with DualMCU-ONE**      | [DualMCU-ONE Guide](https://unit-electronics.github.io/DualMCU-ONE/index.html)        |
-| **Thonny IDE**                            | [Thonny.org](https://thonny.org/)                                                     |
-| **Arduino IDE**                           | [Arduino IDE](https://www.arduino.cc/en/software)                                     |
-| **CH340 Driver**                          | [CH340 Driver](http://www.wch-ic.com/downloads/CH341SER_ZIP.html)                     |
-| **Visual Studio Code**                    | [Visual Studio Code](https://code.visualstudio.com/download)                          |
-| **Raspberry Pi Pico RP2040 Documentation**| [RP2040 Documentation](https://www.raspberrypi.com/documentation/microcontrollers/)   |
-| **Raspberry Pi Pico Python SDK**          | [Python SDK](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-python-sdk.pdf) |
-| **Raspberry Pi Pico MicroPython Examples**| [MicroPython Examples](https://github.com/raspberrypi/pico-micropython-examples)      |
-| **Raspberry Pi Pico C/C++ SDK**           | [C/C++ SDK](https://www.raspberrypi.com/documentation/microcontrollers/c_sdk.html)    |
-| **Raspberry Pi Pico C/C++ Examples**      | [C/C++ Examples](https://github.com/raspberrypi/pico-examples)                        |
-| **RP2040 Datasheet**                      | [RP2040 Datasheet](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)    |
-| **ESP32 WROOM 8MB Datasheet**             | [ESP32 WROOM Datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf) |
-
+For setup and initial projects, refer to the [Getting Started Guide](https://unit-electronics.github.io/DualMCU-ONE/index.html).
 
 ---
+
+
 <!-- 
 ## Contributions
 
-We welcome contributions! Please review our [Contribution Guidelines](CONTRIBUTING.md) before submitting pull requests. -->
+We welcome your contributions! Please review our [Contribution Guidelines](CONTRIBUTING.md) before submitting your pull requests. -->
 
 ---
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/UNIT-Electronics/DualMCU-ONE/blob/main/LICENSE).
+This project is distributed under the [MIT License](https://github.com/UNIT-Electronics/DualMCU-ONE/blob/main/LICENSE).
+

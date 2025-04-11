@@ -16,7 +16,7 @@ Actualmente estamos trabajando en el diseño de esta nueva placa de desarrollo, 
 <div style={{ textAlign: "center" }}>
   <a href="#">
     <img
-      src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT_NANO_C6/refs/heads/main/RESOURCES/TOP(1V5).png"
+      src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT_NANO_C6/refs/heads/main/RESOURCES/TOP(1V6).png"
       width="200px"
       style={{ transform: "rotate(90deg)" }}
       alt="Imagen girada"
@@ -29,7 +29,7 @@ Actualmente estamos trabajando en el diseño de esta nueva placa de desarrollo, 
 <div style={{ textAlign: "center" }}>
   <a href="#">
     <img
-      src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT_NANO_C6/refs/heads/main/RESOURCES/BOTTOM(1V5).png"
+      src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT_NANO_C6/refs/heads/main/RESOURCES/BOTTOM(1V6).png"
       width="200px"
       style={{ transform: "rotate(90deg)" }}
       alt="Imagen girada"

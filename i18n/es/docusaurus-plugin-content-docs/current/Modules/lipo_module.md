@@ -25,23 +25,21 @@ El **Cargador LiPo Boost y Monitor I2C UNIT** es un módulo avanzado de carga y 
 - **Selección de Corriente de Carga**: Pad de soldadura en la parte trasera para seleccionar 200 mA o 1 A de corriente de carga.
 - **Compatibilidad con Salida Qwiic/Stemma**: Conecta las líneas I2C (`SDA`, `SCL`) y tierra (`GND`) al conector Qwiic/Stemma. Un jumper permite enrutar el voltaje del sistema (VSYS) al bus Qwiic/Stemma, que varía entre el voltaje de la batería (3.7V) y hasta 6V (VIN).
 
-> **Nota**: Dado que Qwiic opera a 3.3V, se recomienda usar un regulador de voltaje tras la salida JST para reducir VSYS a 3.3V, protegiendo los dispositivos conectados a Qwiic.
-
----
+:::note
+ Dado que Qwiic opera a 3.3V, se recomienda usar un regulador de voltaje tras la salida JST para reducir VSYS a 3.3V, protegiendo los dispositivos conectados a Qwiic.
+::: 
 
 ## Pinout
 
 ### Pinout Frontal
-
-<a href="https://www.uelectronics.com">
-  ![](/img/module/PinoutTop_EN.jpg)
-</a>
-
+<div style={{ textAlign: "center" }}>
+  <img src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT-LiPo-Charger-Boost-I2C-Monitor/refs/heads/main/resources/Pinouts/PinoutTop_EN.jpg" style={{ width: "50%" }} />
+</div>
 ### Pinout Trasero
 
-<a href="https://www.uelectronics.com">
-  <img src="/img/module/PinoutBottom_EN.jpg" width="600px" />
-</a>
+<div style={{ textAlign: "center" }}>
+  <img src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT-LiPo-Charger-Boost-I2C-Monitor/refs/heads/main/resources/Pinouts/PinoutBottom_EN.jpg" style={{ width: "50%" }} />
+</div>
 
 ---
 
@@ -66,27 +64,24 @@ El **Cargador LiPo Boost y Monitor I2C UNIT** es un módulo avanzado de carga y 
 
 > **Nota de Uso**: Para un rendimiento óptimo, utilice una batería LiPo en el rango de 3.7V a 4.2V. Alternativamente, se puede proporcionar 5V mediante USB Tipo C o pads VIN, con un máximo de 6V de entrada.
 
-<a href="/img/module/PvsV_EN.png">
-  <img src="/img/module/PvsV.png" width="500px" />
-</a>
+<div style={{ textAlign: "center" }}>
+    <img src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT-LiPo-Charger-Boost-I2C-Monitor/refs/heads/main/resources/Curvas/PvsV.png" width="500px" />
+</div>
 
-<a href="/img/module/IvsV_EN.png">
-  <img src="/img/module/IvsV.png" width="500px" />
-</a>
+<div style={{ textAlign: "center" }}>
+    <img src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT-LiPo-Charger-Boost-I2C-Monitor/refs/heads/main/resources/Curvas/IvsV.png" width="500px" />
+</div>
 
----
 
 ## Modelos para Fritzing
 
 Encuentre los modelos para Fritzing de este módulo en el [repositorio de Fritzing](https://github.com/UNIT-Electronics/UNIT-LiPo-Charger-Boost-I2C-Monitor/tree/main/resources/Fritzing), facilitando su integración en sus diagramas de proyecto.
 
----
 
 ## Enlaces de Compra
 
 Puede adquirir el **Cargador LiPo Boost & Monitor I2C UNIT** directamente a través de [UNIT Electronics](https://www.uelectronics.com).
 
----
 
 ## Documentación
 
@@ -100,7 +95,7 @@ Puede adquirir el **Cargador LiPo Boost & Monitor I2C UNIT** directamente a trav
   - **Arduino IDE**
   - **MicroPython**
 
----
+
 
 ## Primeros Pasos
 
@@ -142,4 +137,6 @@ print("Carga de la Batería:", charge, "%")
 
 Con el **Cargador LiPo Boost & Monitor I2C UNIT**, podrá monitorear el estado de la batería, alimentar módulos Qwiic y lograr un voltaje de salida estable para aplicaciones que requieren un voltaje elevado.
 
+:::tip
 ¡Inicie hoy mismo su proyecto de carga y monitoreo de baterías!
+:::

@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Wiki',
   tagline: 'Dinosaurs are cool',
-  // favicon: 'img/favicon.ico',
+  favicon: 'img/1.png',
 
   url: 'https://UNIT-Electronics-MX.github.io', // Dirección de tu sitio
   baseUrl: '/wiki_uelectronics/', // Subdirectorio del repositorio
@@ -73,17 +73,31 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: true,
+        docsRouteBasePath: "/docs",
+        language: ["en", "es"],  // Idiomas de búsqueda
+      },
+    ],
+  ],
+  
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/Logo-UNIT_Web-04-800x182.png',
+      image: 'img/1.png',
       navbar: {
         title: '',
 
         logo: {
           alt: 'My Site Logo',
-          src: 'img/Logo-UNIT_Web-04-800x182.png',
+          src: 'img/1.png',
 
         },
         items: [
@@ -99,7 +113,7 @@ const config = {
          
 
           {
-            href: 'https://github.com/UNIT-Electronics',
+            href: 'https://github.com/UNIT-Electronics-MX/wiki_uelectronics?tab=readme-ov-file',
             label: 'GitHub',
             position: 'right',
           },

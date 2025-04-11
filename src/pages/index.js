@@ -18,11 +18,11 @@ const images = [
 // Lista de videos de YouTube
 const youtubeVideos = [
   {
-    title: "ESP32-S3 Development Board Overview",
+    title: "Brazo Robot",
     url: "https://www.youtube.com/embed/9DHy2TkKxhw"
   },
   {
-    title: "Introduction to MicroPython",
+    title: "Letrero electrónico",
     url: "https://www.youtube.com/embed/QV1FBynrJjo"
   },
 ];
@@ -32,7 +32,7 @@ const extraInfoItems = [
   {
     title: translate({ id: 'homepage.advancedTutorials', message: 'Advanced Tutorials' }),
     description: translate({ id: 'homepage.advancedTutorials.desc', message: 'Dive deeper into complex topics with advanced electronics guides.' }),
-    link: '/docs/circuit-design',
+    link: '#',
     buttonText: translate({ id: 'homepage.learnMore', message: 'Learn More' }),
     icon: 'fas fa-microchip'
   },

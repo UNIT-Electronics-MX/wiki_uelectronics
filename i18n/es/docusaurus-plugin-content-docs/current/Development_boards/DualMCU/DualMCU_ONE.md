@@ -6,6 +6,11 @@ sidebar_position: 2
 
 La **UNIT DualMCU-ONE** es una placa de desarrollo altamente versátil que integra el poder de dos microcontroladores: el ESP32 y el RP2040. Diseñada para aplicaciones avanzadas de IoT, robótica e industriales, ofrece conectividad mejorada, gestión robusta de la energía y total compatibilidad con shields de Arduino UNO.
 
+:::warning
+La DualMCU-ONE opera con niveles lógicos de 3.3V en lugar de los típicos 5V del Arduino Uno. 
+Asegúrate de que cualquier shield o periférico conectado sea compatible con niveles lógicos de 3.3V para evitar posibles daños.
+:::
+
 <div style={{ textAlign: "center" }}>
   <a href="https://uelectronics.com/producto/unit-dualmcu-esp32-rp2040-tarjeta-de-desarrollo/">
     <img src="https://raw.githubusercontent.com/UNIT-Electronics/DualMCU-ONE/refs/heads/main/Resources/IMG_3134.jpg" width="300px" />
@@ -13,6 +18,12 @@ La **UNIT DualMCU-ONE** es una placa de desarrollo altamente versátil que integ
     <em>Haz clic aquí para comprarla en la tienda de UNIT Electronics</em>
   </a>
 </div>
+
+| Recurso                                          |Enlace                                                                                                                                         |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| Curso de MicroPython (Versión en inglés)         | [https://unit-electronics.github.io/DualMCU_Getting_Started/](https://unit-electronics.github.io/DualMCU_Getting_Started/)                      |
+| Curso de MicroPython (Versión en español)        | [https://unit-electronics-mx.github.io/dualmcu_curso_introductorio/index.html](https://unit-electronics-mx.github.io/dualmcu_curso_introductorio/index.html)             |
+
 
 Las mejoras clave respecto a su predecesor, el DualMCU, incluyen:
 - Comunicación SPI entre los microcontroladores para mejorar la transferencia de datos.
@@ -27,6 +38,14 @@ Para más detalles, consulta las páginas de producto en:
 * [DualMCU-ONE_Getting_Started](https://unit-electronics.github.io/DualMCU-ONE/index.html)
 
 ---
+
+## Pinout
+
+La **DualMCU-ONE** cuenta con una amplia variedad de pines de entrada/salida (E/S) que te permiten conectar sensores, actuadores y otros dispositivos a la placa. A continuación, se muestra el pinout de la **DualMCU-ONE**:
+
+<div style={{ textAlign: "center" }}>
+  <img src="https://raw.githubusercontent.com/UNIT-Electronics/DualMCU-ONE/refs/heads/main/Hardware/Resources/Pinout_Top_EN.jpg" width="1200px" />
+</div>
 
 ## Características
 
