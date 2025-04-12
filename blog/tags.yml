@@ -32,3 +32,8 @@ flash:
   label: Flash
   permalink: /flash
   description: Programming microcontrollers tag description
+
+target:
+  label: Target
+  permalink: /target
+  description: Target
