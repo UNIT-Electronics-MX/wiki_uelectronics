@@ -35,8 +35,10 @@
         <updated>2025-01-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[This tutorial will guide you through the process of flashing a firmware to a development board using Espressif idf.]]></summary>
         <content type="html"><![CDATA[<p>This tutorial will guide you through the process of flashing a firmware to a development board using Espressif idf.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/blog/Tutorial-Espressif#introduction" class="hash-link" aria-label="Direct link to Introduction" title="Direct link to Introduction">​</a></h2>
-<p>Espressif IDF (IoT Development Framework) is the official development framework for the ESP32 and ESP32-S series of microcontrollers. It provides a set of tools, libraries, and APIs for developing applications on Espressif's Wi-Fi and Bluetooth-enabled microcontrollers. The IDF is based on FreeRTOS and provides a flexible and powerful environment for developing IoT applications.</p>]]></content>
+<p>Este tutorial te mostrará como cargar firmware a una placa de desarrollo usando Espressif IDF.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introducción">Introducción<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/blog/Tutorial-Espressif#introducci%C3%B3n" class="hash-link" aria-label="Direct link to Introducción" title="Direct link to Introducción">​</a></h2>
+<p>Espressif IDF (IoT Development Framework) is the official development framework for the ESP32 and ESP32-S series of microcontrollers. It provides a set of tools, libraries, and APIs for developing applications on Espressif's Wi-Fi and Bluetooth-enabled microcontrollers. The IDF is based on FreeRTOS and provides a flexible and powerful environment for developing IoT applications.</p>
+<p>Espressif IDF (Entorno de Desarrollo IoT por sus siglas en inglés), es el entorno oficial de desarrollo para la serie de microcontroladores ESP32 y ESP32-S. Proporciona un conjunto de herramientas, librerías, y APIs para desarrollo de aplicaciones en microcontroladores de Espressif con conectividad a Wi-Fi y Bluetooth. Este entorno está basado en FreeRTOS (sistema operativo en tiempo real (RTOS) de código abierto para dispositivos embebidos) que provee un ambiente flexible y poderoso para las aplicaciones del internet de las cosas (IoT).</p>]]></content>
         <author>
             <name>Adrian</name>
             <uri>https://github.com/ARabadann</uri>

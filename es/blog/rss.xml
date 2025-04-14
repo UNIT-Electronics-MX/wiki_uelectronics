@@ -9,68 +9,71 @@
         <generator>https://github.com/jpmonette/feed</generator>
         <language>es</language>
         <item>
-            <title><![CDATA[Matter IoT Line]]></title>
+            <title><![CDATA[Línea Matter IoT]]></title>
             <link>https://UNIT-Electronics-MX.github.io/wiki_uelectronics/es/blog/UNIT-MATTER</link>
             <guid>https://UNIT-Electronics-MX.github.io/wiki_uelectronics/es/blog/UNIT-MATTER</guid>
             <pubDate>Thu, 16 Jan 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[UNIT Matter IoT Line implenting ESP32C6.]]></description>
-            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>consejo</div><div class="admonitionContent_BuS1"><p>UNIT Matter IoT Line implenting ESP32C6.</p></div></div>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/UNIT-MATTER#introduction" class="hash-link" aria-label="Enlace directo a Introduction" title="Enlace directo a Introduction">​</a></h2>
-<p>UNIT Matter IoT Line is a series of development boards based on the ESP32-C6 microcontroller. The ESP32-C6 is a highly integrated Wi-Fi 6 (802.11ax) and Bluetooth Low Energy (BLE) SoC with a dual-core CPU, designed for IoT applications. The Matter IoT Line boards are designed to provide a simple and cost-effective solution for developing IoT devices that are compatible with the Matter protocol.</p>
-<p>Matter connectivity is a new open-source standard for smart home devices, developed by the Connectivity Standards Alliance (CSA). It aims to provide a unified and secure way for smart home devices to communicate with each other, regardless of the manufacturer or communication protocol. The Matter protocol is based on IP and is designed to work over Wi-Fi, Thread, and Ethernet networks.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="espressif-matter-solutions">Espressif Matter Solutions<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/UNIT-MATTER#espressif-matter-solutions" class="hash-link" aria-label="Enlace directo a Espressif Matter Solutions" title="Enlace directo a Espressif Matter Solutions">​</a></h2>
+            <description><![CDATA[Línea UNIT Matter IoT implentando ESP32C6.]]></description>
+            <content:encoded><![CDATA[<div class="theme-admonition theme-admonition-tip admonition_xJq3 alert alert--success"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 12 16"><path fill-rule="evenodd" d="M6.5 0C3.48 0 1 2.19 1 5c0 .92.55 2.25 1 3 1.34 2.25 1.78 2.78 2 4v1h5v-1c.22-1.22.66-1.75 2-4 .45-.75 1-2.08 1-3 0-2.81-2.48-5-5.5-5zm3.64 7.48c-.25.44-.47.8-.67 1.11-.86 1.41-1.25 2.06-1.45 3.23-.02.05-.02.11-.02.17H5c0-.06 0-.13-.02-.17-.2-1.17-.59-1.83-1.45-3.23-.2-.31-.42-.67-.67-1.11C2.44 6.78 2 5.65 2 5c0-2.2 2.02-4 4.5-4 1.22 0 2.36.42 3.22 1.19C10.55 2.94 11 3.94 11 5c0 .66-.44 1.78-.86 2.48zM4 14h5c-.23 1.14-1.3 2-2.5 2s-2.27-.86-2.5-2z"></path></svg></span>consejo</div><div class="admonitionContent_BuS1"><p>Línea UNIT Matter IoT implentando ESP32C6.</p></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introducción">Introducción<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/UNIT-MATTER#introducci%C3%B3n" class="hash-link" aria-label="Enlace directo a Introducción" title="Enlace directo a Introducción">​</a></h2>
+<p>La línea <strong>UNIT Matter IoT</strong> es una serie de placas de desarrollo basadas en el microcontrolador <strong>ESP32-C6</strong>. El ESP32-C6 es un circuito integrado que reúne los principales sistemas electrónicos (SoC), integrando altamente Wi-Fi 6 (802.11ax) y Bluetooth Low Energy (BLE) con doble núcleo CPU, diseñado para aplicaciones IoT. La línea Matter de placas IoT están diseñadas para proporcionar soluciones simples con una <strong>relación costo - efectividad</strong> para el desarrollo de dispositivos IoT compatibles con el protocolo Matter.</p>
+<p>La conectividad Matter es un nuevo estándar de código abierto para dispositivos inteligentes para el hogar, desarrollado por Connectivity Standards Alliance (CSA). Tiene como objetivo unificar y asegurar una forma de comunicación entre dispositivos inteligentes sin importar el fabricante o el protocolo de comunicación. El <strong>protocolo Matter</strong> está basado en IP y es diseñado para trabajar sobre redes Wi-Fi, Thread, y Ethernet.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="soluciones-espressif-matter">Soluciones Espressif Matter<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/UNIT-MATTER#soluciones-espressif-matter" class="hash-link" aria-label="Enlace directo a Soluciones Espressif Matter" title="Enlace directo a Soluciones Espressif Matter">​</a></h2>
 <p><img decoding="async" loading="lazy" src="https://docs.espressif.com/projects/esp-matter/en/latest/esp32/_images/solution_architecture.png" alt="Solution_architecture" class="img_ev3q"></p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="first-results">First Results<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/UNIT-MATTER#first-results" class="hash-link" aria-label="Enlace directo a First Results" title="Enlace directo a First Results">​</a></h2>
-<p>For the new desing development board, we have the first results of the new ESP32-C6 microcontroller. The new ESP32-C6 is a highly integrated Wi-Fi 6 (802.11ax) and Bluetooth Low Energy (BLE) SoC with a dual-core CPU, designed for IoT applications. The ESP32-C6 is based on the RISC-V architecture and features a dual-core CPU with a clock speed of up to 160 MHz. The ESP32-C6 also features a rich set of peripherals, including UART, SPI, I2C, I2S, PWM, and ADC interfaces, as well as a built-in temperature sensor and a security accelerator.</p>]]></content:encoded>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="primeros-resultados">Primeros resultados<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/UNIT-MATTER#primeros-resultados" class="hash-link" aria-label="Enlace directo a Primeros resultados" title="Enlace directo a Primeros resultados">​</a></h2>
+<p>Para el nuevo desarrollo de una placa de desarrollo, aquí tenemos los primeros resultados del nuevo microcontrolador ESP32-C6. El ESP32-C6 integra altamente Wi-Fi 6 y tecnología Bluetooth de bajo consumo en el mismo chip, además, está diseñado con la arquitectura RISC-V que incluye un doblo núcleo CPU con una velocidad de reloj arriba de <strong>160 MHz</strong>. Además, el ESP32-C6 incluye un amplio conjunto de periféricos, por ejemplo, <strong>UART</strong>, <strong>SPI</strong>, <strong>I2C</strong>, <strong>I2S</strong>, <strong>PWM</strong>, e interfaces <strong>ADC</strong>, así como un <strong>sensor de temperatura integrado</strong> y un <strong>acelerador de seguridad</strong>.</p>]]></content:encoded>
             <category>Matter</category>
             <category>ESP32</category>
         </item>
         <item>
-            <title><![CDATA[Espressif idf]]></title>
+            <title><![CDATA[Espressif IDF]]></title>
             <link>https://UNIT-Electronics-MX.github.io/wiki_uelectronics/es/blog/Tutorial-Espressif</link>
             <guid>https://UNIT-Electronics-MX.github.io/wiki_uelectronics/es/blog/Tutorial-Espressif</guid>
             <pubDate>Thu, 16 Jan 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[This tutorial will guide you through the process of flashing a firmware to a development board using Espressif idf.]]></description>
-            <content:encoded><![CDATA[<p>This tutorial will guide you through the process of flashing a firmware to a development board using Espressif idf.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/Tutorial-Espressif#introduction" class="hash-link" aria-label="Enlace directo a Introduction" title="Enlace directo a Introduction">​</a></h2>
-<p>Espressif IDF (IoT Development Framework) is the official development framework for the ESP32 and ESP32-S series of microcontrollers. It provides a set of tools, libraries, and APIs for developing applications on Espressif's Wi-Fi and Bluetooth-enabled microcontrollers. The IDF is based on FreeRTOS and provides a flexible and powerful environment for developing IoT applications.</p>]]></content:encoded>
+            <description><![CDATA[Este tutorial te mostrará el proceso de como cargar firmware a una placa de desarrollo usando Espressif IDF.]]></description>
+            <content:encoded><![CDATA[<p>Este tutorial te mostrará el proceso de como cargar firmware a una placa de desarrollo usando Espressif IDF.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introducción">Introducción<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/Tutorial-Espressif#introducci%C3%B3n" class="hash-link" aria-label="Enlace directo a Introducción" title="Enlace directo a Introducción">​</a></h2>
+<p>Espressif IDF (Entorno de Desarrollo IoT) es el entorno oficial de desarrollo para la serie de microcontroladores ESP32 y ESP32-S. Proporciona un conjunto de herramientas. librerías, y APIs para el desarrollo de aplicaciones en microcontroladores de Espressif con conectividad a Wi-Fi y Bluetooth. Espressif IDF está basado en FreeRTOS (sistema operativo en tiempo real (RTOS) de código abierto para dispositivos embebidos) que convierte al entorno de desarrollo en un poderoso ambiente permitiendo flexibilidad en diferentes aplicaciones.</p>]]></content:encoded>
             <category>Flash</category>
+            <category>Target</category>
         </item>
         <item>
             <title><![CDATA[OpenOCD]]></title>
             <link>https://UNIT-Electronics-MX.github.io/wiki_uelectronics/es/blog/Tutorial-OpenOCD</link>
             <guid>https://UNIT-Electronics-MX.github.io/wiki_uelectronics/es/blog/Tutorial-OpenOCD</guid>
             <pubDate>Thu, 16 Jan 2025 00:00:00 GMT</pubDate>
-            <description><![CDATA[This tutorial will guide you through the process of flashing a firmware to a development board using OpenOCD.]]></description>
-            <content:encoded><![CDATA[<p>This tutorial will guide you through the process of flashing a firmware to a development board using OpenOCD.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introduction">Introduction<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/Tutorial-OpenOCD#introduction" class="hash-link" aria-label="Enlace directo a Introduction" title="Enlace directo a Introduction">​</a></h2>
-<p>OpenOCD (Open On-Chip Debugger) is an open-source software that provides debugging and in-system programming for embedded target devices. It supports a wide range of hardware interfaces and target devices, making it a versatile tool for embedded development.</p>
-<p>In this tutorial, we will use OpenOCD to flash a firmware to a development board. We will cover the installation of OpenOCD, configuration of the target device, and flashing of the firmware.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="prerequisites">Prerequisites<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/Tutorial-OpenOCD#prerequisites" class="hash-link" aria-label="Enlace directo a Prerequisites" title="Enlace directo a Prerequisites">​</a></h2>
-<p>Before you begin, make sure you have the following:</p>
+            <description><![CDATA[Este tutorial te guiará paso a paso para cargar firmware a una placa de desarrollo usando OpenOCD.]]></description>
+            <content:encoded><![CDATA[<p>Este tutorial te guiará paso a paso para cargar firmware a una placa de desarrollo usando OpenOCD.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="introducción">Introducción<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/Tutorial-OpenOCD#introducci%C3%B3n" class="hash-link" aria-label="Enlace directo a Introducción" title="Enlace directo a Introducción">​</a></h2>
+<p>OpenOCD (Depurador de Chip en código abierto) es un <strong>software de código abierto</strong> que proporciona un depurador y programación para sistemas embebidos. Soporta un amplio catálogo de interfaces y dispositivos, creando una herramienta versátil para el desarrollo embebido.</p>
+<p>En este tutorial, se usará OpenOCD para cargar firmware a una placa de desarrollo. Se cubrirá la instalación de OpenOCD, configuración del dispositivo a trabajar y la grabación de firmware en el mismo.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="requisitos">Requisitos<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/Tutorial-OpenOCD#requisitos" class="hash-link" aria-label="Enlace directo a Requisitos" title="Enlace directo a Requisitos">​</a></h2>
+<blockquote>
+<p><strong>Antes de empezar, asegúrate de tener lo siguiente:</strong></p>
+</blockquote>
 <ul>
-<li>A development board with an appropriate hardware interface (e.g., JTAG, SWD).</li>
-<li>A firmware file in a supported format (e.g., ELF, HEX).</li>
-<li>A computer with OpenOCD installed.</li>
+<li>Una <strong>placa de desarrollo</strong> con una interfaz apropiada (ej. JTAG, SWD).</li>
+<li>Un <strong>archivo de firmware</strong> con formato compatible (ej. ELF, HEX).</li>
+<li>Una computadora con <strong>OpenOCD instalado</strong>.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="installation">Installation<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/Tutorial-OpenOCD#installation" class="hash-link" aria-label="Enlace directo a Installation" title="Enlace directo a Installation">​</a></h2>
-<p>To install OpenOCD, follow the instructions for your operating system:</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="instalación">Instalación<a href="https://unit-electronics-mx.github.io/wiki_uelectronics/es/blog/Tutorial-OpenOCD#instalaci%C3%B3n" class="hash-link" aria-label="Enlace directo a Instalación" title="Enlace directo a Instalación">​</a></h2>
+<p>Para instalar OpenOCD, sigue las siguientes instrucciones según tu sistema operativo:</p>
 <ul>
 <li>
-<p><strong>Linux</strong>: OpenOCD is available in most package managers. You can install it using the following command:</p>
+<p><strong>Linux</strong>: OpenOCD está disponible para la mayoría de gestores de paquetes. Tu puedes instalarlo con el siguiente comando:</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">sudo apt-get install openocd</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copiar código al portapapeles" title="Copiar" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 </li>
 <li>
-<p><strong>Windows</strong>: Download the latest OpenOCD binary from the [official website](</p>
+<p><strong>Windows</strong>: Descarga la última versión de OpenOCD en su <a href="https://openocd.org/" target="_blank" rel="noopener noreferrer">sitio web oficial.</a></p>
 </li>
 <li>
-<p><strong>macOS</strong>: OpenOCD can be installed using <a href="https://brew.sh/" target="_blank" rel="noopener noreferrer">Homebrew</a>. Run the following command:</p>
+<p><strong>macOS</strong>: OpenOCD puede se instalado usando <a href="https://brew.sh/" target="_blank" rel="noopener noreferrer">Homebrew</a>. Ejecuta el siguiente comando:</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">brew install openocd</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copiar código al portapapeles" title="Copiar" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
 </li>
 </ul>
-<p>Once OpenOCD is installed, you can verify the installation by running the following command:</p>
+<p>Una vez instalado OpenOCD, puedes verificar la instalación ejecutando el siguiente comando:</p>
 <div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">openocd --version</span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copiar código al portapapeles" title="Copiar" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<p>You should see the version number of OpenOCD displayed in the terminal.</p>]]></content:encoded>
+<p>Deberías ver el número de versión de OpenOCD en tu terminal.</p>]]></content:encoded>
             <category>Flash</category>
         </item>
         <item>
