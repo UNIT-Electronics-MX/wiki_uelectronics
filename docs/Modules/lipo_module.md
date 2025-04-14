@@ -25,23 +25,24 @@ The **UNIT LiPo Charger Boost & I2C Monitor** is an advanced charging and monito
 - **Charging Current Selection**: Backside solder pad to select 200 mA or 1 A charging current.
 - **Qwiic/Stemma Output Compatibility**: Connects I2C lines (`SDA`, `SCL`) and ground (`GND`) to the Qwiic/Stemma connector. A jumper pad allows routing system voltage (VSYS) to the Qwiic/Stemma bus, which varies between battery voltage (3.7V) and up to 6V (VIN).
 
-> **Note**: Since Qwiic operates at 3.3V, a voltage regulator is recommended after the JST output to step down VSYS to 3.3V, protecting connected Qwiic devices.
-
+:::note
+ Since Qwiic operates at 3.3V, a voltage regulator is recommended after the JST output to step down VSYS to 3.3V, protecting connected Qwiic devices.
+:::
 ---
 
 ## Pinout
 
 ### Front Pinout
 
-<a href="https://www.uelectronics.com">
-  ![](/img/module/PinoutTop_EN.jpg)
-</a>
+<div style={{ textAlign: "center" }}>
+  <img src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT-LiPo-Charger-Boost-I2C-Monitor/refs/heads/main/resources/Pinouts/PinoutTop_EN.jpg" style={{ width: "50%" }} />
+</div>
 
 ### Back Pinout
 
-<a href="https://www.uelectronics.com">
-  <img src="/img/module/PinoutBottom_EN.jpg" width="600px" />
-</a>
+<div style={{ textAlign: "center" }}>
+  <img src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT-LiPo-Charger-Boost-I2C-Monitor/refs/heads/main/resources/Pinouts/PinoutBottom_EN.jpg" style={{ width: "50%" }} />
+</div>
 
 ---
 
@@ -66,13 +67,13 @@ The **UNIT LiPo Charger Boost & I2C Monitor** is an advanced charging and monito
 
 > **Usage Note**: For optimal performance, use a LiPo battery within 3.7V to 4.2V. Alternatively, provide 5V through USB Type C or VIN pads, with a maximum input of 6V.
 
-<a href="/img/module/PvsV_EN.png">
-  <img src="/img/module/PvsV.png" width="500px" />
-</a>
+<div style={{ textAlign: "center" }}>
+    <img src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT-LiPo-Charger-Boost-I2C-Monitor/refs/heads/main/resources/Curvas/PvsV.png" width="500px" />
+</div>
 
-<a href="/img/module/IvsV_EN.png">
-  <img src="/img/module/IvsV.png" width="500px" />
-</a>
+<div style={{ textAlign: "center" }}>
+    <img src="https://raw.githubusercontent.com/UNIT-Electronics/UNIT-LiPo-Charger-Boost-I2C-Monitor/refs/heads/main/resources/Curvas/IvsV.png" width="500px" />
+</div>
 
 ---
 
@@ -142,4 +143,7 @@ print("Battery Charge:", charge, "%")
 
 With the **UNIT LiPo Charger Boost & I2C Monitor**, you can monitor battery status, power Qwiic modules, and achieve stable output voltage for applications requiring higher voltage.
 
+:::tip
+
 Start your battery charging and monitoring project today!
+:::

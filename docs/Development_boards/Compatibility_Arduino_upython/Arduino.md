@@ -14,7 +14,7 @@ This guide provides step-by-step instructions for installing the necessary board
 Before proceeding, ensure you have the following tools installed:
 
 - **[Arduino IDE](https://www.arduino.cc/en/software)** – Required for programming the boards.
-- **[USB Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)** – Required for board communication.
+- **[USB Drivers](https://www.wch-ic.com/downloads/CH341SER_EXE.html)** – Required for board communication.
 - **Board Support Packages:**
   - **[DualMCU-ONE (ESP32 + RP2040)](https://uelectronics.com/producto/unit-dualmcu-one-esp32-rp2040/)**
   - **[Cocket Nova CH552](https://uelectronics.com/producto/unit-cocket-nova-ch552g-tarjeta-de-desarrollo/)**

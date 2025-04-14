@@ -13,7 +13,7 @@ Esta guía proporciona instrucciones paso a paso para instalar los paquetes de s
 Antes de continuar, asegúrese de tener instaladas las siguientes herramientas:
 
 - **[Arduino IDE](https://www.arduino.cc/en/software)** – Requerido para programar las placas.
-- **[Controladores USB](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)** – Necesarios para la comunicación con la placa.
+- **[Controladores USB](https://www.wch-ic.com/downloads/CH341SER_EXE.html)** – Necesarios para la comunicación con la placa.
 - **Paquetes de Soporte de Placa:**
    - **[DualMCU-ONE (ESP32 + RP2040)](https://uelectronics.com/producto/unit-dualmcu-one-esp32-rp2040/)**
    - **[Cocket Nova CH552](https://uelectronics.com/producto/unit-cocket-nova-ch552g-tarjeta-de-desarrollo/)**
@@ -35,7 +35,7 @@ o instale los paquetes manualmente siguiendo los pasos a continuación.
 
 ## 1. Instalación Paso a Paso del Paquete para la Placa DualMCU-ONE
 
-### **Paso 1: Instalar el Paquete ESP32**
+### **Paso 1: Instalar el Paquete JSON ESP32**
 
 1. Abra el **Arduino IDE**.
 2. Vaya a **Archivo > Preferencias**.
@@ -50,7 +50,7 @@ o instale los paquetes manualmente siguiendo los pasos a continuación.
 7. Haga clic en **Instalar**.
 8. Una vez instalado, seleccione **DualMCU** en el menú de **Placas**.
 
-### **Paso 2: Instalar el Paquete RP2040**
+### **Paso 2: Instalar el Paquete JSON RP2040**
 
 1. Abra el **Arduino IDE**.
 2. Vaya a **Archivo > Preferencias**.
@@ -73,7 +73,7 @@ o instale los paquetes manualmente siguiendo los pasos a continuación.
 
 ---
 
-## 2. Instalación del Paquete para la Placa Cocket Nova CH552
+## 2. Instalación del Paquete JSON para la Placa Cocket Nova CH552
 
 Para programar la placa **Cocket Nova CH552** utilizando el Arduino IDE, siga estos pasos:
 
@@ -101,3 +101,4 @@ Para programar la placa **Cocket Nova CH552** utilizando el Arduino IDE, siga es
 ¡Ha instalado correctamente los paquetes necesarios para programar las placas **DualMCU-ONE** (ESP32 + RP2040) y **Cocket Nova CH552** en el Arduino IDE! Ahora está listo para comenzar a desarrollar sus proyectos.
 
 Para obtener documentación adicional e ideas de proyectos, visite **[UNIT Electronics](https://uelectronics.com/)**.
+:::

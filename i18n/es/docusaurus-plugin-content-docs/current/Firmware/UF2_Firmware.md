@@ -31,7 +31,7 @@ Este archivo transforma el DualMCU en un micrófono USB de alto rendimiento util
 
 Esta funcionalidad es ideal para videoconferencias o aplicaciones de audio en general, proporcionando un rendimiento de sonido de alta calidad.
 
-<a href="https://github.com/UNIT-Electronics/UNIT-PDM-MEMS-Microphone-Breakout-Guide-UF2#readme"><img src="https://github.com/UNIT-Electronics/DualMCU/blob/main/Software/UF2_Files/AR3631-UNIT-MP34DT05TR-A-Modulo-Microfono-PDM-V2.jpg?raw=false" width="200px"/></a>   <img src="UF2_Files/PDM-Mic.jpg?raw=false" width="170px"/><br/>
+<img src="https://github.com/UNIT-Electronics/DualMCU/blob/main/Software/UF2_Files/AR3631-UNIT-MP34DT05TR-A-Modulo-Microfono-PDM-V2.jpg?raw=false" width="200px"/> <br/>
 
 ## Conectando un micrófono PDM
 

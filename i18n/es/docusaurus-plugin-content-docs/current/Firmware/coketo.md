@@ -6,12 +6,7 @@ sidebar_position: 2
 
 Bienvenido a la documentación del firmware para el proyecto Coketo. Esta sección proporciona información detallada acerca del firmware utilizado en nuestros dispositivos.
 
-## Tabla de Contenidos
 
-1. [Introducción](#introduccion)
-2. [Instalación](#instalacion)
-3. [Configuración](#configuracion)
-4. [Solución de problemas](#solucion-de-problemas)
 
 ## Introducción
 

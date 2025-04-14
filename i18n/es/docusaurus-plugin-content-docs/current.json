@@ -11,12 +11,12 @@
     "message": "Diseño y desarrollo del hardware de las placas de desarrollo",
     "description": "La descripción de la página de índice generado para la categoría UNIT - Placas de desarrollo en la barra lateral tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Compatibility with Arduino": {
-    "message": "Compatibilidad con Arduino",
+  "sidebar.tutorialSidebar.category.Compatibility with Arduino IDE & Micropython": {
+    "message": "Compatibilidad con Arduino IDE y Micropython",
     "description": "La etiqueta para la categoría Compatibilidad con Arduino en la barra lateral tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Compatibility with Arduino.link.generated-index.description": {
-    "message": "Compatibilidad con Arduino",
+  "sidebar.tutorialSidebar.category.Compatibility with Arduino IDE & Micropython.link.generated-index.description": {
+    "message": "Compatibilidad con Arduino IDE y Micropython",
     "description": "La descripción de la página de índice generado para la categoría Compatibilidad con Arduino en la barra lateral tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.DualMCU Development boards": {

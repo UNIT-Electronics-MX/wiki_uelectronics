@@ -17,7 +17,7 @@ This board is great for beginners dipping their toes into microcontrollers and D
 
 <div style={{ textAlign: "center" }}>
   <a href="https://uelectronics.com/producto/unit-cocket-nova-ch552g-tarjeta-de-desarrollo/">
-    <img src="https://raw.githubusercontent.com/UNIT-Electronics/Cocket-Nova_CH552G-Development-Board/refs/heads/main/Hardware/Resources/CocketNova-Pinout.jpg" width="300px"/>
+    <img src="https://raw.githubusercontent.com/UNIT-Electronics/CH55x_SDCC_Doc/refs/heads/main/src/source/_static/CH552_Sq.png" width="300px"/>
     <br/>
     <em>Click here to purchase one from the UNIT Electronics shop</em>
   </a>

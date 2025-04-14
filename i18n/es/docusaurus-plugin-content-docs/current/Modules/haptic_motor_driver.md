@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Módulo Controlador de Motor Háptico
+# Controlador de Motor Háptico
 
 El Módulo Controlador de Motor Háptico es un módulo que se puede utilizar para accionar un motor háptico. El módulo se basa en el IC controlador de motor háptico DRV2605L. El DRV2605L es un controlador háptico versátil que se puede utilizar para accionar un actuador resonante lineal (LRA) o un motor de masa excéntrica rotativa (ERM), proporcionando una amplia gama de efectos hápticos. El módulo está diseñado para usarse con conectores compatibles STEMMA QT y conectores qwiic.
 
@@ -14,7 +14,7 @@ El Módulo Controlador de Motor Háptico es un módulo que se puede utilizar par
 
 ## Ejemplo de Código
 
-:::nota
+:::note 
 
 El siguiente ejemplo es solo demostrativo; puedes encontrar más ejemplos en el [Repositorio GitHub DRV2605L](https://github.com/UNIT-Electronics/UNIT_DRV2605L_Haptic_Motor_Driver/tree/main/Software)
 

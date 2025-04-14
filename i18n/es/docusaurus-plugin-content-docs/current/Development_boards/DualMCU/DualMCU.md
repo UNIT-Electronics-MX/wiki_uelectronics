@@ -16,12 +16,32 @@ DualMCU se ha concebido como una mezcla entre dos microprocesadores de 32 bits: 
 </a>
 </div>
 
-Para más detalles, consulta las páginas de producto en:
-* https://uelectronics.com/
-* [Hardware-DualMCU](https://github.com/UNIT-Electronics/DualMCU/tree/main/Hardware)
-* [Manual de Referencia del Producto.pdf](https://github.com/UNIT-Electronics/DualMCU/blob/main/DualMCU(Product%20Reference%20Manual).pdf)
-* [Archivos de ejemplos en C++ y Micropython para la UNIT DualMCU](https://github.com/UNIT-Electronics/DualMCU/tree/main/Examples)
-* [DualMCU_Getting_Started](https://github.com/UNIT-Electronics/DualMCU_Getting_Started)
+
+## Pinout
+
+La tarjeta de desarrollo DualMCU cuenta con una amplia variedad de pines de entrada/salida (E/S) que te permiten conectar sensores, actuadores y otros dispositivos a la tarjeta. A continuación, se muestra el pinout de la tarjeta DualMCU:
+
+<div style={{ textAlign: "center" }}>
+  <img src="https://raw.githubusercontent.com/UNIT-Electronics/DualMCU/refs/heads/main/Hardware/Resources/EU0002-DUALMCU%20V3.1.2.jpg" width="1200px" />
+</div>
+
+<br/>
+<div style={{ textAlign: "center" }}>
+  | Recurso                                          |Enlace                                                                                                                                         |
+  | ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+  | Curso de MicroPython (Versión en inglés)         | [https://unit-electronics.github.io/DualMCU_Getting_Started/](https://unit-electronics.github.io/DualMCU_Getting_Started/)                      |
+  | Curso de MicroPython (Versión en español)        | [https://unit-electronics-mx.github.io/dualmcu_curso_introductorio/index.html](https://unit-electronics-mx.github.io/dualmcu_curso_introductorio/index.html)             |
+
+</div>
+
+### Más detalles
+
+- [Página oficial de UNIT Electronics](https://uelectronics.com/)
+- [Hardware-DualMCU](https://github.com/UNIT-Electronics/DualMCU/tree/main/Hardware)
+- [Manual de Referencia del Producto (PDF)](https://github.com/UNIT-Electronics/DualMCU/blob/main/DualMCU(Product%20Reference%20Manual).pdf)
+- [Archivos de ejemplos en C++ y MicroPython](https://github.com/UNIT-Electronics/DualMCU/tree/main/Examples)
+- [DualMCU Getting Started](https://github.com/UNIT-Electronics/DualMCU_Getting_Started)
+
 
 :::tip
 ### Aplicaciones

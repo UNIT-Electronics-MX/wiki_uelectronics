@@ -1,8 +1,8 @@
 ---
-sidebar_position: 3
+sidebar_position: 6
 ---
 
-# Módulo Lumiknob
+# Lumiknob
 
 El módulo "Interfaz Potenciómetro SPI MAX7219 32 LED Secuencial" permite controlar 32 LEDs de manera secuencial utilizando un potenciómetro. El módulo utiliza el protocolo SPI para comunicarse con el controlador de LEDs MAX7219, el cual gestiona la iluminación de los LEDs. El potenciómetro se utiliza para ajustar la velocidad a la que se encienden los LEDs.
 <!-- board in proccess designed -->
