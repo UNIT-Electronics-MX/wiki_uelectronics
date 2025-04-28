@@ -44,7 +44,7 @@ El voltaje de salida depende del protocolo del adaptador USB-C conectado. La sig
 
 <div style={{ textAlign: "center" }}>
   <img
-    src="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_proto_power_delivery_decoy_ch224k/refs/heads/main/hardware/resources/protopowerdecoy_pinout_v1.webp"
+    src="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_proto_power_delivery_decoy_ch224k/refs/heads/main/hardware/resources/protopowerdecoy_pinout_v1%5BEN%5D.jpg"
     alt="Distribución de pines"
     style={{ width: '60%', maxWidth: 500 }}
   />

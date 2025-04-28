@@ -28,7 +28,7 @@ The output voltage depends on the connected power adapter's supported protocol. 
 ## Pinout
 
 <div style={{ textAlign: "center" }}>
-  <img src="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_proto_power_delivery_decoy_ch224k/refs/heads/main/hardware/resources/protopowerdecoy_pinout_v1.webp" style={{ width: "50%" }} />
+  <img src="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_proto_power_delivery_decoy_ch224k/refs/heads/main/hardware/resources/protopowerdecoy_pinout_v1%5BEN%5D.jpg" style={{ width: "50%" }} />
 </div>
 
 ## Usage
