@@ -1,36 +1,7 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
+import { translate } from '@docusaurus/Translate';
 import styles from './DocProductAds.module.css';
-
-const relatedProducts = [
-  {
-    id: 1,
-    title: 'UNIT Dual ONE',
-    description: 'Plataforma de desarrollo dual-core',
-    image: 'https://uelectronics.com/wp-content/uploads/2025/01/UNIT-DUAL-ONE-WEB--scaled.jpg',
-    link: '/docs/Development_boards/DualMCU',
-    shopLink: 'https://uelectronics.com/producto/unit-dual-one/',
-    price: '$29.99'
-  },
-  {
-    id: 2,
-    title: 'COCKET NOVA',
-    description: 'Desarrollo con CH552G',
-    image: 'https://uelectronics.com/wp-content/uploads/2024/10/COCKET-NOVA-web3-scaled.jpg',
-    link: '/docs/Development_boards/develab/cocket_nova',
-    shopLink: 'https://uelectronics.com/producto/unit-cocket-nova-ch552g-tarjeta-de-desarrollo/',
-    price: '$34.99'
-  },
-  {
-    id: 3,
-    title: 'Módulos UNIT',
-    description: 'Sensores y módulos compatibles',
-    image: 'https://uelectronics.com/wp-content/uploads/2024/08/03-MODULOS-UNIT.jpg',
-    link: '/docs/category/unit---modules',
-    shopLink: 'https://uelectronics.com/categoria-producto/unit-products/',
-    price: 'Desde $9.99'
-  }
-];
 
 function ProductCard({ product }) {
   return (
@@ -44,10 +15,10 @@ function ProductCard({ product }) {
         <div className={styles.price}>{product.price}</div>
         <div className={styles.actions}>
           <Link to={product.link} className={`button button--sm button--outline ${styles.docsButton}`}>
-            Documentación
+            {translate({ id: 'docProductAds.documentation', message: 'Documentación' })}
           </Link>
           <Link to={product.shopLink} className={`button button--sm button--primary ${styles.shopButton}`} target="_blank">
-            Comprar
+            {translate({ id: 'docProductAds.buy', message: 'Comprar' })}
           </Link>
         </div>
       </div>
@@ -56,11 +27,44 @@ function ProductCard({ product }) {
 }
 
 export default function DocProductAds() {
+  const relatedProducts = [
+    {
+      id: 1,
+      title: translate({ id: 'products.dualOne.title', message: 'UNIT Dual ONE' }),
+      description: translate({ id: 'products.dualOne.docDescription', message: 'Plataforma de desarrollo dual-core' }),
+      image: 'https://uelectronics.com/wp-content/uploads/2025/01/UNIT-DUAL-ONE-WEB--scaled.jpg',
+      link: '/docs/Development_boards/DualMCU',
+      shopLink: 'https://uelectronics.com/producto/unit-dual-one/',
+      price: '$29.99'
+    },
+    {
+      id: 2,
+      title: translate({ id: 'products.cocketNova.title', message: 'COCKET NOVA' }),
+      description: translate({ id: 'products.cocketNova.docDescription', message: 'Desarrollo con CH552G' }),
+      image: 'https://uelectronics.com/wp-content/uploads/2024/10/COCKET-NOVA-web3-scaled.jpg',
+      link: '/docs/Development_boards/develab/cocket_nova',
+      shopLink: 'https://uelectronics.com/producto/unit-cocket-nova-ch552g-tarjeta-de-desarrollo/',
+      price: '$34.99'
+    },
+    {
+      id: 3,
+      title: translate({ id: 'products.modules.title', message: 'Módulos UNIT' }),
+      description: translate({ id: 'products.modules.docDescription', message: 'Sensores y módulos compatibles' }),
+      image: 'https://uelectronics.com/wp-content/uploads/2024/08/03-MODULOS-UNIT.jpg',
+      link: '/docs/category/unit---modules',
+      shopLink: 'https://uelectronics.com/categoria-producto/unit-products/',
+      price: translate({ id: 'products.modules.price', message: 'Desde $9.99' })
+    }
+  ];
   return (
     <div className={styles.adsContainer}>
       <div className={styles.header}>
-        <h3 className={styles.sectionTitle}>Productos Relacionados</h3>
-        <p className={styles.subtitle}>Explora nuestro ecosistema</p>
+        <h3 className={styles.sectionTitle}>
+          {translate({ id: 'docProductAds.title', message: 'Productos Relacionados' })}
+        </h3>
+        <p className={styles.subtitle}>
+          {translate({ id: 'docProductAds.subtitle', message: 'Explora nuestro ecosistema' })}
+        </p>
       </div>
       <div className={styles.productsList}>
         {relatedProducts.map((product) => (

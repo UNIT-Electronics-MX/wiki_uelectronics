@@ -369,5 +369,93 @@
   },
   "homepage.collaborate.desc": {
     "message": "Engage with the community and share your expertise."
+  },
+  "homepage.featuredProducts": {
+    "message": "Featured Products",
+    "description": "Featured products section title on homepage"
+  },
+  "docProductAds.title": {
+    "message": "Related Products",
+    "description": "Related products section title"
+  },
+  "docProductAds.subtitle": {
+    "message": "Explore our ecosystem",
+    "description": "Related products section subtitle"
+  },
+  "docProductAds.documentation": {
+    "message": "Documentation",
+    "description": "Documentation button text"
+  },
+  "docProductAds.buy": {
+    "message": "Buy",
+    "description": "Buy button text"
+  },
+  "products.featured.title": {
+    "message": "Featured Products",
+    "description": "Featured products section title"
+  },
+  "products.featured.subtitle": {
+    "message": "Discover our latest innovations",
+    "description": "Featured products section subtitle"
+  },
+  "products.dualOne.title": {
+    "message": "UNIT Dual ONE",
+    "description": "UNIT Dual ONE product name"
+  },
+  "products.dualOne.description": {
+    "message": "New dual-core ESP32 development board",
+    "description": "UNIT Dual ONE product description"
+  },
+  "products.dualOne.docDescription": {
+    "message": "Dual-core development platform",
+    "description": "UNIT Dual ONE documentation description"
+  },
+  "products.cocketNova.title": {
+    "message": "COCKET NOVA",
+    "description": "COCKET NOVA product name"
+  },
+  "products.cocketNova.description": {
+    "message": "Next-generation development platform",
+    "description": "COCKET NOVA product description"
+  },
+  "products.cocketNova.docDescription": {
+    "message": "Development with CH552G",
+    "description": "COCKET NOVA documentation description"
+  },
+  "products.modules.title": {
+    "message": "UNIT Modules",
+    "description": "UNIT Modules product name"
+  },
+  "products.modules.description": {
+    "message": "Complete modular ecosystem for projects",
+    "description": "UNIT Modules product description"
+  },
+  "products.modules.docDescription": {
+    "message": "Compatible sensors and modules",
+    "description": "UNIT Modules documentation description"
+  },
+  "products.modules.price": {
+    "message": "From $9.99",
+    "description": "UNIT Modules price"
+  },
+  "products.badge.new": {
+    "message": "NEW",
+    "description": "New product badge"
+  },
+  "products.badge.featured": {
+    "message": "FEATURED",
+    "description": "Featured product badge"
+  },
+  "products.badge.popular": {
+    "message": "POPULAR",
+    "description": "Popular product badge"
+  },
+  "products.viewMore": {
+    "message": "Learn More",
+    "description": "View more button text"
+  },
+  "products.viewFullStore": {
+    "message": "View Full Store",
+    "description": "View full store button text"
   }
 }

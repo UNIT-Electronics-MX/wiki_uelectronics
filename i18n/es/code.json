@@ -372,15 +372,15 @@
       "message": "Comparte tu experiencia con la comunidad."
     },
     "homepage.slide1.title": {
-      "message": "Pulsar IoT Development Board",
+      "message": "UNIT Dual ONE",
       "description": "Title for the first carousel slide"
     },
     "homepage.slide1.subtitle": {
-      "message": "Solución avanzada ESP32-S3 para proyectos IoT",
+      "message": "Solución avanzada ESP32+RP2040 para proyectos IoT",
       "description": "Subtitle for the first carousel slide"
     },
     "homepage.slide1.button": {
-      "message": "Explorar Pulsar",
+      "message": "Explorar Dual ONE",
       "description": "Button text for the first carousel slide"
     },
     "homepage.slide2.title": {
@@ -478,6 +478,94 @@
     "homepage.cta.documentation": {
       "message": "Ver Documentación",
       "description": "CTA documentation button"
+    },
+    "homepage.featuredProducts": {
+      "message": "Productos Destacados",
+      "description": "Featured products section title on homepage"
+    },
+    "docProductAds.title": {
+      "message": "Productos Relacionados",
+      "description": "Related products section title"
+    },
+    "docProductAds.subtitle": {
+      "message": "Explora nuestro ecosistema",
+      "description": "Related products section subtitle"
+    },
+    "docProductAds.documentation": {
+      "message": "Documentación",
+      "description": "Documentation button text"
+    },
+    "docProductAds.buy": {
+      "message": "Comprar",
+      "description": "Buy button text"
+    },
+    "products.featured.title": {
+      "message": "Productos Destacados",
+      "description": "Featured products section title"
+    },
+    "products.featured.subtitle": {
+      "message": "Descubre nuestras últimas innovaciones",
+      "description": "Featured products section subtitle"
+    },
+    "products.dualOne.title": {
+      "message": "UNIT Dual ONE",
+      "description": "UNIT Dual ONE product name"
+    },
+    "products.dualOne.description": {
+      "message": "Nuevo board de desarrollo dual-core ESP32",
+      "description": "UNIT Dual ONE product description"
+    },
+    "products.dualOne.docDescription": {
+      "message": "Plataforma de desarrollo dual-core",
+      "description": "UNIT Dual ONE documentation description"
+    },
+    "products.cocketNova.title": {
+      "message": "COCKET NOVA",
+      "description": "COCKET NOVA product name"
+    },
+    "products.cocketNova.description": {
+      "message": "Plataforma de desarrollo de próxima generación",
+      "description": "COCKET NOVA product description"
+    },
+    "products.cocketNova.docDescription": {
+      "message": "Desarrollo con CH552G",
+      "description": "COCKET NOVA documentation description"
+    },
+    "products.modules.title": {
+      "message": "Módulos UNIT",
+      "description": "UNIT Modules product name"
+    },
+    "products.modules.description": {
+      "message": "Ecosistema modular completo para proyectos",
+      "description": "UNIT Modules product description"
+    },
+    "products.modules.docDescription": {
+      "message": "Sensores y módulos compatibles",
+      "description": "UNIT Modules documentation description"
+    },
+    "products.modules.price": {
+      "message": "Desde $9.99",
+      "description": "UNIT Modules price"
+    },
+    "products.badge.new": {
+      "message": "NUEVO",
+      "description": "New product badge"
+    },
+    "products.badge.featured": {
+      "message": "DESTACADO",
+      "description": "Featured product badge"
+    },
+    "products.badge.popular": {
+      "message": "POPULAR",
+      "description": "Popular product badge"
+    },
+    "products.viewMore": {
+      "message": "Ver Más",
+      "description": "View more button text"
+    },
+    "products.viewFullStore": {
+      "message": "Ver Tienda Completa",
+      "description": "View full store button text"
     },
     "homepage.cta.shop": {
       "message": "Visitar Tienda",
