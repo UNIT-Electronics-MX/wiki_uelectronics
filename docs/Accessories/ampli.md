@@ -2,6 +2,7 @@
 sidebar_position: 1
 ---
 
+import InlineProductAds from '@site/src/components/InlineProductAds';
 
 # PAM8403 Audio Amplifier 3W
 
@@ -25,11 +26,13 @@ The **UNIT PAM8403 Audio Amplifier 3W** is a Class D audio amplification module 
 - **Protection:** Includes overheating and short-circuit protection.
 - **Operating temperature:** -40°C to 85°C, suitable for industrial applications and extreme environments.
 
+<InlineProductAds />
+
 # Datasheet
 
 For detailed technical information about the PAM8403 module, refer to the following document:
 
-👉 [Download the PAM8403 Datasheet](https://www.mouser.com/ds/2/115/PAM8403-247318.pdf?srsltid=AfmBOorzunVHYR1wIITzAZVypkFj5LkC2lR0cZLh1zfklQpAhanR1Qrl)
+[Download the PAM8403 Datasheet](https://www.mouser.com/ds/2/115/PAM8403-247318.pdf?srsltid=AfmBOorzunVHYR1wIITzAZVypkFj5LkC2lR0cZLh1zfklQpAhanR1Qrl)
 
 ## Pinout Table
 
@@ -46,7 +49,7 @@ The following table details the main connections for the **UNIT PAM8403** amplif
 
 For a detailed example of how to use the **UNIT PAM8403** with the **ESP32** microcontroller, check out the usage guide at the following link:
 
-👉 [UNIT PAM8403 Usage Guide with DualMCU ESP32](https://github.com/UNIT-Electronics/VoiceAmp_Synth_ESP32)
+[UNIT PAM8403 Usage Guide with DualMCU ESP32](https://github.com/UNIT-Electronics/VoiceAmp_Synth_ESP32)
 
 ## Purchase Links
 

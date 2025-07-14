@@ -1,0 +1,37 @@
+.docPageWrapper {
+  display: flex;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.docContentWrapper {
+  flex: 1;
+  min-width: 0; /* Permite que el contenido se encoja */
+}
+
+.docAdsSidebar {
+  width: 300px;
+  margin-left: 2rem;
+  flex-shrink: 0;
+}
+
+/* Responsive: ocultar publicidad en tablets y móviles */
+@media screen and (max-width: 1200px) {
+  .docAdsSidebar {
+    display: none;
+  }
+}
+
+/* Ajustar el layout para que no se vea apretado */
+@media screen and (min-width: 1201px) {
+  .docPageWrapper {
+    gap: 2rem;
+  }
+}
+
+/* Ajustar el contenedor principal para dar más espacio */
+@media screen and (min-width: 1400px) {
+  .docPageWrapper {
+    max-width: 1400px;
+  }
+}

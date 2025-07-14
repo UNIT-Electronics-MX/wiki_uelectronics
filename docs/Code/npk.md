@@ -6,10 +6,10 @@ sidebar_position: 2
 
 This MicroPython library allows communication with the RS485 soil sensor to read:
 
-- 🌱 Soil Humidity (%)
-- 🌡️ Temperature (°C)
-- ⚡ Electrical Conductivity (EC, µS/cm)
-- 🧪 pH Level
+- Soil Humidity (%)
+- Temperature (°C)
+- Electrical Conductivity (EC, µS/cm)
+- pH Level
 
 ## Features
 

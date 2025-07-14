@@ -25,9 +25,9 @@ El módulo  buzzer es un diseño compacto y fácil de usar, enfocado a sistemas 
 
 ## Características
 
-- 🧩 Interfaz estándar de 3 pines: `+5V`, `Señal`, `GND`
-- 🔊 Buzzer integrado (activo o pasivo)
-- 📏 Tamaño compacto con agujero de montaje
+- Interfaz estándar de 3 pines: `+5V`, `Señal`, `GND`
+- Buzzer integrado (activo o pasivo)
+- Tamaño compacto con agujero de montaje
 
 
 ## Aplicaciones
@@ -40,13 +40,13 @@ El módulo  buzzer es un diseño compacto y fácil de usar, enfocado a sistemas 
 - Sistema de alerta para drones o robots autónomos
 
 
-## 🔄 Sistema de Prioridad de Alertas (Opcional) 
-- 🔴 Tono continuo → Falla crítica
-- 🟡 Tono intermitente → Advertencia o evento moderado
-- 🔵 Pitido corto → Confirmación de evento o retroalimentación
+## Sistema de Prioridad de Alertas (Opcional) 
+- **Tono continuo** → Falla crítica
+- **Tono intermitente** → Advertencia o evento moderado
+- **Pitido corto** → Confirmación de evento o retroalimentación
 
 
-> 🔧 Nota: utiliza señales **PWM** para generar tonos.
+> **Nota:** utiliza señales **PWM** para generar tonos.
 <div style={{ textAlign: "center" }}>
 
     <img src="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_buzzer_module/refs/heads/main/hardware/resources/sonido.gif" alt="Icono de Sonido" width="100"/>

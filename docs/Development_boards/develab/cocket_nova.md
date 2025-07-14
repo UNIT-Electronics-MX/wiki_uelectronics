@@ -120,4 +120,4 @@ The material was assembled by the UNIT Electronics Team.
 
 <hr/>
 
-⌨️ With ❤️ by <a href="www.uelectronics.com">UNIT Electronics </a>
+With love by <a href="www.uelectronics.com">UNIT Electronics </a>

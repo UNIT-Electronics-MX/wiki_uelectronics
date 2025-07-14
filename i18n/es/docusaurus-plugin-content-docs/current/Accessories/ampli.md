@@ -28,7 +28,7 @@ El **AMPLIFICADOR DE AUDIO UNIT PAM8403 3W** es un módulo de amplificación de 
 
 Para obtener información técnica detallada sobre el módulo PAM8403, consulta el siguiente documento:
 
-👉 [Descargar la Hoja de Datos del PAM8403](https://www.mouser.com/ds/2/115/PAM8403-247318.pdf?srsltid=AfmBOorzunVHYR1wIITzAZVypkFj5LkC2lR0cZLh1zfklQpAhanR1Qrl)
+[Descargar la Hoja de Datos del PAM8403](https://www.mouser.com/ds/2/115/PAM8403-247318.pdf?srsltid=AfmBOorzunVHYR1wIITzAZVypkFj5LkC2lR0cZLh1zfklQpAhanR1Qrl)
 
 ## Tabla de Conexiones
 
@@ -45,7 +45,7 @@ La siguiente tabla detalla las conexiones principales para el **AMPLIFICADOR UNI
 
 Para un ejemplo detallado de cómo utilizar el **AMPLIFICADOR UNIT PAM8403** con el microcontrolador **ESP32**, consulta la guía de uso en el siguiente enlace:
 
-👉 [Guía de Uso del UNIT PAM8403 con DualMCU ESP32](https://github.com/UNIT-Electronics/VoiceAmp_Synth_ESP32)
+[Guía de Uso del UNIT PAM8403 con DualMCU ESP32](https://github.com/UNIT-Electronics/VoiceAmp_Synth_ESP32)
 
 ## Enlaces de Compra
 

@@ -33,7 +33,7 @@ La DualMCU cuenta con selector manual para elegir entre el microcontrolador ESP3
 :::
 
 
-### Interfaz de configuración para actualizar MicroPython 👋
+### Interfaz de configuración para actualizar MicroPython
 Antes de comenzar, se recomienda realizar la siguiente configuración:
 
  - [Instalación de Thonny IDE](https://thonny.org/)
@@ -44,7 +44,7 @@ Una vez que hayas instalado Thonny IDE, sigue los siguientes pasos:
 
   ![Interpeter](https://raw.githubusercontent.com/UNIT-Electronics/DualMCU-ESP32-MicroPython/refs/heads/main/img/config_intepeter.png)
 
-### Actualización de firmware (ESP32) 🚀
+### Actualización de firmware (ESP32)
 
 Para poder utilizar MicroPython, es recomendable considerar la actualización. Por lo tanto, es necesario iniciar tu DualMCU ESP32 presionando el botón de FLASH.
 
@@ -120,7 +120,7 @@ Otra forma de instalar MicroPython en la placa **DualMCU-ONE/DualMCU** es median
 
  ![RP2040](https://raw.githubusercontent.com/UNIT-Electronics/DualMCU/refs/heads/main/Docs/RP2040-Boot_button.jpg)
 
-##  Abrir y ejecutar Thonny IDE🛠️
+## Abrir y ejecutar Thonny IDE
 
 Una vez que hayas instalado MicroPython en tu placa **DualMCU-ONE/DualMCU**, puedes abrir Thonny IDE y comenzar a programar en Python.
 

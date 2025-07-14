@@ -6,25 +6,119 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #5a989c;
-  --ifm-color-primary-dark: #495057;
-  --ifm-color-primary-darker: #343a40;
-  --ifm-color-primary-darkest: #212529;
-  --ifm-color-primary-light: #adb5bd;
-  --ifm-color-primary-lighter: #ced4da;
-  --ifm-color-primary-lightest: #dee2e6;
+  /* UNIT Electronics Primary Color Palette - Teal/Cyan */
+  --ifm-color-primary: #2E8B94;
+  --ifm-color-primary-dark: #268289;
+  --ifm-color-primary-darker: #24787F;
+  --ifm-color-primary-darkest: #1E6368;
+  --ifm-color-primary-light: #36949F;
+  --ifm-color-primary-lighter: #3A9EA9;
+  --ifm-color-primary-lightest: #4FB3BE;
+  
+  /* Secondary Color - Complementary Orange */
+  --ifm-color-secondary: #FF7B54;
+  --ifm-color-secondary-dark: #FF6B42;
+  --ifm-color-secondary-darker: #FF5E35;
+  --ifm-color-secondary-darkest: #E5401F;
+  --ifm-color-secondary-light: #FF8A66;
+  --ifm-color-secondary-lighter: #FF9678;
+  --ifm-color-secondary-lightest: #FFB3A0;
+  
+  /* Success Colors - Green */
+  --ifm-color-success: #10B981;
+  --ifm-color-success-dark: #0EA373;
+  --ifm-color-success-darker: #0D9B6D;
+  --ifm-color-success-darkest: #0A7C5A;
+  --ifm-color-success-light: #34C590;
+  --ifm-color-success-lighter: #4ACD9C;
+  --ifm-color-success-lightest: #7DDBB8;
+  
+  /* Warning Colors - Amber */
+  --ifm-color-warning: #F59E0B;
+  --ifm-color-warning-dark: #DC8A0A;
+  --ifm-color-warning-darker: #C77F09;
+  --ifm-color-warning-darkest: #A66808;
+  --ifm-color-warning-light: #F7B32B;
+  --ifm-color-warning-lighter: #F8C24C;
+  --ifm-color-warning-lightest: #FBD888;
+  
+  /* Danger Colors - Red */
+  --ifm-color-danger: #EF4444;
+  --ifm-color-danger-dark: #DC2626;
+  --ifm-color-danger-darker: #B91C1C;
+  --ifm-color-danger-darkest: #991B1B;
+  --ifm-color-danger-light: #F87171;
+  --ifm-color-danger-lighter: #FCA5A5;
+  --ifm-color-danger-lightest: #FECACA;
+  
+  /* Info Colors - Blue */
+  --ifm-color-info: #3B82F6;
+  --ifm-color-info-dark: #2563EB;
+  --ifm-color-info-darker: #1D4ED8;
+  --ifm-color-info-darkest: #1E40AF;
+  --ifm-color-info-light: #60A5FA;
+  --ifm-color-info-lighter: #93C5FD;
+  --ifm-color-info-lightest: #BFDBFE;
+  
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(108, 117, 125, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(46, 139, 148, 0.1);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #a1c6eb;
-  --ifm-color-primary-dark: #adb5bd;
-  --ifm-color-primary-darker: #6c757d;
-  --ifm-color-primary-darkest: #8c8e91;
-  --ifm-color-primary-light: #dee2e6;
-  --ifm-color-primary-lighter: #e9ecef;
-  --ifm-color-primary-lightest: #f8f9fa;
-  --docusaurus-highlighted-code-line-bg: rgba(147, 156, 163, 0.3);
+  /* UNIT Electronics Dark Mode Colors - Lighter teal for better readability */
+  --ifm-color-primary: #4FB3BE;
+  --ifm-color-primary-dark: #3A9EA9;
+  --ifm-color-primary-darker: #36949F;
+  --ifm-color-primary-darkest: #2E8B94;
+  --ifm-color-primary-light: #5FBCC7;
+  --ifm-color-primary-lighter: #6FC5D0;
+  --ifm-color-primary-lightest: #8FD4DD;
+  
+  /* Secondary colors for dark mode */
+  --ifm-color-secondary: #FF9678;
+  --ifm-color-secondary-dark: #FF8A66;
+  --ifm-color-secondary-darker: #FF7B54;
+  --ifm-color-secondary-darkest: #FF6B42;
+  --ifm-color-secondary-light: #FFA88A;
+  --ifm-color-secondary-lighter: #FFB3A0;
+  --ifm-color-secondary-lightest: #FFC5B8;
+  
+  /* Success colors for dark mode */
+  --ifm-color-success: #34C590;
+  --ifm-color-success-dark: #10B981;
+  --ifm-color-success-darker: #0EA373;
+  --ifm-color-success-darkest: #0D9B6D;
+  --ifm-color-success-light: #4ACD9C;
+  --ifm-color-success-lighter: #7DDBB8;
+  --ifm-color-success-lightest: #A3E6CC;
+  
+  /* Warning colors for dark mode */
+  --ifm-color-warning: #F7B32B;
+  --ifm-color-warning-dark: #F59E0B;
+  --ifm-color-warning-darker: #DC8A0A;
+  --ifm-color-warning-darkest: #C77F09;
+  --ifm-color-warning-light: #F8C24C;
+  --ifm-color-warning-lighter: #FBD888;
+  --ifm-color-warning-lightest: #FCE5A8;
+  
+  /* Danger colors for dark mode */
+  --ifm-color-danger: #F87171;
+  --ifm-color-danger-dark: #EF4444;
+  --ifm-color-danger-darker: #DC2626;
+  --ifm-color-danger-darkest: #B91C1C;
+  --ifm-color-danger-light: #FCA5A5;
+  --ifm-color-danger-lighter: #FECACA;
+  --ifm-color-danger-lightest: #FEE2E2;
+  
+  /* Info colors for dark mode */
+  --ifm-color-info: #60A5FA;
+  --ifm-color-info-dark: #3B82F6;
+  --ifm-color-info-darker: #2563EB;
+  --ifm-color-info-darkest: #1D4ED8;
+  --ifm-color-info-light: #93C5FD;
+  --ifm-color-info-lighter: #BFDBFE;
+  --ifm-color-info-lightest: #DBEAFE;
+  
+  --docusaurus-highlighted-code-line-bg: rgba(79, 179, 190, 0.3);
 }

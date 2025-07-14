@@ -2,6 +2,8 @@
 sidebar_position: 9
 ---
 
+import InlineProductAds from '@site/src/components/InlineProductAds';
+
 # Buzzer Module
 
 
@@ -23,12 +25,13 @@ This module is a compact, easy-to-use **passive** buzzer component designed for 
 
 > **_NOTE:_** The buzzer onboard can generate audible signals for use in **alarms**, **notifications**, **timers**, and **user feedback systems**. Its design includes a pre-mounted drive circuit, enabling direct digital control from microcontroller GPIO pins.
 
+<InlineProductAds />
 
 ## Features
 
-- 🧩 3-pin standard interface: `+5V`, `Signal`, `GND`
-- 🔊 Built-in buzzer (active or passive)
-- 📏 Compact footprint with mounting hole
+- 3-pin standard interface: `+5V`, `Signal`, `GND`
+- Built-in buzzer (active or passive)
+- Compact footprint with mounting hole
 
 
 ## Applications
@@ -41,13 +44,13 @@ This module is a compact, easy-to-use **passive** buzzer component designed for 
 - Autonomous Drone or Robot Alert System
 
 
-## 🔄 Alert Priority System (Optional) 
-- 🔴 Continuous tone → Critical failure
-- 🟡 Intermittent tone → Warning or moderate event
-- 🔵 Short beep → Event confirmation or feedback
+## Alert Priority System (Optional) 
+- **Continuous tone** → Critical failure
+- **Intermittent tone** → Warning or moderate event
+- **Short beep** → Event confirmation or feedback
 
 
-> 🔧 Note: use **PWM signals** to generate tones.
+> **Note:** use **PWM signals** to generate tones.
 <div style={{ textAlign: "center" }}>
 
     <img src="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_buzzer_module/refs/heads/main/hardware/resources/sonido.gif" alt="Sound Icon" width="100"/>

@@ -83,7 +83,7 @@ Este proyecto proporciona firmware para un programador USB basado en el **microc
   </table>
 </div>
 
-## 🔌 Descripción del Hardware
+## Descripción del Hardware
 
 - Microcontrolador: **CH552G / CH552E / CH552P**
 - Interfaz USB Full-Speed (CDC / HID dependiendo del firmware)
@@ -94,9 +94,9 @@ Este proyecto proporciona firmware para un programador USB basado en el **microc
   - **Programador CPLD JTAG** (compatible con Quartus)
 
 
-## 🔧 Perfiles de Firmware
+## Perfiles de Firmware
 
-### 🔹 Firmware de Programador AVR
+### Firmware de Programador AVR
 
 - **Protocolos:** USBasp, SerialUPDI
 - **Dispositivos Objetivo:** ATmega, ATtiny y otros MCUs AVR
@@ -115,7 +115,7 @@ Este proyecto proporciona firmware para un programador USB basado en el **microc
 
 ---
 
-### 🔹 Firmware de Depurador CMSIS-DAP (picoDAP)
+### Firmware de Depurador CMSIS-DAP (picoDAP)
 
 - **Protocolos:** SWD, JTAG (CMSIS-DAP)
 - **Dispositivos Objetivo:** ARM Cortex-M (e.g., STM32, SAM, nRF52)
@@ -133,7 +133,7 @@ Este proyecto proporciona firmware para un programador USB basado en el **microc
 
 ---
 
-### 🔹 Firmware de Programador CPLD (JTAG, Compatible con Quartus)
+### Firmware de Programador CPLD (JTAG, Compatible con Quartus)
 
 - **Dispositivos Objetivo:** Intel/Altera **MAX II (e.g., EPM240)**
 - **Protocolo:** JTAG vía protocolo USB-Blaster
@@ -149,7 +149,7 @@ Este proyecto proporciona firmware para un programador USB basado en el **microc
 
 ---
 
-## 🛠️ Herramientas y Flasheo
+## Herramientas y Flasheo
 
 ### Dependencias
 
@@ -172,7 +172,7 @@ O usar **WCHISPTool** para Windows.
 
 ---
 
-## 📌 Modo Bootloader (CH552)
+## Modo Bootloader (CH552)
 
 Para entrar en modo bootloader USB:
 
@@ -191,7 +191,7 @@ sudo udevadm trigger
 
 ---
 
-## ✅ Resumen de Capacidades del Firmware
+## Resumen de Capacidades del Firmware
 
 | Firmware       | Protocolos         | Objetivos          | Modo USB      | Herramientas Compatibles |
 |----------------|-------------------|---------------------|---------------|---------------------------|

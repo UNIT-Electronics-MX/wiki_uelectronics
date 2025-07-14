@@ -83,7 +83,7 @@ This project provides firmware for a USB-based programmer built on the **CH552 m
 </div>
 
 
-## 🔌 Hardware Overview
+## Hardware Overview
 
 - Microcontroller: **CH552G / CH552E / CH552P**
 - USB Full-Speed Interface (CDC / HID depending on firmware)
@@ -94,9 +94,9 @@ This project provides firmware for a USB-based programmer built on the **CH552 m
   - **CPLD JTAG Programmer** (Quartus-compatible)
 
 
-## 🔧 Firmware Profiles
+## Firmware Profiles
 
-### 🔹 AVR Programmer Firmware
+### AVR Programmer Firmware
 
 - **Protocols:** USBasp, SerialUPDI
 - **Target Devices:** ATmega, ATtiny, and other AVR MCUs
@@ -115,7 +115,7 @@ This project provides firmware for a USB-based programmer built on the **CH552 m
 
 ---
 
-### 🔹 CMSIS-DAP Debugger Firmware (picoDAP)
+### CMSIS-DAP Debugger Firmware (picoDAP)
 
 - **Protocols:** SWD, JTAG (CMSIS-DAP)
 - **Target Devices:** ARM Cortex-M (e.g., STM32, SAM, nRF52)
@@ -132,7 +132,7 @@ This project provides firmware for a USB-based programmer built on the **CH552 m
 
 ---
 
-### 🔹 CPLD Programmer Firmware (JTAG, Quartus-Compatible)
+### CPLD Programmer Firmware (JTAG, Quartus-Compatible)
 
 - **Target Devices:** Intel/Altera **MAX II (e.g., EPM240)**
 - **Protocol:** JTAG via USB-Blaster protocol
@@ -148,7 +148,7 @@ This project provides firmware for a USB-based programmer built on the **CH552 m
 
 ---
 
-## 🛠️ Toolchain & Flashing
+## Toolchain & Flashing
 
 ### Dependencies
 
@@ -171,7 +171,7 @@ Or use **WCHISPTool** for Windows.
 
 ---
 
-## 📌 Bootloader Mode (CH552)
+## Bootloader Mode (CH552)
 
 To enter USB bootloader mode:
 
@@ -190,7 +190,7 @@ sudo udevadm trigger
 
 ---
 
-## ✅ Summary of Firmware Capabilities
+## Summary of Firmware Capabilities
 
 | Firmware       | Protocols         | Targets            | USB Mode      | Tools Supported     |
 |----------------|-------------------|---------------------|---------------|----------------------|

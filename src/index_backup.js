@@ -1,0 +1,211 @@
+import React, { useEffect, useState } from 'react';
+import Layout from '@theme/Layout';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, EffectFade, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
+import styles from './HomePage.module.css';
+import Link from '@docusaurus/Link';
+import Translate, { translate } from '@docusaurus/Translate';
+
+// Lista de imágenes para el carrusel con información adicional
+const carouselSlides = [
+  {
+    image: 'https://uelectronics.com/wp-content/uploads/2025/01/UNIT-DUAL-ONE-WEB--scaled.jpg',
+    title: translate({ id: 'homepage.slide1.title', message: 'UNIT Dual ONE' }),
+    subtitle: translate({ id: 'homepage.slide1.subtitle', message: 'Advanced dual-core development board' }),
+    buttonText: translate({ id: 'homepage.slide1.button', message: 'Explore Dual ONE' }),
+    buttonLink: '/docs/Development_boards/DualMCU',
+    overlay: true
+  },
+  {
+    image: 'https://uelectronics.com/wp-content/uploads/2024/10/COCKET-NOVA-web3-scaled.jpg',
+    title: translate({ id: 'homepage.slide2.title', message: 'COCKET NOVA' }),
+    subtitle: translate({ id: 'homepage.slide2.subtitle', message: 'Next-generation development platform' }),
+    buttonText: translate({ id: 'homepage.slide2.button', message: 'Learn More' }),
+    buttonLink: '/docs/Development_boards',
+    overlay: true
+  },
+  {
+    image: 'https://uelectronics.com/wp-content/uploads/2024/08/03-MODULOS-UNIT.jpg',
+    title: translate({ id: 'homepage.slide3.title', message: 'UNIT Modules' }),
+    subtitle: translate({ id: 'homepage.slide3.subtitle', message: 'Modular electronics ecosystem' }),
+    buttonText: translate({ id: 'homepage.slide3.button', message: 'View Modules' }),
+    buttonLink: '/docs/Modules',
+    overlay: true
+  }
+];
+
+// Lista de videos de YouTube
+const youtubeVideos = [
+  {
+    title: "Brazo Robot",
+    url: "https://www.youtube.com/embed/9DHy2TkKxhw"
+  },
+  {
+    title: "Letrero electrónico",
+    url: "https://www.youtube.com/embed/QV1FBynrJjo"
+  },
+];
+
+// Lista de características principales
+const mainFeatures = [
+  {
+    title: translate({ id: 'homepage.feature1.title', message: 'Comprehensive Documentation' }),
+    description: translate({ id: 'homepage.feature1.desc', message: 'Detailed guides, tutorials, and API documentation for all UNIT Electronics products.' }),
+    icon: 'fas fa-book-open',
+    link: '/docs/intro'
+  },
+  {
+    title: translate({ id: 'homepage.feature2.title', message: 'Hardware Ecosystem' }),
+    description: translate({ id: 'homepage.feature2.desc', message: 'Explore our complete range of development boards, modules, and sensors.' }),
+    icon: 'fas fa-microchip',
+    link: '/docs/Development_boards'
+  },
+  {
+    title: translate({ id: 'homepage.feature3.title', message: 'Code Examples' }),
+    description: translate({ id: 'homepage.feature3.desc', message: 'Ready-to-use code samples for Arduino, ESP-IDF, and MicroPython.' }),
+    icon: 'fas fa-code',
+    link: '/docs/Code'
+  },
+  {
+    title: translate({ id: 'homepage.feature4.title', message: 'Community Support' }),
+    description: translate({ id: 'homepage.feature4.desc', message: 'Join our active community for help, discussions, and collaboration.' }),
+    icon: 'fas fa-users',
+    link: 'https://www.hackster.io/unit-electronics/discussion'
+  }
+];
+
+// Sección de Información Adicional
+const extraInfoItems = [
+  {
+    title: translate({ id: 'homepage.advancedTutorials', message: 'Advanced Tutorials' }),
+    description: translate({ id: 'homepage.advancedTutorials.desc', message: 'Dive deeper into complex topics with advanced electronics guides.' }),
+    link: '/docs/intro',
+    buttonText: translate({ id: 'homepage.learnMore', message: 'Learn More' }),
+    icon: 'fas fa-graduation-cap'
+  },
+  {
+    title: translate({ id: 'homepage.communityForum', message: 'Community Forum' }),
+    description: translate({ id: 'homepage.communityForum.desc', message: 'Join discussions and ask questions in our interactive community.' }),
+    link: 'https://www.hackster.io/unit-electronics/discussion',
+    buttonText: translate({ id: 'homepage.visitForum', message: 'Visit Forum' }),
+    icon: 'fas fa-comments'
+  },
+  {
+    title: translate({ id: 'homepage.openSourceProjects', message: 'Open-Source Projects' }),
+    description: translate({ id: 'homepage.openSourceProjects.desc', message: 'Explore and contribute to open-source electronics projects.' }),
+    link: 'https://github.com/UNIT-Electronics',
+    buttonText: translate({ id: 'homepage.github', message: 'GitHub' }),
+    icon: 'fab fa-github'
+  }
+];
+
+function HomePage() {
+  const [theme, setTheme] = useState('light');
+
+  useEffect(() => {
+    const htmlElement = document.documentElement;
+    const currentTheme = htmlElement.getAttribute('data-theme');
+    setTheme(currentTheme || 'light');
+  }, []);
+
+  return (
+    <Layout 
+      title={translate({ id: 'homepage.title', message: 'Wiki Unit Electronics' })} 
+      description={translate({ id: 'homepage.description', message: 'Explore electronics knowledge with our comprehensive platform.' })}
+    >
+      {/* Carrusel de Imágenes */}
+      <section className={clsx(styles.carouselSection)}>
+        <Swiper
+          modules={[Autoplay, Pagination]}
+          loop
+          autoplay={{ delay: 5000, disableOnInteraction: false }}
+          slidesPerView={1}
+          pagination={{ clickable: true }}
+          className={styles.carouselContainer}
+        >
+          {images.map((src, index) => (
+            <SwiperSlide key={index} className={styles.carouselSlide}>
+              <div className={styles.imageContainer}>
+                <img src={src} alt={`Slide ${index + 1}`} className={styles.carouselImage} />
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </section>
+
+      <main>
+        {/* Sección de Videos de YouTube */}
+        <section className={styles.videoSection}>
+          <div className="container">
+            <h2><Translate id="homepage.featuredVideos">Featured Videos</Translate></h2>
+            <div className={styles.videoGrid}>
+              {youtubeVideos.map((video, index) => (
+                <div key={index} className={styles.videoCard}>
+                  <iframe
+                    src={video.url}
+                    title={video.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className={styles.videoIframe}
+                  ></iframe>
+                  <h3>{video.title}</h3>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Sección de Información Adicional */}
+        <section className={styles.extraInfo}>
+          <div className="container">
+            <h2><Translate id="homepage.discoverMore">Discover More</Translate></h2>
+            <div className={styles.infoGrid}>
+              {extraInfoItems.map((item, index) => (
+                <div key={index} className={styles.infoCard}>
+                  <div className={styles.iconContainer}>
+                    <i className={item.icon}></i>
+                  </div>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                  <Link to={item.link} className="button button--primary">
+                    {item.buttonText}
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.features}>
+          <div className="container">
+            <h2><Translate id="homepage.explorePlatform">Explore Our Platform</Translate></h2>
+            <div className={styles.centeredRow}>
+              <div className={clsx(styles.featureItem)}>
+                <i className="fas fa-book" />
+                <h3><Translate id="homepage.learn">Learn</Translate></h3>
+                <p><Translate id="homepage.learn.desc">Access comprehensive guides and tutorials for all skill levels.</Translate></p>
+              </div>
+              <div className={clsx(styles.featureItem)}>
+                <i className="fas fa-tools" />
+                <h3><Translate id="homepage.build">Build</Translate></h3>
+                <p><Translate id="homepage.build.desc">Hands-on projects to apply and solidify your knowledge.</Translate></p>
+              </div>
+              <div className={clsx(styles.featureItem)}>
+                <i className="fas fa-users" />
+                <h3><Translate id="homepage.collaborate">Collaborate</Translate></h3>
+                <p><Translate id="homepage.collaborate.desc">Engage with the community and share your expertise.</Translate></p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </Layout>
+  );
+}
+
+export default HomePage;

@@ -9,8 +9,6 @@ import 'swiper/css/effect-fade';
 import styles from './HomePage.module.css';
 import Link from '@docusaurus/Link';
 import Translate, { translate } from '@docusaurus/Translate';
-import ProductAds from '@site/src/components/ProductAds';
-import PromotionBanner from '@site/src/components/PromotionBanner';
 
 // Lista de imágenes para el carrusel con información adicional
 const carouselSlides = [
@@ -201,37 +199,25 @@ function HomePage() {
       </section>
 
       <main>
-        {/* Sección de Publicidad de Productos */}
-        <section className={styles.productAdsSection}>
+        {/* Sección de Características Principales */}
+        <section className={styles.featuresSection}>
           <div className="container">
-            <div className={styles.productAdsGrid}>
-              <div className={styles.productAdsColumn}>
-                <ProductAds />
-              </div>
-              <div className={styles.contentColumn}>
-                {/* Sección de Características Principales */}
-                <section className={styles.featuresSection}>
-                  <div className="container">
-                    <h2 className={styles.sectionTitle}>
-                      <Translate id="homepage.whyChooseUnit">Why Choose UNIT Electronics?</Translate>
-                    </h2>
-                    <div className={styles.featuresGrid}>
-                      {mainFeatures.map((feature, index) => (
-                        <div key={index} className={styles.featureCard}>
-                          <div className={styles.featureIcon}>
-                            <i className={feature.icon}></i>
-                          </div>
-                          <h3 className={styles.featureTitle}>{feature.title}</h3>
-                          <p className={styles.featureDescription}>{feature.description}</p>
-                          <Link to={feature.link} className="button button--outline button--primary">
-                            <Translate id="homepage.exploreMore">Explore More</Translate>
-                          </Link>
-                        </div>
-                      ))}
-                    </div>
+            <h2 className={styles.sectionTitle}>
+              <Translate id="homepage.whyChooseUnit">Why Choose UNIT Electronics?</Translate>
+            </h2>
+            <div className={styles.featuresGrid}>
+              {mainFeatures.map((feature, index) => (
+                <div key={index} className={styles.featureCard}>
+                  <div className={styles.featureIcon}>
+                    <i className={feature.icon}></i>
                   </div>
-                </section>
-              </div>
+                  <h3 className={styles.featureTitle}>{feature.title}</h3>
+                  <p className={styles.featureDescription}>{feature.description}</p>
+                  <Link to={feature.link} className="button button--outline button--primary">
+                    <Translate id="homepage.exploreMore">Explore More</Translate>
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -285,9 +271,6 @@ function HomePage() {
           </div>
         </section>
       </main>
-      
-      {/* Banner promocional flotante - solo desktop */}
-      <PromotionBanner />
     </Layout>
   );
 }

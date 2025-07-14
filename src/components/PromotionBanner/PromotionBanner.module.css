@@ -1,0 +1,99 @@
+.floatingBanner {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  max-width: 280px;
+  animation: slideInUp 0.5s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.bannerContent {
+  background: var(--gradient-primary);
+  color: white;
+  padding: 1rem;
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow-large);
+  position: relative;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-bottom: 0.75rem;
+}
+
+.text strong {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.text small {
+  opacity: 0.9;
+  font-size: 0.8rem;
+}
+
+.ctaButton {
+  background: white;
+  color: var(--ifm-color-primary);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius-sm);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.ctaButton:hover {
+  background: var(--unit-color-gray-100);
+  color: var(--ifm-color-primary-dark);
+  text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+.closeButton {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  line-height: 1;
+}
+
+.closeButton:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Asegurar que no aparezca en móvil */
+@media screen and (max-width: 996px) {
+  .floatingBanner {
+    display: none;
+  }
+}

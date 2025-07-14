@@ -6,10 +6,10 @@ sidebar_position: 2
 
 Esta biblioteca para MicroPython permite la comunicación con el sensor de suelo RS485 para leer:
 
-- 🌱 Humedad del suelo (%)
-- 🌡️ Temperatura (°C)
-- ⚡ Conductividad eléctrica (CE, µS/cm)
-- 🧪 Nivel de pH
+- Humedad del suelo (%)
+- Temperatura (°C)
+- Conductividad eléctrica (CE, µS/cm)
+- Nivel de pH
 
 ## Características
 

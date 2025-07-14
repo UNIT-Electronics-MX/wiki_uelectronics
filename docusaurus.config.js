@@ -121,11 +121,11 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: '📚 Documentation',
+            label: 'Documentation',
           },
-          {to: '/blog', label: '📰 Blog', position: 'left'},
-          {to: 'https://uelectronics.com/', label: '🛒 Shop', position: 'left'},
-          {to: 'https://www.hackster.io/unit-electronics/discussion', label: '💬 Community', position: 'right'},
+          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: 'https://uelectronics.com/', label: 'Shop', position: 'left'},
+          {to: 'https://www.hackster.io/unit-electronics/discussion', label: 'Community', position: 'right'},
          
 
           {
@@ -155,15 +155,15 @@ const config = {
               },
               {
                 label: 'Development Boards',
-                to: '/docs/Development_boards',
+                to: '/docs/category/unit---development-boards',
               },
               {
                 label: 'Modules & Sensors',
-                to: '/docs/Modules',
+                to: '/docs/category/unit---modules',
               },
               {
                 label: 'Code Examples',
-                to: '/docs/Code',
+                to: '/docs/category/unit---libraries',
               },
             ],
           },
@@ -210,7 +210,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} UNIT Electronics. Built with 💙 by the UNIT team.`,
+        copyright: `Copyright © ${new Date().getFullYear()} UNIT Electronics. Built with love by the UNIT team.`,
       },
       prism: {
         theme: prismThemes.github,
