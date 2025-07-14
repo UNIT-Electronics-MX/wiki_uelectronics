@@ -1,0 +1,8 @@
+{
+  "label": "DevLab development boards",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "DevLab Line hardware design and development"
+  }
+}

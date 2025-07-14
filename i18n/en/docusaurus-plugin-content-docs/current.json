@@ -23,17 +23,21 @@
     "message": "DualMCU Development boards",
     "description": "The label for category DualMCU Development boards in sidebar tutorialSidebar"
   },
+  "sidebar.tutorialSidebar.category.DevLab Development boards": {
+    "message": "DevLab development boards",
+    "description": "The label for category DevLab Development boards in sidebar tutorialSidebar"
+  },
   "sidebar.tutorialSidebar.category.DualMCU Development boards.link.generated-index.description": {
     "message": "DualMCU Line hardware design and development",
     "description": "The generated-index page description for category DualMCU Development boards in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Nano Development boards": {
-    "message": "Nano Development boards",
-    "description": "The label for category Nano Development boards in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Pulsar Development boards": {
+    "message": "Pulsar Development boards",
+    "description": "The label for category Pulsar Development boards in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Nano Development boards.link.generated-index.description": {
-    "message": "Nano Development boards hardware design and development",
-    "description": "The generated-index page description for category Nano Development boards in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Pulsar Development boards.link.generated-index.description": {
+    "message": "Pulsar Development boards hardware design and development",
+    "description": "The generated-index page description for category Pulsar Development boards in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.UNIT - Modules": {
     "message": "UNIT - Modules",
@@ -54,6 +58,10 @@
   "sidebar.tutorialSidebar.category.UNIT - Firmware": {
     "message": "UNIT - Firmware",
     "description": "The label for category UNIT - Firmware in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.UNIT - Sensors": {
+    "message": "UNIT - Sensors",
+    "description": "The label for category UNIT - Sensors in sidebar tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.UNIT - Firmware.link.generated-index.description": {
     "message": "Firmware software design and development",

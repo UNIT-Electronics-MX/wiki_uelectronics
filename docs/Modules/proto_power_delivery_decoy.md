@@ -1,3 +1,6 @@
+---
+sidebar_position: 4
+---
 # unit_proto_power_delivery_decoy_ch224k
 
 ## Overview

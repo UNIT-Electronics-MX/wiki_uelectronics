@@ -129,15 +129,3 @@ For setup and initial projects, refer to the [Getting Started Guide](https://uni
 
 ---
 
-
-<!-- 
-## Contributions
-
-We welcome your contributions! Please review our [Contribution Guidelines](CONTRIBUTING.md) before submitting your pull requests. -->
-
----
-
-## License
-
-This project is distributed under the [MIT License](https://github.com/UNIT-Electronics/DualMCU-ONE/blob/main/LICENSE).
-

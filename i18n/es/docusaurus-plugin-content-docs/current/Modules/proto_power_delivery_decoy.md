@@ -1,5 +1,5 @@
 ---
-title: UNIT Proto Power Delivery Decoy CH224K
+title: Proto Power Delivery Decoy CH224K
 ---
 
 import useBaseUrl from '@docusaurus/useBaseUrl';

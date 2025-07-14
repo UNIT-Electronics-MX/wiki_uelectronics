@@ -27,13 +27,17 @@
     "message": "Diseño y desarrollo del hardware de la línea DualMCU",
     "description": "La descripción de la página de índice generado para la categoría de placas de desarrollo DualMCU en la barra lateral tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Nano Development boards": {
-    "message": "Placas de desarrollo Nano",
-    "description": "La etiqueta para la categoría de placas de desarrollo Nano en la barra lateral tutorialSidebar"
+    "sidebar.tutorialSidebar.category.DevLab development boards": {
+    "message": "DevLab Placas de desarrollo",
+    "description": "La etiqueta para la categoría DevLab Placas de desarrollo en la barra lateral tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Nano Development boards.link.generated-index.description": {
-    "message": "Diseño y desarrollo del hardware de las placas de desarrollo Nano",
-    "description": "La descripción de la página de índice generado para la categoría de placas de desarrollo Nano en la barra lateral tutorialSidebar"
+  "sidebar.tutorialSidebar.category.Pulsar Development boards": {
+    "message": "Placas de desarrollo Pulsar",
+    "description": "La etiqueta para la categoría de placas de desarrollo Pulsar en la barra lateral tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Pulsar Development boards.link.generated-index.description": {
+    "message": "Diseño y desarrollo del hardware de las placas de desarrollo Pulsar",
+    "description": "La descripción de la página de índice generado para la categoría de placas de desarrollo Pulsar en la barra lateral tutorialSidebar"
   },
   "sidebar.tutorialSidebar.category.UNIT - Modules": {
     "message": "UNIT - Módulos",
@@ -54,6 +58,10 @@
   "sidebar.tutorialSidebar.category.UNIT - Firmware": {
     "message": "UNIT - Firmware",
     "description": "La etiqueta para la categoría UNIT - Firmware en la barra lateral tutorialSidebar"
+  },
+    "sidebar.tutorialSidebar.category.UNIT - Sensors": {
+    "message": "UNIT - Sensores",
+    "description": "The label for category UNIT - Tutoriales para la categoría UNIT - Sensores en la barra lateral tutorialSidebar"
   },
 
   "sidebar.tutorialSidebar.category.UNIT - Firmware.link.generated-index.description": {

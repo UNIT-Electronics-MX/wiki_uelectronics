@@ -10,8 +10,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Wiki',
-  tagline: 'Dinosaurs are cool',
+  title: 'UNIT Electronics Wiki',
+  tagline: 'Innovative Electronics Solutions for Modern Development',
   favicon: 'img/1.png',
 
   url: 'https://UNIT-Electronics-MX.github.io', // Dirección de tu sitio
@@ -92,30 +92,48 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/1.png',
+      metadata: [
+        {name: 'keywords', content: 'electronics, development, arduino, esp32, modules, sensors, iot'},
+        {name: 'description', content: 'Comprehensive documentation for UNIT Electronics products - Development boards, modules, sensors, and IoT solutions'},
+      ],
+      headTags: [
+        {
+          tagName: 'link',
+          attributes: {
+            rel: 'stylesheet',
+            href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css',
+            crossorigin: 'anonymous',
+          },
+        },
+      ],
       navbar: {
-        title: '',
+        title: 'UNIT Electronics',
+        hideOnScroll: true,
 
         logo: {
-          alt: 'My Site Logo',
+          alt: 'UNIT Electronics Logo',
           src: 'img/1.png',
-
+          width: 32,
+          height: 32,
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Development',
+            label: '📚 Documentation',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
-          {to: 'https://uelectronics.com/', label: 'UNIT Shop', position: 'left'},
-          {to: 'https://www.hackster.io/unit-electronics/discussion', label: 'Forums', position: 'right'},
+          {to: '/blog', label: '📰 Blog', position: 'left'},
+          {to: 'https://uelectronics.com/', label: '🛒 Shop', position: 'left'},
+          {to: 'https://www.hackster.io/unit-electronics/discussion', label: '💬 Community', position: 'right'},
          
 
           {
             href: 'https://github.com/UNIT-Electronics-MX/wiki_uelectronics?tab=readme-ov-file',
             label: 'GitHub',
             position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub repository',
           },
          
 
@@ -129,11 +147,23 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Getting Started',
                 to: '/docs/intro',
+              },
+              {
+                label: 'Development Boards',
+                to: '/docs/Development_boards',
+              },
+              {
+                label: 'Modules & Sensors',
+                to: '/docs/Modules',
+              },
+              {
+                label: 'Code Examples',
+                to: '/docs/Code',
               },
             ],
           },
@@ -141,17 +171,21 @@ const config = {
             title: 'Community',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Hackster.io Forum',
+                href: 'https://www.hackster.io/unit-electronics/discussion',
               },
-              // {
-              //   label: 'Discord',
-              //   href: 'https://discordapp.com/invite/docusaurus',
-              // },
-              // {
-              //   label: 'X',
-              //   href: 'https://x.com/docusaurus',
-              // },
+              {
+                label: 'YouTube Channel',
+                href: 'https://www.youtube.com/@UNITElectronics',
+              },
+              {
+                label: 'Instagram',
+                href: 'https://www.instagram.com/unit_electronics/',
+              },
+              {
+                label: 'LinkedIn',
+                href: 'https://www.linkedin.com/company/unit-electronics',
+              },
             ],
           },
           {
@@ -162,13 +196,21 @@ const config = {
                 to: '/blog',
               },
               {
+                label: 'Shop',
+                href: 'https://uelectronics.com/',
+              },
+              {
                 label: 'GitHub',
-                href: 'https://github.com/UNIT-Electronics',
+                href: 'https://github.com/UNIT-Electronics-MX',
+              },
+              {
+                label: 'Support',
+                href: 'mailto:contacto@uelectronics.com',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} UNIT Electronics`,
+        copyright: `Copyright © ${new Date().getFullYear()} UNIT Electronics. Built with 💙 by the UNIT team.`,
       },
       prism: {
         theme: prismThemes.github,

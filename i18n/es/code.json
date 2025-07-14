@@ -370,7 +370,133 @@
     },
     "homepage.collaborate.desc": {
       "message": "Comparte tu experiencia con la comunidad."
+    },
+    "homepage.slide1.title": {
+      "message": "Pulsar IoT Development Board",
+      "description": "Title for the first carousel slide"
+    },
+    "homepage.slide1.subtitle": {
+      "message": "Solución avanzada ESP32-S3 para proyectos IoT",
+      "description": "Subtitle for the first carousel slide"
+    },
+    "homepage.slide1.button": {
+      "message": "Explorar Pulsar",
+      "description": "Button text for the first carousel slide"
+    },
+    "homepage.slide2.title": {
+      "message": "COCKET NOVA",
+      "description": "Title for the second carousel slide"
+    },
+    "homepage.slide2.subtitle": {
+      "message": "Plataforma de desarrollo de nueva generación",
+      "description": "Subtitle for the second carousel slide"
+    },
+    "homepage.slide2.button": {
+      "message": "Saber Más",
+      "description": "Button text for the second carousel slide"
+    },
+    "homepage.slide3.title": {
+      "message": "Módulos UNIT",
+      "description": "Title for the third carousel slide"
+    },
+    "homepage.slide3.subtitle": {
+      "message": "Ecosistema de electrónica modular",
+      "description": "Subtitle for the third carousel slide"
+    },
+    "homepage.slide3.button": {
+      "message": "Ver Módulos",
+      "description": "Button text for the third carousel slide"
+    },
+    "homepage.hero.title": {
+      "message": "Wiki UNIT Electronics",
+      "description": "Main hero title"
+    },
+    "homepage.hero.subtitle": {
+      "message": "Tu guía completa para el desarrollo electrónico con soluciones de hardware y software de vanguardia",
+      "description": "Hero subtitle description"
+    },
+    "homepage.hero.getStarted": {
+      "message": "Comenzar",
+      "description": "Get started button"
+    },
+    "homepage.hero.readBlog": {
+      "message": "Leer Blog",
+      "description": "Read blog button"
+    },
+    "homepage.whyChooseUnit": {
+      "message": "¿Por qué elegir UNIT Electronics?",
+      "description": "Why choose section title"
+    },
+    "homepage.feature1.title": {
+      "message": "Documentación Completa",
+      "description": "First feature title"
+    },
+    "homepage.feature1.desc": {
+      "message": "Guías detalladas, tutoriales y documentación de API para todos los productos de UNIT Electronics.",
+      "description": "First feature description"
+    },
+    "homepage.feature2.title": {
+      "message": "Ecosistema de Hardware",
+      "description": "Second feature title"
+    },
+    "homepage.feature2.desc": {
+      "message": "Explora nuestra gama completa de placas de desarrollo, módulos y sensores.",
+      "description": "Second feature description"
+    },
+    "homepage.feature3.title": {
+      "message": "Ejemplos de Código",
+      "description": "Third feature title"
+    },
+    "homepage.feature3.desc": {
+      "message": "Ejemplos de código listos para usar con Arduino, ESP-IDF y MicroPython.",
+      "description": "Third feature description"
+    },
+    "homepage.feature4.title": {
+      "message": "Soporte Comunitario",
+      "description": "Fourth feature title"
+    },
+    "homepage.feature4.desc": {
+      "message": "Únete a nuestra activa comunidad para obtener ayuda, discusiones y colaboración.",
+      "description": "Fourth feature description"
+    },
+    "homepage.exploreMore": {
+      "message": "Explorar Más",
+      "description": "Explore more button text"
+    },
+    "homepage.videoDescription": {
+      "message": "Mira nuestros últimos tutoriales y demostraciones de proyectos",
+      "description": "Video section description"
+    },
+    "homepage.cta.title": {
+      "message": "¿Listo para empezar a construir?",
+      "description": "Call to action title"
+    },
+    "homepage.cta.description": {
+      "message": "Únete a miles de desarrolladores y makers que confían en UNIT Electronics para sus proyectos",
+      "description": "Call to action description"
+    },
+    "homepage.cta.documentation": {
+      "message": "Ver Documentación",
+      "description": "CTA documentation button"
+    },
+    "homepage.cta.shop": {
+      "message": "Visitar Tienda",
+      "description": "CTA shop button"
+    },
+    "homepage.stats.products": {
+      "message": "Productos",
+      "description": "Products statistic label"
+    },
+    "homepage.stats.projects": {
+      "message": "Proyectos Construidos",
+      "description": "Projects statistic label"
+    },
+    "homepage.stats.years": {
+      "message": "Años de Experiencia",
+      "description": "Years statistic label"
+    },
+    "homepage.stats.support": {
+      "message": "Soporte Comunitario",
+      "description": "Support statistic label"
     }
-  
-  
 }

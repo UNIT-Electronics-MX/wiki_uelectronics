@@ -1,42 +1,58 @@
 ---
 sidebar_position: 3
 ---
+# Lumiknob Module 
 
-# Lumiknob Module
+This document describes the functionality and application of the Module Potentiometer Interface designed for SPI-controlled sequential LED activation using the MAX7219. The module enables the sequential control of 32 LEDs via a potentiometer, which modulates the illumination speed.
 
+<!-- <div style={{ textAlign: "center" }}>
+  <img src="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_lumiknob_module/refs/heads/main/hardware/resources/lumiknob.png" width="500" />
+</div> -->
 
-The Module Potentiometer Interface SPI MAX7219 32 LED Sequential is a module that allows you to control 32 LEDs sequentially using a potentiometer. The module uses the SPI protocol to communicate with the MAX7219 LED driver, which controls the LEDs. The potentiometer is used to adjust the speed at which the LEDs are lit up.
-<!-- board in proccess designed -->
-:::caution
-**Board in Development**: The Lumiknob Module is currently in development. The information provided here is subject to change as the design progresses.
+<p align="center">
+  <img
+    src="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_lumiknob_module/refs/heads/main/hardware/resources/lumiknob.png"
+    alt="Lumiknob Module"
+    width="500"
+  />
+</p>
+
+## Overview
+
+The module employs the SPI protocol for communication with the MAX7219 LED driver. A potentiometer is used to adjust the speed at which the LED sequence is activated. Appropriate connections should be made between the potentiometer, MAX7219, and the respective microcontroller pins.
+
+:::warning
+The potentiometer's ADC must be connected to an analog input pin on the microcontroller. Its output voltage should range from 0V to 3.3V for 3.3V microcontrollers, and from 0V to 5V for 5V microcontrollers.
 :::
 
 
-## Sequential LED Control
+## Hardware Interface
 
-![Sequential LED Control](/img/module/schematic.PNG)
+- Potentiometer: Connect to an analog input of the microcontroller.
+- MAX7219: Connect to the designated SPI pins (MOSI, SCK, and Chip Select) of the microcontroller.
 
+Ensure that the project directory includes the necessary files, such as `max7219.py` and `main.py`.
 
-## How to Use
+## Tested Hardware
 
-To use the module, you will need to connect the Potentiometer and the MAX7219 LED driver to your microcontroller. The Potentiometer should be connected to an analog input pin on your microcontroller, and the MAX7219 should be connected to the SPI pins on your microcontroller. You will also need to include the `max7219.py` and `main.py` files in your project.
+The table below enumerates the microcontroller boards that have been verified with this module:
 
-## Tested Boards
+<p align="center">
 
-The following table lists the microcontroller boards that have been tested with this module:
+| Board             | Status              |
+|-------------------|---------------------|
+| Arduino Uno       | Not Tested          |
+| Raspberry Pi Pico | Not Tested          |
+| ESP32C3 SuperMini | Tested and Functional |
+| Pulsar C6         | Tested and Functional |
 
-| Board             | Status            |
-|-------------------|-------------------|
-| Arduino Uno       | No Tested         |
-| Raspberry Pi Pico | No Tested         |
-| ESP32C3 SuperMini | Tested and Works  |
+</p>
 
 ## Example Code
 
-The following is an example code that illustrates the use of the module with an ESP32C3 SuperMini board:
+Below is an example demonstrating the use of the module with an ESP32C3 SuperMini board:
 
 ```python
-
 import max7219
 from machine import Pin, SPI, ADC
 import time
@@ -58,7 +74,6 @@ while True:
     num_leds = int((pot_value / 4095) * 32)
 
     display.fill(0)
-
     led_count = 0
     for row in range(8):
         for col in range(8):
@@ -72,15 +87,22 @@ while True:
     time.sleep(0.1)
 ```
 
-This code reads the potentiometer's value and subsequently determines the quantity of LEDs to illuminate. The LEDs glow sequentially, row by row, from left to right. The potentiometer controls the intensity of the LED illumination.
+The sample code retrieves the value from the potentiometer and calculates the corresponding number of LEDs that need to be lit. The LED activation is performed in a sequential manner, progressing row by row from left to right.
 
+## Performance Outcome
 
-## Results
+The provided GIF demonstrates that the module functions as expected. The potentiometer effectively regulates the sequential activation rate of 32 LEDs, ensuring smooth operation across the display.
 
-The subsequent GIF image of the module operates as expected and facilitates the sequential control of 32 LEDs with a potentiometer. The potentiometer regulates the illumination rate of the LEDs sequentially, from left to right, row by row. The module is intuitive and can be effortlessly incorporated into your apps.
+<p align="center">
+  <img
+    src="https://github.com/UNIT-Electronics-MX/unit_lumiknob_module/blob/main/hardware/resources/resized_output.gif?raw=true"
+    alt="Sequential LED Demonstration"
+    width="500"
+  />
+</p>
 
-![Sequential LED Control](/img/module/resized_output.gif)
 
 ## License
 
-This module is released under the MIT License. You are free to use, modify, and distribute this code as you see fit. See the `LICENSE` file for more information.
+The module is subject to the applicable open-source license terms.
+

@@ -2,35 +2,48 @@
 sidebar_position: 6
 ---
 
-# Lumiknob
+# Lumiknob  
+## Interfaz Avanzada para Potenciómetro y Controlador LED MAX7219 mediante SPI
 
-El módulo "Interfaz Potenciómetro SPI MAX7219 32 LED Secuencial" permite controlar 32 LEDs de manera secuencial utilizando un potenciómetro. El módulo utiliza el protocolo SPI para comunicarse con el controlador de LEDs MAX7219, el cual gestiona la iluminación de los LEDs. El potenciómetro se utiliza para ajustar la velocidad a la que se encienden los LEDs.
-<!-- board in proccess designed -->
-:::caution
-**Placa en Desarrollo**: El Módulo Lumiknob se encuentra actualmente en desarrollo. La información proporcionada aquí puede cambiar a medida que el diseño progresa.
+El módulo Lumiknob es una solución integral para gestionar secuencialmente 32 LEDs utilizando el controlador MAX7219 a través de una comunicación SPI. Este sistema se beneficia de la lectura precisa de un potenciómetro para ajustar dinámicamente la velocidad de activación, con el valor del ADC regulando la secuencia de iluminación. Compatible con microcontroladores como el ESP32C3 SuperMini y la Pulsar C6, este módulo garantiza un rendimiento estable y preciso en aplicaciones de visualización de LEDs.
+
+:::warning
+Asegúrate de que el ADC del potenciómetro esté conectado a un pin analógico del microcontrolador. Verifica que el voltaje de salida del potenciómetro se encuentre entre 0V y 3.3V para microcontroladores de 3.3V, o entre 0V y 5V para aquellos de 5V.
 :::
 
-## Control Secuencial de LEDs
+<p align="center">
+    <img
+        src="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_lumiknob_module/refs/heads/main/hardware/resources/lumiknob.png"
+        alt="Módulo Lumiknob"
+        width="500"
+    />
+</p>
 
-![Control Secuencial de LEDs](/img/module/schematic.PNG)
+## Descripción General
 
-## Cómo Usar
+El módulo emplea el protocolo SPI para la comunicación con el controlador LED MAX7219, respaldado por un potenciómetro que permite regular la velocidad de la secuencia de iluminación. Es fundamental establecer las conexiones correctas entre el potenciómetro, el MAX7219 y los pines correspondientes del microcontrolador.
 
-Para utilizar el módulo, deberás conectar el potenciómetro y el controlador de LEDs MAX7219 a tu microcontrolador. El potenciómetro debe conectarse a un pin de entrada analógica, y el MAX7219 a los pines SPI de tu microcontrolador. Además, deberás incluir los archivos `max7219.py` y `main.py` en tu proyecto.
+## Interfaz de Hardware
 
-## Placas Probadas
+- **Potenciómetro:** Conéctese a una entrada analógica del microcontrolador.
+- **MAX7219:** Conéctese a los pines SPI designados (MOSI, SCK y Chip Select).
 
-La siguiente tabla enumera las placas de microcontrolador que han sido probadas con este módulo:
+Asegúrese de que el proyecto incluya todos los archivos necesarios, como `max7219.py` y `main.py`.
 
-| Placa              | Estado            |
-|--------------------|-------------------|
-| Arduino Uno        | No Probada        |
-| Raspberry Pi Pico  | No Probada        |
-| ESP32C3 SuperMini  | Probada y Funciona|
+## Hardware Probado
 
-## Código de Ejemplo
+A continuación se muestra una tabla con las placas de microcontrolador verificadas con este módulo:
 
-El siguiente código de ejemplo ilustra cómo utilizar el módulo con una placa ESP32C3 SuperMini:
+| Placa              | Estado                     |
+|--------------------|----------------------------|
+| Arduino Uno        | No probado                 |
+| Raspberry Pi Pico  | No probado                 |
+| ESP32C3 SuperMini  | Probado y funcional        |
+| Pulsar C6          | Probado y funcional        |
+
+## Ejemplo de Código
+
+El siguiente ejemplo demuestra cómo utilizar el módulo con una placa ESP32C3 SuperMini:
 
 ```python
 import max7219
@@ -50,32 +63,37 @@ display.fill(0)
 display.show()
 
 while True:
-    pot_value = pot.read()
-    num_leds = int((pot_value / 4095) * 32)
+        pot_value = pot.read()
+        num_leds = int((pot_value / 4095) * 32)
 
-    display.fill(0)
+        display.fill(0)
+        led_count = 0
+        for row in range(8):
+                for col in range(8):
+                        if led_count < num_leds:
+                                display.pixel(col, row, 1)
+                                led_count += 1
+                        else:
+                                break
 
-    led_count = 0
-    for row in range(8):
-        for col in range(8):
-            if led_count < num_leds:
-                display.pixel(col, row, 1)
-                led_count += 1
-            else:
-                break
-
-    display.show()
-    time.sleep(0.1)
+        display.show()
+        time.sleep(0.1)
 ```
 
-Este código lee el valor del potenciómetro y determina la cantidad de LEDs a iluminar. Los LEDs se encienden de manera secuencial, fila por fila, de izquierda a derecha. El potenciómetro controla la intensidad de la iluminación de los LEDs.
+El ejemplo calcula y enciende el número correspondiente de LEDs en función del valor leído del potenciómetro, avanzando de forma secuencial por filas.
 
-## Resultados
+## Rendimiento del Módulo
 
-La imagen GIF a continuación muestra que el módulo funciona como se esperaba y facilita el control secuencial de 32 LEDs mediante un potenciómetro. El potenciómetro regula la velocidad de iluminación de los LEDs de forma secuencial, de izquierda a derecha, fila por fila. El módulo es intuitivo y se puede incorporar fácilmente a tus aplicaciones.
+El GIF a continuación ilustra claramente el funcionamiento del módulo. El potenciómetro permite ajustar de manera efectiva la velocidad de activación de los 32 LEDs, asegurando una transición fluida en el display.
 
-![Control Secuencial de LEDs](/img/module/resized_output.gif)
+<p align="center">
+    <img
+        src="https://github.com/UNIT-Electronics-MX/unit_lumiknob_module/blob/main/hardware/resources/resized_output.gif?raw=true"
+        alt="Demostración de Secuencia de LED"
+        width="500"
+    />
+</p>
 
-## License
+## Licencia
 
-Este módulo se publica bajo la licencia MIT. Eres libre de usar, modificar y distribuir este código según lo desees. Consulta el archivo `LICENSE` para más información.
+El módulo se distribuye bajo los términos de la licencia de código abierto aplicable.

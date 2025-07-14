@@ -1,0 +1,764 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2E8B94;
+  --ifm-color-primary-dark: #268289;
+  --ifm-color-primary-darker: #24787F;
+  --ifm-color-primary-darkest: #1E6368;
+  --ifm-color-primary-light: #36949F;
+  --ifm-color-primary-lighter: #3A9EA9;
+  --ifm-color-primary-lightest: #4FB3BE;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(46, 139, 148, 0.1);
+  
+  /* Custom gradient variables */
+  --gradient-primary: linear-gradient(135deg, var(--ifm-color-primary), var(--ifm-color-primary-light));
+  --gradient-secondary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  
+  /* Enhanced shadows */
+  --shadow-soft: 0 4px 20px rgba(46, 139, 148, 0.1);
+  --shadow-medium: 0 8px 25px rgba(46, 139, 148, 0.15);
+  --shadow-strong: 0 15px 35px rgba(46, 139, 148, 0.2);
+  
+  /* Animation durations */
+  --animation-fast: 0.2s;
+  --animation-normal: 0.3s;
+  --animation-slow: 0.5s;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #4FB3BE;
+  --ifm-color-primary-dark: #3A9EA9;
+  --ifm-color-primary-darker: #36949F;
+  --ifm-color-primary-darkest: #2E8B94;
+  --ifm-color-primary-light: #5FBCC7;
+  --ifm-color-primary-lighter: #6FC5D0;
+  --ifm-color-primary-lightest: #8FD4DD;
+  --docusaurus-highlighted-code-line-bg: rgba(79, 179, 190, 0.3);
+  
+  /* Dark mode gradients */
+  --gradient-primary: linear-gradient(135deg, var(--ifm-color-primary-dark), var(--ifm-color-primary));
+  --gradient-secondary: linear-gradient(135deg, #4fb3d9 0%, #2cacd1 100%);
+  
+  /* Dark mode shadows */
+  --shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.3);
+  --shadow-medium: 0 8px 25px rgba(0, 0, 0, 0.4);
+  --shadow-strong: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+/* Global improvements */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced button styles */
+.button {
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all var(--animation-normal) ease;
+  text-transform: none;
+  padding: 0.75rem 1.5rem;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.button--primary {
+  background: var(--gradient-primary);
+  border: none;
+}
+
+.button--secondary {
+  background: transparent;
+  border: 2px solid var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.button--secondary:hover {
+  background: var(--ifm-color-primary);
+  color: white;
+}
+
+.button--lg {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+/* Enhanced container spacing */
+.container {
+  padding-left: max(var(--ifm-spacing-horizontal), calc((100vw - var(--ifm-container-width)) / 2));
+  padding-right: max(var(--ifm-spacing-horizontal), calc((100vw - var(--ifm-container-width)) / 2));
+}
+
+/* Improved typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+/* Enhanced navbar */
+.navbar {
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(10px);
+}
+
+.navbar__title {
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+/* GitHub icon in navbar */
+.header-github-link:hover {
+  opacity: 0.6;
+}
+
+.header-github-link:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
+}
+
+[data-theme='dark'] .header-github-link:before {
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
+    no-repeat;
+}
+
+/* Enhanced navbar styling */
+.navbar {
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.navbar__title {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+}
+
+/* Navbar items hover effects */
+.navbar__link:hover,
+.navbar__item:hover {
+  color: var(--ifm-color-primary);
+  transition: color var(--animation-normal) ease;
+}
+
+/* Footer improvements */
+.footer {
+  background: linear-gradient(135deg, var(--ifm-color-emphasis-100), var(--ifm-color-emphasis-200));
+}
+
+[data-theme='dark'] .footer {
+  background: linear-gradient(135deg, var(--ifm-color-emphasis-900), var(--ifm-color-emphasis-800));
+}
+
+/* Loading animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+.loading {
+  animation: pulse 2s infinite;
+}
+
+/* Smooth transitions for theme switching */
+* {
+  transition: background-color var(--animation-normal) ease, 
+              color var(--animation-normal) ease,
+              border-color var(--animation-normal) ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ifm-color-emphasis-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ifm-color-primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ifm-color-primary-dark);
+}
+
+/* Focus states for accessibility */
+.button:focus,
+.navbar__link:focus,
+a:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Hide focus outline for mouse users */
+.js-focus-visible .button:focus:not(.focus-visible),
+.js-focus-visible .navbar__link:focus:not(.focus-visible),
+.js-focus-visible a:focus:not(.focus-visible) {
+  outline: none;
+}
+
+/* Font Awesome icons global styling */
+.fas, .fab, .far {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+}
+
+/* Enhanced code blocks */
+.prism-code {
+  border-radius: 12px;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Improved tables */
+.table-wrapper {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+}
+
+/* Mobile optimizations */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  .container {
+    padding-left: var(--ifm-spacing-horizontal);
+    padding-right: var(--ifm-spacing-horizontal);
+  }
+  
+  .button {
+    padding: 0.6rem 1.2rem;
+  }
+  
+  .button--lg {
+    padding: 0.8rem 1.6rem;
+    font-size: 1rem;
+  }
+}
+
+/* Search bar responsive improvements */
+.navbar__search {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__search-input {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  transition: all var(--animation-normal) ease;
+  min-width: 200px;
+}
+
+.navbar__search-input:focus {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px rgba(46, 139, 148, 0.2);
+  outline: none;
+}
+
+/* Dark mode search styling */
+[data-theme='dark'] .navbar__search-input {
+  background: var(--ifm-background-color);
+  border-color: var(--ifm-color-emphasis-400);
+  color: var(--ifm-font-color-base);
+}
+
+/* Responsive navbar layout */
+@media screen and (max-width: 996px) {
+  .navbar__inner {
+    flex-wrap: wrap;
+  }
+  
+  .navbar__items {
+    flex: 1;
+    min-width: 0;
+  }
+  
+  .navbar__search {
+    order: 2;
+    flex: 1 1 100%;
+    margin-top: 0.5rem;
+    max-width: none;
+  }
+  
+  .navbar__search-input {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar__search {
+    margin-top: 0.75rem;
+  }
+  
+  .navbar__search-input {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+}
+
+/* Ensure search results are properly styled */
+.DocSearch-Button {
+  border-radius: 20px !important;
+  padding: 0.5rem 1rem !important;
+  border: 1px solid var(--ifm-color-emphasis-300) !important;
+  background: transparent !important;
+  transition: all var(--animation-normal) ease !important;
+  min-width: 200px !important;
+}
+
+.DocSearch-Button:hover {
+  border-color: var(--ifm-color-primary) !important;
+  box-shadow: 0 0 0 2px rgba(46, 139, 148, 0.2) !important;
+}
+
+/* ============ NAVBAR SIDEBAR MOBILE FIXES ============ */
+/* Fix for mobile sidebar appearing behind content */
+.navbar-sidebar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100vh !important;
+  z-index: 9999 !important;
+  background: var(--ifm-background-color) !important;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.15) !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  pointer-events: auto !important;
+  visibility: visible !important;
+}
+
+/* Ensure sidebar content is properly positioned */
+.navbar-sidebar__brand {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 10000 !important;
+  background: var(--ifm-background-color) !important;
+  padding: 1rem !important;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200) !important;
+  pointer-events: auto !important;
+}
+
+.navbar-sidebar__items {
+  flex: 1 !important;
+  padding: 1rem !important;
+  overflow-y: auto !important;
+  -webkit-overflow-scrolling: touch !important;
+  pointer-events: auto !important;
+}
+
+/* Fix sidebar close button positioning */
+.navbar-sidebar__close {
+  position: absolute !important;
+  top: 1rem !important;
+  right: 1rem !important;
+  z-index: 10001 !important;
+  background: var(--ifm-color-emphasis-200) !important;
+  border-radius: 50% !important;
+  padding: 0.5rem !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.navbar-sidebar__close:hover {
+  background: var(--ifm-color-emphasis-300) !important;
+}
+
+/* Prevent body scroll when sidebar is open */
+.navbar-sidebar--show {
+  overflow: hidden !important;
+}
+
+/* Fix menu items styling in mobile sidebar */
+.navbar-sidebar .menu__list {
+  padding: 0 !important;
+  margin: 0 !important;
+  pointer-events: auto !important;
+}
+
+.navbar-sidebar .menu__list-item {
+  margin: 0 !important;
+  border-bottom: 1px solid var(--ifm-color-emphasis-100) !important;
+  pointer-events: auto !important;
+}
+
+.navbar-sidebar .menu__link {
+  padding: 1rem !important;
+  display: block !important;
+  color: var(--ifm-font-color-base) !important;
+  text-decoration: none !important;
+  border-radius: 0 !important;
+  transition: background-color 0.2s ease !important;
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  position: relative !important;
+  z-index: 10000 !important;
+}
+
+.navbar-sidebar .menu__link:hover,
+.navbar-sidebar .menu__link:active,
+.navbar-sidebar .menu__link:focus {
+  background: var(--ifm-color-emphasis-100) !important;
+  color: var(--ifm-color-primary) !important;
+  outline: none !important;
+}
+
+/* Fix language dropdown in mobile sidebar */
+.navbar-sidebar .menu__list-item--collapsed .menu__link--sublist {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.navbar-sidebar .menu__caret {
+  margin-left: auto !important;
+  padding: 0.25rem !important;
+}
+
+/* Dark mode adjustments for sidebar */
+[data-theme='dark'] .navbar-sidebar {
+  background: var(--ifm-background-color) !important;
+  border-right: 1px solid var(--ifm-color-emphasis-200) !important;
+}
+
+[data-theme='dark'] .navbar-sidebar__brand {
+  background: var(--ifm-background-color) !important;
+  border-bottom-color: var(--ifm-color-emphasis-200) !important;
+}
+
+[data-theme='dark'] .navbar-sidebar__close {
+  background: var(--ifm-color-emphasis-200) !important;
+  color: var(--ifm-font-color-base) !important;
+}
+
+[data-theme='dark'] .navbar-sidebar__close:hover {
+  background: var(--ifm-color-emphasis-300) !important;
+}
+
+/* Ensure proper overlay behavior */
+.navbar-sidebar-overlay {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  z-index: 9998 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 0.3s ease, visibility 0.3s ease !important;
+}
+
+.navbar-sidebar-overlay--show {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* ============ ADDITIONAL MOBILE NAVIGATION FIXES ============ */
+/* Prevent horizontal scroll issues */
+html, body {
+  overflow-x: hidden !important;
+}
+
+/* Fix main content area when sidebar is open */
+body.navbar-sidebar--show {
+  overflow: hidden !important;
+  position: fixed !important;
+  width: 100% !important;
+}
+
+/* Ensure navbar doesn't interfere with content */
+.navbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+}
+
+/* Fix navbar brand and items alignment on mobile */
+@media screen and (max-width: 996px) {
+  .navbar__inner {
+    padding: 0 1rem !important;
+  }
+  
+  .navbar__brand {
+    margin-right: auto !important;
+  }
+  
+  .navbar__toggle {
+    margin-left: auto !important;
+    order: 1 !important;
+  }
+  
+  /* Hide desktop navbar items on mobile */
+  .navbar__items--right,
+  .navbar__items--left {
+    display: none !important;
+  }
+  
+  /* Show only toggle button on mobile */
+  .navbar__toggle {
+    display: flex !important;
+  }
+}
+
+/* Fix touch scrolling for iOS */
+.navbar-sidebar__items {
+  -webkit-overflow-scrolling: touch !important;
+  overflow-y: auto !important;
+  max-height: calc(100vh - 80px) !important;
+}
+
+/* Improve touch targets for mobile */
+@media screen and (max-width: 768px) {
+  .navbar-sidebar .menu__link {
+    min-height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    font-size: 1rem !important;
+  }
+  
+  .navbar-sidebar__close {
+    min-width: 44px !important;
+    min-height: 44px !important;
+    touch-action: manipulation !important;
+  }
+  
+  .navbar__toggle {
+    min-width: 44px !important;
+    min-height: 44px !important;
+    touch-action: manipulation !important;
+  }
+}
+
+/* Fix sidebar backdrop/overlay */
+.navbar-sidebar-backdrop {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  z-index: 9998 !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: all 0.3s ease !important;
+}
+
+.navbar-sidebar-backdrop--show {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Ensure proper stacking context */
+.theme-layout {
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.navbar-sidebar {
+  position: fixed !important;
+  z-index: 9999 !important;
+}
+
+/* Prevent content jumping when sidebar opens/closes */
+.main-wrapper {
+  transition: none !important;
+}
+
+/* Fix for potential transform issues */
+.navbar-sidebar {
+  will-change: transform !important;
+  backface-visibility: hidden !important;
+  -webkit-backface-visibility: hidden !important;
+}
+
+/* ============ FORCE INTERACTION ON SIDEBAR ELEMENTS ============ */
+/* Ensure all sidebar elements are interactive */
+.navbar-sidebar *,
+.navbar-sidebar *:before,
+.navbar-sidebar *:after {
+  pointer-events: auto !important;
+}
+
+/* Force clickable states for all links and buttons */
+.navbar-sidebar a,
+.navbar-sidebar button,
+.navbar-sidebar [role="button"] {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  touch-action: manipulation !important;
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+}
+
+/* Fix for language dropdown and other interactive elements */
+.navbar-sidebar .menu__list-item--collapsed,
+.navbar-sidebar .dropdownNavbarItemMobile_J0Sd,
+.navbar-sidebar .menu__caret {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* Remove any transform that might interfere with clicks */
+.navbar-sidebar--show {
+  transform: translateX(0) !important;
+  pointer-events: auto !important;
+}
+
+/* Ensure proper event handling during transitions */
+.navbar-sidebar {
+  transition: transform 0.3s ease !important;
+  pointer-events: auto !important;
+}
+
+/* Fix for brand logo and title clickability */
+.navbar-sidebar .navbar__brand,
+.navbar-sidebar .navbar__title,
+.navbar-sidebar .navbar__logo {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* Dark mode toggle button fix */
+.navbar-sidebar .toggle_vylO,
+.navbar-sidebar .toggleButton_gllP {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  z-index: 10001 !important;
+}
+
+/* Close button enhanced interaction */
+.navbar-sidebar__close {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+  z-index: 10002 !important;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+/* Menu panel fixes */
+.navbar-sidebar__item,
+.theme-layout-navbar-sidebar-panel {
+  pointer-events: auto !important;
+}
+
+/* External link icons */
+.navbar-sidebar .iconExternalLink_nPIU {
+  pointer-events: none !important;
+}
+
+/* Language icon */
+.navbar-sidebar .iconLanguage_nlXk {
+  pointer-events: none !important;
+}
+
+/* Ensure menu items have proper active states */
+.navbar-sidebar .menu__link:active {
+  background: var(--ifm-color-primary-lighter) !important;
+  transform: scale(0.98) !important;
+}
+
+/* Fix for collapsed menu items */
+.navbar-sidebar .menu__list-item-collapsible {
+  pointer-events: auto !important;
+}
+
+.navbar-sidebar .menu__link--sublist {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* ============ FINAL SIDEBAR INTERACTION FIXES ============ */
+/* Remove any transform issues that prevent interaction */
+.navbar-sidebar {
+  transform: none !important;
+  transition: none !important;
+  will-change: auto !important;
+}
+
+.navbar-sidebar--show {
+  transform: none !important;
+}
+
+/* Force all elements to be interactive */
+.navbar-sidebar,
+.navbar-sidebar * {
+  pointer-events: auto !important;
+}
+
+/* Override any Docusaurus styles that might block interaction */
+.navbar-sidebar .menu__list-item a {
+  pointer-events: auto !important;
+  display: block !important;
+  position: relative !important;
+  z-index: 10000 !important;
+}
+
+/* Ensure buttons work properly */
+.navbar-sidebar button,
+.navbar-sidebar [type="button"] {
+  pointer-events: auto !important;
+  cursor: pointer !important;
+}
+
+/* Make sure close button is always on top and clickable */
+.navbar-sidebar__close {
+  position: fixed !important;
+  top: 1rem !important;
+  right: 1rem !important;
+  z-index: 99999 !important;
+  pointer-events: auto !important;
+  background: var(--ifm-color-emphasis-300) !important;
+  border-radius: 50% !important;
+  width: 40px !important;
+  height: 40px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: none !important;
+  cursor: pointer !important;
+}
