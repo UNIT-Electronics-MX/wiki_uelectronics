@@ -2,206 +2,277 @@
 sidebar_position: 1
 ---
 
-# Programador Multi-Protocolo   
+# Programador Multi-Protocolo
 
 <div align="center">
   <a href="#"><img src="https://img.shields.io/badge/version-1.0-blue.svg" alt="Versión"/></a>
   <a href="#"><img src="https://img.shields.io/badge/language-Python-lightgrey.svg" alt="Lenguaje"/></a>
   <a href="#"><img src="https://img.shields.io/badge/language-C-lightgrey.svg" alt="Lenguaje"/></a>
   <a href="#"><img src="https://img.shields.io/badge/license-MIT-green.svg" alt="Licencia"/></a>
-  <br/>
 </div>
 
 <div align="center">
-  <p href="./docs/unit_product_brief.pdf">  <img src="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_ch552_multiprotocol_programmer/refs/heads/main/hardware/resources/programmer.png" width="500px"/></p>
-  <br/>   
-  </div>
-
-
-**Compatible con AVR, ARM (CMSIS-DAP) y CPLD (MAX II)**
-
-Este proyecto proporciona firmware para un programador USB basado en el **microcontrolador CH552**, compatible con múltiples objetivos y protocolos de programación, incluyendo dispositivos **AVR**, **ARM Cortex-M** y **CPLD**. El dispositivo incluye **selección de voltaje objetivo (3.3V / 5V)** y puede configurarse con diferentes firmware para adaptarse a familias específicas de microcontroladores.
-
-<div style={{ display: 'flex', justifyContent: 'center' }}>
-  <table>
-    <thead>
-      <tr>
-        <th>Tema</th>
-        <th>Enlace</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Programador Multi-Protocolo</td>
-        <td>
-          <a href="https://unit-electronics-mx.github.io/unit_multiprotocol_programmer_platform/" target="_blank">
-            Programador Multi-Protocolo
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>Primeros Pasos</td>
-        <td>
-          <a href="https://unit-electronics-mx.github.io/unit_ch552_multiprotocol_programmer/index.html" target="_blank">
-            Primeros Pasos
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>Diseño Esquemático</td>
-        <td>
-          <a href="https://github.com/UNIT-Electronics-MX/unit_ch552_multiprotocol_programmer/blob/main/hardware/unit_sch_V_0_0_1_ue0090_CH552_USB_Multi-Protocol-Programmer.pdf" target="_blank">
-            Diseño Esquemático
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>Diseño de PCB</td>
-        <td>
-          <a href="https://github.com/UNIT-Electronics-MX/unit_ch552_multiprotocol_programmer/tree/main/hardware" target="_blank">
-            Diseño de PCB
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>Desarrollo de Firmware</td>
-        <td>
-          <a href="https://github.com/UNIT-Electronics-MX/unit_ch552_multiprotocol_programmer/tree/main/software/PICO-DAP" target="_blank">
-            Desarrollo de Firmware
-          </a>
-        </td>
-      </tr>
-      <tr>
-        <td>Pruebas y Depuración</td>
-        <td>
-          <a href="https://github.com/UNIT-Electronics-MX/unit_ch55x_docker_sdk" target="_blank">
-            Pruebas y Depuración
-          </a>
-        </td>
-      </tr>
-    </tbody>
-  </table>
+  <a href="./docs/unit_product_brief.pdf">
+    <img src="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_ch552_multiprotocol_programmer/refs/heads/main/hardware/resources/programmer.png" width="500px" alt="Programador Multi-Protocolo"/>
+  </a>
 </div>
 
-## Descripción del Hardware
+:::warning ⚠️ ADVERTENCIA IMPORTANTE
+**El usuario debe cargar el firmware específico según sus necesidades.**
 
-- Microcontrolador: **CH552G / CH552E / CH552P**
-- Interfaz USB Full-Speed (CDC / HID dependiendo del firmware)
-- Selector de Voltaje: **3.3V / 5V** con interruptor de suministro
-- Perfiles de firmware programables:
-  - **Programador AVR** (USBasp o Serial UPDI)
-  - **Depurador ARM CMSIS-DAP** (firmware picoDAP)
-  - **Programador CPLD JTAG** (compatible con Quartus)
+Este programador requiere que cargues el firmware correspondiente al protocolo que deseas utilizar:
+- **Firmware AVR** para dispositivos ATmega/ATtiny
+- **Firmware CMSIS-DAP** para microcontroladores ARM Cortex-M  
+- **Firmware CPLD** para dispositivos Intel/Altera MAX II
 
+**Sin el firmware apropiado, el dispositivo no funcionará correctamente.**
+:::
 
-## Perfiles de Firmware
+## Descripción General
 
-### Firmware de Programador AVR
+El **Programador Multi-Protocolo** es un dispositivo USB versátil basado en el microcontrolador **CH552** que soporta múltiples protocolos de programación y depuración. Compatible con dispositivos **AVR**, **ARM Cortex-M** y **CPLD Intel/Altera MAX II**.
 
-- **Protocolos:** USBasp, SerialUPDI
-- **Dispositivos Objetivo:** ATmega, ATtiny y otros MCUs AVR
-- **Interfaz USB:** Compatible con libusb
-- **Compatibilidad con Herramientas:** 
-  - `avrdude`
-  - PlatformIO
-  - Windows (Zadig/libusb)
-- **Voltaje:** Seleccionable 3.3V o 5V
+### Características Principales
+- 🔌 **Interfaz USB Full-Speed** (CDC/HID según firmware)
+- ⚡ **Selector de voltaje**: 3.3V / 5V con interruptor
+- 🔄 **Firmware intercambiable** para diferentes protocolos
+- 🛠️ **Compatible** con herramientas estándar de la industria
 
-**Opciones de Compilación:**
-- Compilar con [SDCC](https://sdcc.sourceforge.net/)
-- O flashear binarios precompilados usando `tools/chprog.py`
+## Recursos y Documentación
 
-> *El modo USBasp se enumera como dispositivo USB HID; Serial UPDI utiliza puerto CDC.*
+<div className="table-center">
 
----
+| Recurso | Descripción | Enlace |
+|:-------:|:-----------:|:------:|
+| 📚 **Documentación Completa** | Guía detallada del programador | [Ver Documentación](https://unit-electronics-mx.github.io/unit_multiprotocol_programmer_platform/) |
+| 🚀 **Primeros Pasos** | Tutorial de configuración inicial | [Comenzar Aquí](https://unit-electronics-mx.github.io/unit_ch552_multiprotocol_programmer/index.html) |
+| 📋 **Esquemático** | Diseño del circuito electrónico | [Ver Esquemático](https://github.com/UNIT-Electronics-MX/unit_ch552_multiprotocol_programmer/blob/main/hardware/unit_sch_V_0_0_1_ue0090_CH552_USB_Multi-Protocol-Programmer.pdf) |
+| 🔧 **Diseño PCB** | Archivos de diseño de la placa | [Ver Diseño](https://github.com/UNIT-Electronics-MX/unit_ch552_multiprotocol_programmer/tree/main/hardware) |
+| 💻 **Firmware** | Código fuente y binarios | [Ver Código](https://github.com/UNIT-Electronics-MX/unit_ch55x_docker_sdk/tree/main/examples/usb/prog) |
+| 🧪 **SDK de Desarrollo** | Herramientas para CH55x | [Ver SDK](https://github.com/UNIT-Electronics-MX/unit_ch55x_docker_sdk) |
+| 📦 **Repositorio Principal** | Código fuente completo | [GitHub](https://github.com/UNIT-Electronics-MX/unit_ch552_multiprotocol_programmer) |
 
-### Firmware de Depurador CMSIS-DAP (picoDAP)
+</div>
 
-- **Protocolos:** SWD, JTAG (CMSIS-DAP)
-- **Dispositivos Objetivo:** ARM Cortex-M (e.g., STM32, SAM, nRF52)
-- **Compatibilidad con Herramientas:**  
-  - [OpenOCD](http://openocd.org/)
-  - PyOCD
+## Especificaciones Técnicas
 
-- **Interfaz USB:**
-  - CMSIS-DAP vía HID
-  - UART CDC (opcional, para registro o VCP)
-- **Controladores:**
-  - Linux/macOS: Nativo
+### Hardware Base
+- **Microcontrolador**: CH552G / CH552E / CH552P
+- **Interfaz USB**: Full-Speed (12 Mbps)
+- **Alimentación**: Bus USB (5V) con regulador interno
+- **Voltaje de salida**: Seleccionable 3.3V / 5V mediante interruptor
+- **Conectores**: Pin headers estándar para conexiones de programación
 
-> *El dispositivo aparece como HID con puerto COM serial opcional.*
+### Protocolos Soportados
+- 🔌 **AVR**: USBasp, Serial UPDI
+- 🛡️ **ARM**: SWD, JTAG (CMSIS-DAP)
+- ⚙️ **CPLD**: JTAG (compatible con USB-Blaster)
 
----
+## Perfiles de Firmware Disponibles
 
-### Firmware de Programador CPLD (JTAG, Compatible con Quartus)
+:::info 📋 Selección de Firmware
+Cada firmware está optimizado para un tipo específico de dispositivo. **Debes cargar el firmware correcto antes de usar el programador.**
+:::
 
-- **Dispositivos Objetivo:** Intel/Altera **MAX II (e.g., EPM240)**
-- **Protocolo:** JTAG vía protocolo USB-Blaster
-- **Compatibilidad con Herramientas:**  
-  - Programador Intel Quartus (vía emulación USB-Blaster)
-- **Opciones de VID/PID USB:**
-  - Modo de distribución seguro (predeterminado): `0x16C0:0x05DC`
-  - Modo de compatibilidad: `0x09FB:0x6001` *(para soporte completo de Quartus)*
-- **Selección de Voltaje:** 3.3V / 5V mediante interruptor de hardware
-- **Sistema de Compilación:**  
-  - Compilar con SDCC
-  - Flashear vía bootloader WCH o `chprog.py`
+### 1. 🔧 Firmware Programador AVR
 
----
+**Para microcontroladores AVR (ATmega, ATtiny, etc.)**
 
-## Herramientas y Flasheo
+#### Características:
+- **Protocolos**: USBasp y Serial UPDI
+- **Dispositivos objetivo**: Toda la familia AVR de Microchip
+- **Interfaz USB**: HID (USBasp) / CDC (Serial UPDI)
+- **Voltaje**: Seleccionable 3.3V o 5V
 
-### Dependencias
+#### Herramientas compatibles:
+- ✅ `avrdude`
+- ✅ PlatformIO
+- ✅ Arduino IDE
+- ✅ Atmel Studio / Microchip Studio
 
-- [Compilador SDCC](https://sdcc.sourceforge.net/)
-- Python 3 con [`pyusb`](https://github.com/pyusb/pyusb)
-
+#### Compilación:
 ```bash
-sudo apt install build-essential sdcc python3 python3-pip
+# Compilar con SDCC
+make avr
+
+# O flashear binario precompilado
+python3 tools/chprog.py firmware/avr_programmer.bin
+```
+
+:::tip 💡 Nota Técnica
+El modo USBasp se enumera como dispositivo HID, mientras que Serial UPDI utiliza puerto CDC virtual.
+:::
+
+---
+
+### 2. 🛡️ Firmware Depurador ARM (CMSIS-DAP)
+
+**Para microcontroladores ARM Cortex-M**
+
+#### Características:
+- **Protocolos**: SWD y JTAG (estándar CMSIS-DAP)
+- **Dispositivos objetivo**: STM32, SAM, nRF52, ESP32-C3, etc.
+- **Interfaz USB**: HID + CDC opcional
+- **Velocidad**: Hasta 10 MHz SWD/JTAG
+
+#### Herramientas compatibles:
+- ✅ [OpenOCD](http://openocd.org/)
+- ✅ PyOCD
+- ✅ Keil µVision
+- ✅ STM32CubeIDE
+- ✅ PlatformIO
+
+#### Controladores:
+- **Linux/macOS**: Soporte nativo (sin drivers adicionales)
+- **Windows**: Drivers automáticos via WinUSB
+
+:::warning ⚠️ Compatibilidad
+Algunos IDEs pueden requerir configuración específica para reconocer el dispositivo como CMSIS-DAP.
+:::
+
+---
+
+### 3. ⚙️ Firmware Programador CPLD
+
+**Para dispositivos Intel/Altera MAX II**
+
+#### Características:
+- **Dispositivos objetivo**: EPM240, EPM570, EPM1270, etc.
+- **Protocolo**: JTAG via emulación USB-Blaster
+- **Compatibilidad**: Intel Quartus Prime (todas las versiones)
+- **Velocidad**: Compatible con especificaciones USB-Blaster
+
+#### Opciones de configuración:
+- **Modo seguro** (predeterminado): VID:`0x16C0` PID:`0x05DC`
+- **Modo compatibilidad**: VID:`0x09FB` PID:`0x6001`
+
+:::caution 🚨 Modo de Compatibilidad
+El modo de compatibilidad usa VID/PID de Intel. Úsalo solo para desarrollo personal y cumpliendo las licencias correspondientes.
+:::
+
+## Instalación y Configuración
+
+### Requisitos del Sistema
+
+#### Software requerido:
+```bash
+# Ubuntu/Debian
+sudo apt install build-essential sdcc python3 python3-pip git
+
+# Instalar dependencias Python
 pip3 install pyusb
+
+# Verificar instalación
+sdcc --version
+python3 --version
 ```
 
-### Flasheo de Firmware (Linux/Windows/macOS)
+#### Para Windows:
+- [SDCC Compiler](https://sdcc.sourceforge.net/)
+- [Python 3.8+](https://python.org/)
+- [Git for Windows](https://git-scm.com/)
+
+### Proceso de Flasheo del Firmware
+
+#### 1. Entrar en Modo Bootloader
+
+:::info 📝 Procedimiento paso a paso:
+1. **Desconectar** completamente el programador del USB
+2. **Mantener presionado** el botón `BOOT` en la placa
+3. **Conectar** el cable USB mientras mantienes presionado `BOOT`
+4. **Soltar** el botón - el dispositivo entra en modo bootloader
+5. El LED debería cambiar de estado indicando modo bootloader
+:::
+
+#### 2. Flashear el Firmware
 
 ```bash
-# Para modo bootloader
-python3 tools/chprog.py <firmware.bin>
+# Método 1: Usando chprog.py (Recomendado)
+python3 tools/chprog.py firmware/nombre_firmware.bin
+
+# Método 2: Usando WCHISPTool (Windows)
+# Abrir WCHISPTool y seleccionar el archivo .bin
 ```
 
-O usar **WCHISPTool** para Windows.
-
----
-
-## Modo Bootloader (CH552)
-
-Para entrar en modo bootloader USB:
-
-1. Desconectar toda la alimentación.
-2. Mantener presionado el botón **BOOT**.
-3. Reconectar USB mientras se mantiene presionado BOOT.
-4. Soltar el botón — el dispositivo entra en modo bootloader.
-
-Usuarios de Linux: establecer reglas udev adecuadas si es necesario.
+#### 3. Verificar la Instalación
 
 ```bash
+# Verificar que el dispositivo es reconocido
+lsusb | grep -i "ch55"
+
+# Para Windows, verificar en Device Manager
+```
+
+### Configuración de Permisos (Linux)
+
+```bash
+# Crear reglas udev para acceso sin privilegios
 echo 'SUBSYSTEM=="usb", ATTR{idVendor}=="4348", ATTR{idProduct}=="55e0", MODE="666"' | sudo tee /etc/udev/rules.d/99-ch55x.rules
+
+# Recargar reglas
 sudo udevadm control --reload
 sudo udevadm trigger
+
+# Agregar usuario al grupo dialout (para puertos serie)
+sudo usermod -a -G dialout $USER
 ```
 
----
+## Tabla de Compatibilidad de Firmware
 
-## Resumen de Capacidades del Firmware
+<div className="table-center">
 
-| Firmware       | Protocolos         | Objetivos          | Modo USB      | Herramientas Compatibles |
-|----------------|-------------------|---------------------|---------------|---------------------------|
-| Programador AVR | USBasp / UPDI     | AVR (ATmega, ATtiny) | CDC / HID     | `avrdude`, PlatformIO     |
-| CMSIS-DAP      | SWD, JTAG         | ARM Cortex-M        | HID + CDC     | OpenOCD, PyOCD            |
-| Programador CPLD| JTAG (Blaster)    | EPM240 / MAX II     | HID           | Programador Quartus       |
+| Firmware | Protocolos | Dispositivos Objetivo | Modo USB | Herramientas Principales |
+|:--------:|:----------:|:---------------------:|:--------:|:------------------------:|
+| **AVR** | USBasp, UPDI | ATmega, ATtiny, AVR-DA/DB | CDC/HID | avrdude, PlatformIO |
+| **CMSIS-DAP** | SWD, JTAG | STM32, SAM, nRF52, ESP32-C3 | HID+CDC | OpenOCD, PyOCD, Keil |
+| **CPLD** | JTAG (USB-Blaster) | EPM240, EPM570, MAX II | HID | Quartus Prime |
 
----
+</div>
 
-## 🪪 Licencia
+## Solución de Problemas Comunes
 
-Este proyecto está licenciado bajo la **Licencia MIT** o **Creative Commons Attribution-ShareAlike 3.0**, dependiendo de la base del firmware utilizado. Consulte cada subproyecto de firmware para detalles específicos de la licencia.
+### ❌ El dispositivo no es reconocido
+
+**Posibles causas y soluciones:**
+
+1. **Firmware incorrecto cargado**
+   - Verificar que el firmware corresponde al uso deseado
+   - Re-flashear el firmware correcto
+
+2. **Problemas de drivers (Windows)**
+   ```bash
+   # Instalar Zadig para drivers libusb
+   # Seleccionar el dispositivo y instalar WinUSB driver
+   ```
+
+3. **Permisos insuficientes (Linux)**
+   ```bash
+   # Verificar reglas udev
+   sudo udevadm test /sys/bus/usb/devices/[device_path]
+   ```
+
+### ❌ Error de programación
+
+1. **Verificar conexiones de cables**
+2. **Comprobar voltaje objetivo (3.3V vs 5V)**
+3. **Verificar que el dispositivo objetivo está alimentado**
+4. **Revisar compatibilidad del protocolo**
+
+### ❌ Velocidad de programación lenta
+
+1. **Reducir frecuencia de JTAG/SWD**
+2. **Verificar calidad de conexiones**
+3. **Usar cables más cortos**
+
+## Licencias y Atribuciones
+
+Este proyecto se distribuye bajo múltiples licencias dependiendo del componente:
+
+- **Hardware**: Creative Commons Attribution-ShareAlike 4.0
+- **Firmware base**: MIT License
+- **Componentes derivados**: Licencias específicas de cada proyecto base
+
+:::note 📄 Importante
+Consulta el archivo `LICENSE` en cada directorio de firmware para detalles específicos de licenciamiento.
+:::
 

@@ -2,103 +2,101 @@
 sidebar_position: 1
 ---
 
-# Guía de Instalación del Paquete JSON UNIT Electronics 
+# Guía de instalación de paquetes de placas – UNIT Electronics
 
-Esta guía proporciona un paso a paso para instalar los paquetes oficiales de soporte de placas (BSPs) necesarios para programar las placas de desarrollo de **UNIT Electronics** utilizando el IDE de Arduino. Estos paquetes garantizan una integración fluida con el entorno Arduino y habilitan el acceso completo a las características de cada placa.
+Esta guía proporciona un paso a paso para instalar los paquetes oficiales de soporte de placas (BSPs) necesarios para programar tarjetas de desarrollo de **UNIT Electronics** utilizando el entorno Arduino IDE. Estos paquetes permiten una integración completa y sin complicaciones.
 
-Las placas compatibles incluyen:
+## Placas compatibles
+
 - [**DualMCU-ONE** (ESP32 + RP2040)](https://uelectronics.com/producto/unit-dualmcu-one-esp32-rp2040/)
-- [**Cocket Nova CH552**](https://uelectronics.com/producto/unit-cocket-nova-ch552g-tarjeta-de-desarrollo/)
 - [**Pulsar C6** (ESP32-C6)](https://uelectronics.com/producto/unit-pulsar-esp32-c6/)
 - **Pulsar H2** (ESP32-H2)
 - **TouchDot S3** (ESP32-S3 Mini)
+- [**Cocket Nova CH552**](https://uelectronics.com/producto/unit-cocket-nova-ch552g-tarjeta-de-desarrollo/)
 
 :::tip
-Para especificaciones detalladas y documentación, visita el [**sitio web de UNIT Electronics**](https://uelectronics.com/).
+Para especificaciones técnicas y documentación de cada placa, visita el [**sitio web oficial de UNIT Electronics**](https://uelectronics.com/).
 :::
 
+---
 
-## Requisitos Previos
+## Requisitos previos
 
-Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas:
+Antes de comenzar, asegúrate de contar con lo siguiente:
 
-- [**Arduino IDE**](https://www.arduino.cc/en/software) – Necesario para cargar y gestionar sketches.
-- [**Controladores USB CH34x**](https://www.wch-ic.com/downloads/CH341SER_EXE.html) – Requeridos para la comunicación USB con algunas placas (por ejemplo, CH552, ESP32).
+- [**Arduino IDE**](https://www.arduino.cc/en/software) – Requerido para cargar y gestionar programas.
+- [**Controladores CH34x USB**](https://www.wch-ic.com/downloads/CH341SER_EXE.html) – Necesarios para la comunicación por USB en placas de ESP32.
+- [**Controladores USB CH375**](https://www.wch-ic.com/downloads/CH372DRV_EXE.html) – Necesarios para placas de la serie CH552.
 
 
-## Instalación Rápida para Placas ESP32, RP2040 y CH552
+---
 
-Agrega las siguientes URLs al campo **Additional Board Manager URLs** en las preferencias del IDE de Arduino:
+## Instalación rápida (todas las placas)
+
+Agrega las siguientes URLs al campo **URLs adicionales del Gestor de tarjetas** en las preferencias de Arduino IDE:
 
 ```plaintext
 https://raw.githubusercontent.com/UNIT-Electronics/Uelectronics-ESP32-Arduino-Package/main/package_Uelectronics_esp32_index.json
 https://raw.githubusercontent.com/UNIT-Electronics/Uelectronics-RP2040-Arduino-Package/main/package_Uelectronics_rp2040_index.json
 https://raw.githubusercontent.com/UNIT-Electronics/Uelectronics-CH552-Arduino-Package/refs/heads/develop/package_duino_mcs51_index.json
-```
+````
 
-Después de agregar las URLs:
+**Pasos:**
 
-1. Ve a **Herramientas → Placa → Gestor de Placas**.
-2. Busca **UNIT Electronics**.
-3. Haz clic en **Instalar** para los paquetes correspondientes.
+1. Abre **Arduino IDE** y ve a **Archivo → Preferencias**.
+2. Pega las URLs en **URLs adicionales del Gestor de tarjetas**.
+3. Dirígete a **Herramientas → Placa → Gestor de tarjetas**.
+4. Busca **UNIT Electronics** y haz clic en **Instalar** según el paquete requerido.
 
-Alternativamente, puedes instalar los paquetes manualmente siguiendo los pasos a continuación.
+---
 
+## 1. Instalación para ESP32 y RP2040
 
-## 1. Instalación del Paquete de la Placa DualMCU-ONE
+La placa **DualMCU-ONE** requiere instalar tanto el paquete para ESP32 como el de RP2040.
 
-La placa **DualMCU-ONE** incluye tanto un microcontrolador ESP32 como un RP2040. Necesitarás instalar paquetes para ambos.
+### A. Instalar paquete ESP32
 
-### Paso 1: Instalar el Paquete de la Placa ESP32
+1. Abre **Archivo → Preferencias**.
+2. Agrega la siguiente URL:
 
-1. Abre el **IDE de Arduino**.
-2. Navega a **Archivo → Preferencias**.
-3. En el campo **Additional Board Manager URLs**, ingresa:
+   ```plaintext
+   https://raw.githubusercontent.com/UNIT-Electronics/Uelectronics-ESP32-Arduino-Package/main/package_Uelectronics_esp32_index.json
+   ```
+3. Abre el **Gestor de tarjetas** y busca **UNIT ESP32**.
+4. Haz clic en **Instalar** y selecciona la placa **DualMCU ESP32** desde el menú de placas.
 
-    ```plaintext
-    https://raw.githubusercontent.com/UNIT-Electronics/Uelectronics-ESP32-Arduino-Package/main/package_Uelectronics_esp32_index.json
-    ```
-4. Haz clic en **OK**.
-5. Ve a **Herramientas → Placa → Gestor de Placas**.
-6. Busca **DualMCU**.
-7. Haz clic en **Instalar**.
-8. Una vez instalado, selecciona **DualMCU** desde el menú **Placa**.
+### B. Instalar paquete RP2040
 
-### Paso 2: Instalar el Paquete de la Placa RP2040
+1. Agrega esta URL en las preferencias:
 
-1. Repite los pasos anteriores, pero esta vez ingresa la siguiente URL:
+   ```plaintext
+   https://raw.githubusercontent.com/UNIT-Electronics/Uelectronics-RP2040-Arduino-Package/main/package_Uelectronics_rp2040_index.json
+   ```
+2. Abre el **Gestor de tarjetas** y busca **UNIT RP2040**.
+3. Haz clic en **Instalar** y selecciona la placa correspondiente a **RP2040**.
 
-    ```plaintext
-    https://raw.githubusercontent.com/UNIT-Electronics/Uelectronics-RP2040-Arduino-Package/main/package_Uelectronics_rp2040_index.json
-    ```
-2. Busca **UNIT RP2040** en el Gestor de Placas.
-3. Instala el paquete y selecciona **RP2040** desde el menú **Placa**.
-
-#### Captura de Pantalla Ejemplo
+#### Captura de pantalla
 
 <div style={{ textAlign: "center" }}>
   <img src="https://raw.githubusercontent.com/Rabadan-uelectronics/DualMCU-RP2040-Arduino-Package/refs/heads/main/releases/download/0.0.0/BoardsManager.png" width="600px" />
 </div>
 
+---
 
-## 2. Instalación del Paquete de la Placa Cocket Nova CH552
+## 2. Instalación para CH552 – Cocket Nova
 
-Para programar la **Cocket Nova CH552**, sigue estos pasos:
+Sigue estos pasos para instalar soporte para la **Cocket Nova CH552**:
 
-1. Abre el **IDE de Arduino**.
-2. Navega a **Archivo → Preferencias**.
-3. En el campo **Additional Board Manager URLs**, agrega:
+1. Abre **Arduino IDE → Archivo → Preferencias**.
+2. Agrega la siguiente URL del paquete CH552:
 
-    ```plaintext
-    https://raw.githubusercontent.com/UNIT-Electronics/Uelectronics-CH552-Arduino-Package/refs/heads/develop/package_duino_mcs51_index.json
-    ```
-4. Haz clic en **OK**.
-5. Abre **Herramientas → Placa → Gestor de Placas**.
-6. Busca **Cocket Nova**.
-7. Haz clic en **Instalar**.
-8. Después de la instalación, selecciona **Cocket Nova** desde el menú **Placa**.
+   ```plaintext
+   https://raw.githubusercontent.com/UNIT-Electronics/Uelectronics-CH552-Arduino-Package/refs/heads/develop/package_duino_mcs51_index.json
+   ```
+3. Ve al **Gestor de tarjetas** y busca **Cocket Nova**.
+4. Haz clic en **Instalar** y luego selecciona **Cocket Nova (CH552)** desde el menú de placas.
 
-#### Captura de Pantalla Ejemplo
+#### Captura de pantalla
 
 <div style={{ textAlign: "center" }}>
   <img src="https://raw.githubusercontent.com/UNIT-Electronics/Uelectronics-CH552-Arduino-Package/refs/heads/main/images/board_json.png" width="600px" />
