@@ -122,3 +122,39 @@
   
   --docusaurus-highlighted-code-line-bg: rgba(79, 179, 190, 0.3);
 }
+
+/* Custom CSS for centering tables */
+.centered-table-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.centered-table-container table {
+  margin: 0 auto !important;
+  width: auto !important;
+  max-width: 600px;
+}
+
+/* Alternative approach for markdown tables */
+div[style*="textAlign: 'center'"] table,
+div[style*="text-align: center"] table {
+  margin-left: auto !important;
+  margin-right: auto !important;
+  width: auto !important;
+  display: table !important;
+}
+
+/* Force center alignment for table containers */
+.table-center {
+  text-align: center !important;
+  display: block !important;
+  width: 100% !important;
+}
+
+.table-center table {
+  margin: 0 auto !important;
+  display: inline-table !important;
+  width: auto !important;
+}
