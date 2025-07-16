@@ -42,7 +42,7 @@ export default function ProductAds() {
       title: translate({ id: 'products.cocketNova.title', message: 'COCKET NOVA' }),
       description: translate({ id: 'products.cocketNova.description', message: 'Plataforma de desarrollo de próxima generación' }),
       image: 'https://uelectronics.com/wp-content/uploads/2024/10/COCKET-NOVA-web3-scaled.jpg',
-      link: '/docs/Development_boards/develab/cocket_nova',
+      link: '/docs/Development_boards/devlab/cocket_nova',
       badge: translate({ id: 'products.badge.featured', message: 'DESTACADO' }),
       price: '$100.MXN'
     },

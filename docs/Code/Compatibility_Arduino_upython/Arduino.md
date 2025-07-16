@@ -9,7 +9,7 @@ This guide provides a step-by-step walkthrough for installing the official board
 Supported boards include:
 - [**DualMCU-ONE** (ESP32 + RP2040)](https://uelectronics.com/producto/unit-dualmcu-one-esp32-rp2040/)
 - [**Cocket Nova CH552**](https://uelectronics.com/producto/unit-cocket-nova-ch552g-tarjeta-de-desarrollo/)
-- [**Pulsar C6** (ESP32-C6)](https://uelectronics.com/producto/unit-pulsar-c6/)
+- [**Pulsar C6** (ESP32-C6)](https://uelectronics.com/producto/unit-pulsar-esp32-c6/)
 - **Pulsar H2** (ESP32-H2)
 - **TouchDot S3** (ESP32-S3 Mini)
 

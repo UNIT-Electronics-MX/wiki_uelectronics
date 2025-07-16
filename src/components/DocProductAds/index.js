@@ -42,7 +42,7 @@ export default function DocProductAds() {
       title: translate({ id: 'products.cocketNova.title', message: 'COCKET NOVA' }),
       description: translate({ id: 'products.cocketNova.docDescription', message: 'Desarrollo con CH552G' }),
       image: 'https://uelectronics.com/wp-content/uploads/2024/10/COCKET-NOVA-web3-scaled.jpg',
-      link: '/docs/Development_boards/develab/cocket_nova',
+      link: '/docs/Development_boards/devlab/cocket_nova',
       shopLink: 'https://uelectronics.com/producto/unit-cocket-nova-ch552g-tarjeta-de-desarrollo/',
       price: '$34.99'
     },
