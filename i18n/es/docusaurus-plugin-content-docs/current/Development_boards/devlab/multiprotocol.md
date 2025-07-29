@@ -65,7 +65,7 @@ El **Programador Multi-Protocolo** es un dispositivo USB versátil basado en el 
 
 ### Protocolos Soportados
 - 🔌 **AVR**: USBasp, Serial UPDI
-- 🛡️ **ARM**: SWD, JTAG (CMSIS-DAP)
+- 🛡️ **ARM**: SWD (CMSIS-DAP)
 - ⚙️ **CPLD**: JTAG (compatible con USB-Blaster)
 
 ## Perfiles de Firmware Disponibles
@@ -79,24 +79,58 @@ Cada firmware está optimizado para un tipo específico de dispositivo. **Debes 
 **Para microcontroladores AVR (ATmega, ATtiny, etc.)**
 
 #### Características:
-- **Protocolos**: USBasp y Serial UPDI
+- **Protocolos**: USBasp
 - **Dispositivos objetivo**: Toda la familia AVR de Microchip
 - **Interfaz USB**: HID (USBasp) / CDC (Serial UPDI)
 - **Voltaje**: Seleccionable 3.3V o 5V
 
 #### Herramientas compatibles:
 - ✅ `avrdude`
-- ✅ PlatformIO
 - ✅ Arduino IDE
-- ✅ Atmel Studio / Microchip Studio
 
 #### Compilación:
 ```bash
-# Compilar con SDCC
-make avr
+# Compilar con SDCC 
+make all
 
 # O flashear binario precompilado
-python3 tools/chprog.py firmware/avr_programmer.bin
+python3 ./tools/chprog.py build/main.bin 
+
+```
+Ejemplo de flasheo de binario precompilado:
+
+:::note
+Python3 es nativo en la mayoría de distribuciones Linux, pero puedes instalarlo en Windows o macOS con soporte limitado.
+:::
+
+```bash
+make flash 
+Compilando main.c ...
+Compilando src/delay.c ...
+Compilando src/isp.c ...
+Compilando src/tpi.c ...
+Compilando src/updi.c ...
+Compilando src/usb_asp.c ...
+Compilando src/usb_cdc.c ...
+Compilando src/usb_descr.c ...
+Compilando src/usb_handler.c ...
+Enlazando IHX...
+Generando BIN...
+------------------
+FLASH: 5341 bytes
+IRAM:  36 bytes
+XRAM:  480 bytes
+------------------
+Eliminando temporales...
+Flasheando a CH55x...
+Connecting to device ...
+FOUND: CH552 with bootloader v2.5.0.
+Erasing chip ...
+Flashing build/main.bin to CH552 ...
+SUCCESS: 5341 bytes written.
+Verifying ...
+SUCCESS: 5341 bytes verified.
+DONE.
 ```
 
 :::tip 💡 Nota Técnica
@@ -111,16 +145,14 @@ El modo USBasp se enumera como dispositivo HID, mientras que Serial UPDI utiliza
 
 #### Características:
 - **Protocolos**: SWD y JTAG (estándar CMSIS-DAP)
-- **Dispositivos objetivo**: STM32, SAM, nRF52, ESP32-C3, etc.
+- **Dispositivos objetivo**: STM32, PY32, RP2040, etc.
 - **Interfaz USB**: HID + CDC opcional
-- **Velocidad**: Hasta 10 MHz SWD/JTAG
 
 #### Herramientas compatibles:
 - ✅ [OpenOCD](http://openocd.org/)
 - ✅ PyOCD
-- ✅ Keil µVision
-- ✅ STM32CubeIDE
-- ✅ PlatformIO
+- ✅ Visual Studio Code (Extensión PlatformIO)
+- ✅ Visual Studio Code (Extensión Raspberry Pi Pico)
 
 #### Controladores:
 - **Linux/macOS**: Soporte nativo (sin drivers adicionales)
@@ -137,9 +169,9 @@ Algunos IDEs pueden requerir configuración específica para reconocer el dispos
 **Para dispositivos Intel/Altera MAX II**
 
 #### Características:
-- **Dispositivos objetivo**: EPM240, EPM570, EPM1270, etc.
+- **Dispositivos objetivo**: EPM240, etc.
 - **Protocolo**: JTAG via emulación USB-Blaster
-- **Compatibilidad**: Intel Quartus Prime (todas las versiones)
+- **Compatibilidad**: Intel Quartus Prime (versión lite)
 - **Velocidad**: Compatible con especificaciones USB-Blaster
 
 #### Opciones de configuración:
@@ -172,6 +204,11 @@ python3 --version
 - [Python 3.8+](https://python.org/)
 - [Git for Windows](https://git-scm.com/)
 
+### SDK Docker CH55x
+
+- [SDK Docker CH55x](https://github.com/UNIT-Electronics-MX/unit_ch55x_docker_sdk)
+- [Documentación](https://unit-electronics-mx.github.io/unit_ch552_multiprotocol_programmer/7_0_0_cpld.html)
+
 ### Proceso de Flasheo del Firmware
 
 #### 1. Entrar en Modo Bootloader
@@ -188,7 +225,7 @@ python3 --version
 
 ```bash
 # Método 1: Usando chprog.py (Recomendado)
-python3 tools/chprog.py firmware/nombre_firmware.bin
+python3 ./tools/chprog.py build/main.bin 
 
 # Método 2: Usando WCHISPTool (Windows)
 # Abrir WCHISPTool y seleccionar el archivo .bin
@@ -223,8 +260,8 @@ sudo usermod -a -G dialout $USER
 
 | Firmware | Protocolos | Dispositivos Objetivo | Modo USB | Herramientas Principales |
 |:--------:|:----------:|:---------------------:|:--------:|:------------------------:|
-| **AVR** | USBasp, UPDI | ATmega, ATtiny, AVR-DA/DB | CDC/HID | avrdude, PlatformIO |
-| **CMSIS-DAP** | SWD, JTAG | STM32, SAM, nRF52, ESP32-C3 | HID+CDC | OpenOCD, PyOCD, Keil |
+| **AVR** | USBasp | ATmega, ATtiny, AVR-DA/DB | CDC/HID | avrdude, PlatformIO |
+| **CMSIS-DAP** | SWD | STM32, RP2040, PY32 | HID+CDC | OpenOCD, PyOCD |
 | **CPLD** | JTAG (USB-Blaster) | EPM240, EPM570, MAX II | HID | Quartus Prime |
 
 </div>

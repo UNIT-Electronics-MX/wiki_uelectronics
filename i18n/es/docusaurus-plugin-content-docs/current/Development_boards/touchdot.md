@@ -45,9 +45,9 @@ La Touchdot S3 es una avanzada placa de desarrollo concebida para aplicaciones i
 
 <div align="center">
 
-<a href="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_touchdot_s3/refs/heads/main/hardware/resources/unit_pinout_v_0_1_3_ue0072_touch_dot_s3_en.png" target="_blank">
+<a href="https://github.com/UNIT-Electronics-MX/unit_touchdot_s3/blob/main/hardware/resources/unit_pinout_v_0_1_4_ue0072_touch_dot_s3_en.jpg?raw=true" target="_blank">
 
-  <img src="https://raw.githubusercontent.com/UNIT-Electronics-MX/unit_touchdot_s3/refs/heads/main/hardware/resources/unit_pinout_v_0_1_3_ue0072_touch_dot_s3_en.png" width="450px" alt="UNIT Touchdot S3"/>
+  <img src="https://github.com/UNIT-Electronics-MX/unit_touchdot_s3/blob/main/hardware/resources/unit_pinout_v_0_1_4_ue0072_touch_dot_s3_en.jpg?raw=true" width="450px" alt="UNIT Touchdot S3"/>
   <p>UNIT Touchdot S3</p>
 </a>
 </div>
